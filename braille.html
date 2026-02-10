@@ -335,6 +335,27 @@
     .alpha-item.highlight .alpha-dots {
       color: #000;
     }
+
+    #braille-preview {
+      position: relative;
+    }
+    #braille-preview::after {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background: #4fc3f7;
+      margin-left: 2px;
+      animation: blink 1s infinite;
+      vertical-align: middle;
+    }
+    /* 入力中のみカーソル表示 */
+    #braille-preview.has-input::after {
+      opacity: 1;
+    }
+    #braille-preview:not(.has-input)::after {
+      opacity: 0.3;
+    }
   </style>
 </head>
 <body>
@@ -480,7 +501,7 @@
       0x35: 'z',
       // Punctuation & symbols
       0x2c: ',', 0x3c: ';', 0x36: ':', 0x26: '.', 0x14: '?',
-      0x32: '!', 0x04: "'", 0x24: '"', 0x3e: '-', 0x00: ' ',
+      0x32: '!', 0x04: "'", 0x24: '"', 0x3e: '-',
       // Special
       0x20: '⠠',  // Capital sign
       0x3c: '⠼',  // Number sign
@@ -554,6 +575,8 @@
       textPreview.textContent = text;
       dotsPreview.textContent = dots;
       
+      braillePreview.classList.toggle('has-input', activeDots.size > 0);
+      
       highlightAlphabet(code);
     }
     
@@ -617,19 +640,16 @@
     // ==================== INPUT ACTIONS ====================
     
     function confirmChar() {
-      if (activeDots.size === 0) return;
-      
-      const code = dotsToCode(activeDots);
-      const braille = codeToBraille(code);
-      const text = codeToText(code);
+      const code = dotsToCode(activeDots);  // activeDots.size === 0 なら 0
+      const braille = codeToBraille(code);  // code === 0 なら '⠀'
+      const text = code === 0 ? ' ' : codeToText(code);  // 空白は特別扱い
       
       brailleContent += braille;
       textContent += text;
       
       resetDots();
       updateEditors();
-    }
-    
+    }    
     function deleteLastChar() {
       if (brailleContent.length === 0) return;
       
@@ -692,13 +712,10 @@
       
       // Space = confirm
       if (e.code === 'Space') {
-        if (activeDots.size > 0) {
-          e.preventDefault();
-          confirmChar();
-        }
+        e.preventDefault();
+        confirmChar();  // 中身に関わらず常に確定
         return;
-      }
-      
+      }      
       // Backspace = delete
       if (e.key === 'Backspace') {
         e.preventDefault();
