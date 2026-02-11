@@ -134,15 +134,19 @@ function isLetter(code) {
 // ==================== TEMPLATE HELPERS ====================
 
 function renderKey(key, dot) {
-  return `<div class="key" data-key="${key.toLowerCase()}" data-dot="${dot}">
+  return `<div class="key" data-key="${key.toLowerCase()}" data-dot="${dot}" 
+    role="button" 
+    tabindex="0"
+    aria-label="Dot ${dot} - Key ${key.toUpperCase()}"
+    aria-pressed="false">
     <span class="key-letter">${key.toUpperCase()}</span>
     <span class="key-dot">${dot}</span>
   </div>`;
 }
 
 function renderAlphaItem(braille, text, dotsStr, dataAttr, dataValue) {
-  return `<div class="alpha-item" ${dataAttr}="${dataValue}">
-    <span class="alpha-braille">${braille}</span>
+  return `<div class="alpha-item" ${dataAttr}="${dataValue}" role="listitem" aria-label="${text}, dots ${dotsStr}">
+    <span class="alpha-braille" aria-hidden="true">${braille}</span>
     <span class="alpha-text">${text}</span>
     <span class="alpha-dots">${dotsStr}</span>
   </div>`;
@@ -161,7 +165,7 @@ function codeToDots(code) {
 function initLayoutSelector() {
   dom.layoutSelector.innerHTML = Object.entries(LAYOUTS).map(([key, layout]) => `
     <div class="layout-option">
-      <input type="radio" id="layout-${key}" name="layout" value="${key}" ${key === currentLayout ? 'checked' : ''}>
+      <input type="radio" id="layout-${key}" name="layout" value="${key}" ${key === currentLayout ? 'checked' : ''} aria-describedby="layout-description">
       <label for="layout-${key}">${layout.name}</label>
     </div>
   `).join('');
@@ -225,10 +229,33 @@ function attachKeyListeners() {
       e.preventDefault();
       state.activeDots.add(parseInt(keyEl.dataset.dot));
       keyEl.classList.add('active');
+      keyEl.setAttribute('aria-pressed', 'true');
       updatePreview();
     });
-    keyEl.addEventListener('mouseup',    () => keyEl.classList.remove('active'));
-    keyEl.addEventListener('mouseleave', () => keyEl.classList.remove('active'));
+    keyEl.addEventListener('mouseup',    () => {
+      keyEl.classList.remove('active');
+      keyEl.setAttribute('aria-pressed', 'false');
+    });
+    keyEl.addEventListener('mouseleave', () => {
+      keyEl.classList.remove('active');
+      keyEl.setAttribute('aria-pressed', 'false');
+    });
+    // Keyboard support for keys
+    keyEl.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        state.activeDots.add(parseInt(keyEl.dataset.dot));
+        keyEl.classList.add('active');
+        keyEl.setAttribute('aria-pressed', 'true');
+        updatePreview();
+      }
+    });
+    keyEl.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        keyEl.classList.remove('active');
+        keyEl.setAttribute('aria-pressed', 'false');
+      }
+    });
   });
 }
 
@@ -254,8 +281,13 @@ function updatePreview() {
 
   const code    = dotsToCode(state.activeDots);
   const braille = codeToBraille(code);
-  const text    = (state.numberMode && isLetterAtoJ(code)) ? NUMBER_MAP[code] : codeToText(code);
+  let text      = (state.numberMode && isLetterAtoJ(code)) ? NUMBER_MAP[code] : codeToText(code);
   const dots    = dotsArray(state.activeDots).join('-');
+
+  // Apply capitalization preview
+  if (state.capitalMode > 0 && isLetter(code)) {
+    text = text.toUpperCase();
+  }
 
   dom.braillePreview.textContent = braille;
   dom.textPreview.textContent    = text;
@@ -281,7 +313,10 @@ function updateEditors() {
 
 function updateKeyVisual(key, active) {
   const el = document.querySelector(`.key[data-key="${key.toLowerCase()}"]`);
-  if (el) el.classList.toggle('active', active);
+  if (el) {
+    el.classList.toggle('active', active);
+    el.setAttribute('aria-pressed', active ? 'true' : 'false');
+  }
 }
 
 // ==================== ALPHABET / NUMBER REFERENCE ====================
@@ -434,6 +469,7 @@ function handleBrailleDotKey(key) {
 const KEY_ACTIONS = {
   Space:     () => confirmChar(),
   Backspace: () => state.activeDots.size > 0 ? resetDotsUI() : deleteLastChar(),
+  Delete:    () => deleteLastChar(),
   Escape:    () => resetDotsUI(),
   Enter:     () => addNewline(),
 };
