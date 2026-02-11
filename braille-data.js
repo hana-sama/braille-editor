@@ -1,3 +1,17 @@
+// braille-data.js の冒頭
+/**
+ * BRAILLE DATA MODULE
+ * ===================
+ * All Braille lookup tables, layout configurations, and constants.
+ * 
+ * This module is designed to be:
+ * - Audit-friendly: All mappings visible in one place
+ * - Test-friendly: Pure data, no side effects
+ * - Swap-friendly: Easy to add Grade 2, Japanese Braille, etc.
+ * 
+ * @author Hana
+ * @license MIT
+ */
 // ==================== BRAILLE DATA MODULE ====================
 // All Braille lookup tables, layout configurations, and constants
 // live here so they can be audited, tested, and swapped independently.
@@ -6,12 +20,25 @@
 
 const BRAILLE_START = 0x2800;
 
-// ==================== SPECIAL BRAILLE CODES ====================
+// ==================== COMMON INDICATORS ====================
+// Centralised registry of all UEB indicator codes.
+// Adding a new indicator? Put it here first, then reference it everywhere.
 
-const NUMBER_SIGN_CODE   = 0x3c;  // dots 3456 = ⠼
-const CAPITAL_SIGN_CODE  = 0x20;  // dot 6 = ⠠
-const CONTINUOUS_CAPS_CODE = 0x30; // dots 56 — continuous capitalisation
-const LETTER_SIGN_CODE   = 0x38;  // dots 56 (reserved, not used in basic UEB numbers)
+const COMMON_INDICATORS = {
+  NUMBER_SIGN:      0x3c,  // ⠼ dots 3456 — starts number mode
+  CAPITAL_SIGN:     0x20,  // ⠠ dot 6     — next letter capitalised
+  CONTINUOUS_CAPS:  0x30,  // dots 56     — continuous capitalisation
+  LETTER_SIGN:      0x10,  // ⠐ dot 5     — ends number mode
+  DECIMAL_POINT:    0x22,  // ⠲ dots 256  — decimal point (in numbers)
+};
+
+// ==================== DERIVED CONSTANTS ====================
+// Convenience aliases used by braille.js — all point back to COMMON_INDICATORS.
+
+const NUMBER_SIGN_CODE     = COMMON_INDICATORS.NUMBER_SIGN;
+const CAPITAL_SIGN_CODE    = COMMON_INDICATORS.CAPITAL_SIGN;
+const CONTINUOUS_CAPS_CODE = COMMON_INDICATORS.CONTINUOUS_CAPS;
+const LETTER_SIGN_CODE     = COMMON_INDICATORS.LETTER_SIGN;
 
 // ==================== UEB GRADE 1 MAPPING ====================
 // Braille dot-pattern code → print text character.
@@ -43,6 +70,10 @@ const UEB_GRADE1 = {
   // Special sign indicators (displayed as their braille symbol)
   0x3c: '⠼',   // Number sign (dots 3456)
   0x20: '⠠',   // Capital sign (dot 6)
+  0x10: '⠐',   // Letter sign (dot 5) — ends number mode
+
+  // NOTE: 0x39 maps to '?' here.
+  // TODO: 文脈判定実装後に opening/closing quotation も対応
 };
 
 // ==================== NUMBER MODE MAPPING ====================
@@ -66,7 +97,7 @@ const NUMBER_MAP = {
 
 const TEXT_TO_BRAILLE = {};
 Object.entries(UEB_GRADE1).forEach(([code, text]) => {
-  if (text.length === 1 && !'⠠⠼'.includes(text)) {
+  if (text.length === 1 && !'⠠⠼⠐'.includes(text)) {
     TEXT_TO_BRAILLE[text] = parseInt(code);
   }
 });
@@ -145,3 +176,22 @@ const DEFAULT_LAYOUT = 'perkins';
 const STORAGE_KEYS = {
   LAYOUT: 'brailleEditorLayout',
 };
+
+// ==================== EXPORTS ====================
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    BRAILLE_START,
+    COMMON_INDICATORS,
+    NUMBER_SIGN_CODE,
+    CAPITAL_SIGN_CODE,
+    CONTINUOUS_CAPS_CODE,
+    LETTER_SIGN_CODE,
+    UEB_GRADE1,
+    NUMBER_MAP,
+    TEXT_TO_BRAILLE,
+    NUMBER_TO_BRAILLE,
+    LAYOUTS,
+    DEFAULT_LAYOUT,
+    STORAGE_KEYS,
+  };
+}
