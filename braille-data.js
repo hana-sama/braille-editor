@@ -414,3 +414,27 @@ if (typeof module !== "undefined" && module.exports) {
     STORAGE_KEYS
   };
 }
+
+// Make available globally for browser (when not using modules)
+// These are already global due to const declarations at top level,
+// but we explicitly attach to window for clarity
+if (typeof window !== "undefined") {
+  window.BRAILLE_START = BRAILLE_START;
+  window.COMMON_INDICATORS = COMMON_INDICATORS;
+  window.INDICATORS = INDICATORS;
+  window.INDICATOR_PREFIXES = INDICATOR_PREFIXES;
+  window.INDICATOR_SEQUENCES = INDICATOR_SEQUENCES;
+  window.PUNCTUATION_RULES = PUNCTUATION_RULES;
+  window.NUMBER_SIGN_CODE = NUMBER_SIGN_CODE;
+  window.CAPITAL_SIGN_CODE = CAPITAL_SIGN_CODE;
+  window.CONTINUOUS_CAPS_CODE = CONTINUOUS_CAPS_CODE;
+  window.LETTER_SIGN_CODE = LETTER_SIGN_CODE;
+  window.UEB_GRADE1 = UEB_GRADE1;
+  window.CONTEXT_DEPENDENT = CONTEXT_DEPENDENT;
+  window.NUMBER_MAP = NUMBER_MAP;
+  window.TEXT_TO_BRAILLE = TEXT_TO_BRAILLE;
+  window.NUMBER_TO_BRAILLE = NUMBER_TO_BRAILLE;
+  window.LAYOUTS = LAYOUTS;
+  window.DEFAULT_LAYOUT = DEFAULT_LAYOUT;
+  window.STORAGE_KEYS = STORAGE_KEYS;
+}

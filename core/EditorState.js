@@ -11,7 +11,10 @@
  */
 
 // Import for Node.js environment
-const BrailleMode = require('../modes/BrailleMode.js');
+// For browser, BrailleMode is already global from the script tag
+if (typeof require !== 'undefined' && typeof BrailleMode === 'undefined') {
+  var BrailleMode = require('../modes/BrailleMode.js');
+}
 
 class EditorState {
   /**
@@ -347,4 +350,9 @@ class EditorState {
 // Export for module systems
 if (typeof module !== "undefined" && module.exports) {
   module.exports = EditorState;
+}
+
+// Make available globally for browser
+if (typeof window !== "undefined") {
+  window.EditorState = EditorState;
 }

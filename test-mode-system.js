@@ -7,7 +7,7 @@
 
 // Load modules
 const BrailleMode = require('./modes/BrailleMode.js');
-const { ModeRegistry } = require('./modes/ModeRegistry.js');
+const { ModeRegistry, modeRegistry } = require('./modes/ModeRegistry.js');
 const UEBGrade1Mode = require('./modes/ueb/UEBGrade1Mode.js');
 const EditorState = require('./core/EditorState.js');
 

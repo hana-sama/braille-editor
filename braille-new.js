@@ -42,8 +42,26 @@ const LayoutStorage = {
 // ==================== GLOBALS ====================
 
 let currentLayout = DEFAULT_LAYOUT;
-let KEY_MAP = {};
 let editorState = null;
+
+// ==================== KEY MAP BUILDER ====================
+// Build KEY_MAP from a layout configuration
+function buildKeyMap(layout) {
+  const map = {};
+  [...layout.leftHand, ...layout.rightHand].forEach(({ key, dot }) => {
+    map[key.toLowerCase()] = dot;
+    map[key.toUpperCase()] = dot;
+  });
+  return map;
+}
+
+// Initialize KEY_MAP immediately with default layout so keyboard works on load
+let KEY_MAP = LAYOUTS[DEFAULT_LAYOUT] ? buildKeyMap(LAYOUTS[DEFAULT_LAYOUT]) : {};
+
+// Get mode system globals (works in both browser and Node.js)
+const modeRegistry = window.modeRegistry;
+const UEBGrade1Mode = window.UEBGrade1Mode;
+const EditorState = window.EditorState;
 
 // ==================== DOM ELEMENTS ====================
 
@@ -209,12 +227,8 @@ function setLayout(layoutKey) {
   currentLayout = layoutKey;
   const layout = LAYOUTS[layoutKey];
 
-  // Build KEY_MAP from layout
-  KEY_MAP = {};
-  [...layout.leftHand, ...layout.rightHand].forEach(({ key, dot }) => {
-    KEY_MAP[key.toLowerCase()] = dot;
-    KEY_MAP[key.toUpperCase()] = dot;
-  });
+  // Build KEY_MAP from layout using the helper function
+  KEY_MAP = buildKeyMap(layout);
 
   updateLayoutDescription();
   rebuildKeyboardVisual();
@@ -620,16 +634,67 @@ dom.textEditor.addEventListener("scroll", () => {
 // ==================== INITIALIZATION ====================
 
 function init() {
-  // Initialize mode system first
-  initModes();
+  // Validate required globals are available
+  if (!modeRegistry || !UEBGrade1Mode || !EditorState) {
+    console.error("Missing required globals:", {
+      modeRegistry: !!modeRegistry,
+      UEBGrade1Mode: !!UEBGrade1Mode,
+      EditorState: !!EditorState
+    });
+    return;
+  }
   
-  // Initialize UI
-  initLayoutSelector();
-  initModeSelector();
-  setLayout(LayoutStorage.load(DEFAULT_LAYOUT));
-  buildAlphabetReference();
-  updateEditors();
-  updatePreview();
+  try {
+    // Initialize mode system first
+    initModes();
+  } catch (e) {
+    console.error("Failed to initialize mode system:", e);
+    return; // Can't continue without mode system
+  }
+  
+  // Initialize UI - these can fail without breaking everything
+  try {
+    initLayoutSelector();
+  } catch (e) {
+    console.error("Failed to initialize layout selector:", e);
+  }
+  
+  try {
+    initModeSelector();
+  } catch (e) {
+    console.error("Failed to initialize mode selector:", e);
+  }
+  
+  // CRITICAL: Always ensure layout is set so keyboard works
+  try {
+    setLayout(LayoutStorage.load(DEFAULT_LAYOUT));
+  } catch (e) {
+    console.error("Failed to set layout from storage, using default:", e);
+    // Fallback to default layout
+    if (LAYOUTS[DEFAULT_LAYOUT]) {
+      KEY_MAP = buildKeyMap(LAYOUTS[DEFAULT_LAYOUT]);
+    }
+  }
+  
+  try {
+    buildAlphabetReference();
+  } catch (e) {
+    console.error("Failed to build alphabet reference:", e);
+  }
+  
+  try {
+    updateEditors();
+  } catch (e) {
+    console.error("Failed to update editors:", e);
+  }
+  
+  try {
+    updatePreview();
+  } catch (e) {
+    console.error("Failed to update preview:", e);
+  }
+  
+  console.log("Braille editor initialized successfully");
 }
 
 init();

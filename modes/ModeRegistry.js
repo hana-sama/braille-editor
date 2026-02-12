@@ -267,3 +267,9 @@ const modeRegistry = new ModeRegistry();
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { ModeRegistry, modeRegistry };
 }
+
+// Make available globally for browser
+if (typeof window !== "undefined") {
+  window.ModeRegistry = ModeRegistry;
+  window.modeRegistry = modeRegistry;
+}

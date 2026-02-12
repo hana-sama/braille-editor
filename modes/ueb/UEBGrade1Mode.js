@@ -15,7 +15,10 @@
  */
 
 // Import base class for Node.js environment
-const BrailleMode = require('../BrailleMode.js');
+// For browser, BrailleMode is already global from the script tag
+if (typeof require !== 'undefined' && typeof BrailleMode === 'undefined') {
+  var BrailleMode = require('../BrailleMode.js');
+}
 
 class UEBGrade1Mode extends BrailleMode {
   constructor() {
@@ -355,4 +358,9 @@ class UEBGrade1Mode extends BrailleMode {
 // Export for module systems
 if (typeof module !== "undefined" && module.exports) {
   module.exports = UEBGrade1Mode;
+}
+
+// Make available globally for browser
+if (typeof window !== "undefined") {
+  window.UEBGrade1Mode = UEBGrade1Mode;
 }

@@ -355,18 +355,25 @@
     <!-- 5. Update mode display after load -->
     <script>
       // Update mode display in status bar when mode changes
-      modeRegistry.addListener(function(event) {
-        if (event.type === 'modeChange') {
-          var display = document.getElementById('current-mode-display');
-          if (display) {
-            display.textContent = event.currentMode.name;
+      // Use window.modeRegistry explicitly to ensure correct scope
+      if (window.modeRegistry) {
+        window.modeRegistry.addListener(function(event) {
+          if (event.type === 'modeChange') {
+            var display = document.getElementById('current-mode-display');
+            if (display) {
+              display.textContent = event.currentMode.name;
+            }
           }
+        });
+        
+        // Initial update - with null check
+        var currentMode = window.modeRegistry.getMode();
+        if (currentMode) {
+          document.getElementById('current-mode-display').textContent = currentMode.name;
         }
-      });
-      
-      // Initial update
-      document.getElementById('current-mode-display').textContent = 
-        modeRegistry.getMode().name;
+      } else {
+        console.error('modeRegistry not available on window');
+      }
     </script>
   </body>
 </html>
