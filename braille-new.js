@@ -58,10 +58,10 @@ function buildKeyMap(layout) {
 // Initialize KEY_MAP immediately with default layout so keyboard works on load
 let KEY_MAP = LAYOUTS[DEFAULT_LAYOUT] ? buildKeyMap(LAYOUTS[DEFAULT_LAYOUT]) : {};
 
-// Get mode system globals (works in both browser and Node.js)
-const modeRegistry = window.modeRegistry;
-const UEBGrade1Mode = window.UEBGrade1Mode;
-const EditorState = window.EditorState;
+// Mode system globals (modeRegistry, UEBGrade1Mode, EditorState) are
+// already in scope from prior <script> tags — no redeclaration needed.
+// Using const/let/var here would cause SyntaxError due to duplicate
+// lexical bindings in the shared global scope.
 
 // ==================== DOM ELEMENTS ====================
 

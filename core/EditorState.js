@@ -10,10 +10,12 @@
  * @license MIT
  */
 
-// Import for Node.js environment
-// For browser, BrailleMode is already global from the script tag
-if (typeof require !== 'undefined' && typeof BrailleMode === 'undefined') {
-  var BrailleMode = require('../modes/BrailleMode.js');
+// Node.js only: load BrailleMode via require and place on global.
+// In browser, BrailleMode is already in scope from the <script> tag.
+// We must NOT use var/let/const here — any declaration hoists and
+// collides with the class declaration from BrailleMode.js.
+if (typeof window === 'undefined' && typeof require === 'function') {
+  global.BrailleMode = require('../modes/BrailleMode.js');
 }
 
 class EditorState {
