@@ -112,8 +112,9 @@ The layout mirrors the Grade 1 table, but it now includes the **standard contr
 
 *(Only a handful of whole‑word contractions are used in standard UEB; the rest are handled by letter‑group and punctuation‑group rules.)*
 
-### 4.2 Letter‑group (two‑cell) contractions  
+### 4.2 Letter‑group (multi‑cell) contractions  
 
+**⌂ letter or letters ⌂⌂ word or words.** 
 | Print | Dots | Braille Pattern | Unicode |
 |-------|------|----------------|----------|
 |**A**||||
@@ -132,224 +133,195 @@ The layout mirrors the Grade 1 table, but it now includes the **standard contr
 | although | 1, 1-2-3, 1-4-5-6 (al) | ⠁⠇⠹ | U+2801, U+2807, U+2839 |
 | altogether | 1, 1-2-3, 2-3-4-5 (alt) | ⠁⠇⠞ | U+2801, U+2807, U+281E |
 | always | 1, 1-2-3, 2-4-5-6 (alw)| ⠁⠇⠺ | U+2801, U+2807, U+2817 |
-| xance | 4-6, 1-5 | ⠨⠑ | U+2828, U+2811 |
+| ⌂ance | 4-6, 1-5 | ⠨⠑ | U+2828, U+2811 |
 | and | 1-2-3-4-6 | ⠯ | U+282F |
 | ar | 3-4-5 | ⠜ | U+281C |
 | as | 1-3-5-6 | ⠵ | U+2835 |
 | **B**||||
-|⌂bb⌂| 2|| UD+28|
-|be or be⌂| 2|| UD+28|
-|because |2c|| UD+28|
-|before |2f|| UD+28|
-|behind |2h|| UD+28|
-|below |2l|| UD+28|
-|beneath |2n|| UD+28|
-|beside |2s|| UD+28|
-|between |2t|| UD+28|
-|beyond |2y|| UD+28|
-|blind |bl|| UD+28|
-|braille |brl|| UD+28|
-|but b 
-| **C**||| UD+28|
-|can |c|| UD+28|
-|cannot |_c|| UD+28|
-|⌂cc⌂ |3|| UD+28|
-|ch |*|| UD+28|
-|character |"*|| UD+28|
-|child |*|| UD+28|
-|children |*n|| UD+28|
-|con⌂ |3|| UD+28|
-|conceive |3cv|| UD+28|
-|conceiving |3cvg|| UD+28|
-|could |cd || UD+28|
+|⌂bb⌂| 2-3 | ⠆ | U+2806 |
+|be or be⌂| 2-3 | ⠆ | U+2806 |
+|because |2-3,1-4 | ⠆⠉ | U+2806, U+2809|
+|before |2-3, 1-2-4 | ⠆⠋ | U+2806, U+280B|
+|behind |2-3, 1-2-5 | ⠆⠓ | U+2806, U+2813 |
+|below |2-3, 1-2-3 | ⠆⠇ | U+2806, U+2807 |
+|beneath |2-3, 1-3-4-5 | ⠆⠝ | U+2806, U+281D |
+|beside |2-3, 2-3-4 | ⠆ ⠎ | U+2806, U+280E |
+|between |2-3, 2-3-4-5 | ⠆⠞ | U+2806, U+281E |
+|beyond |2-3, 1-3-4-5-6 | ⠆⠽ | U+2806, U+283D |
+|blind | 1-2, 1-2-3 | ⠃⠇ | U+2806, U+2807 |
+|braille | 1-2, 1-2-3-5, 1-2-3 | ⠃⠗⠇ | U+2806, U+2817, U+2807 |
+|but| 1-2, | ⠃ | U+2803 | 
+| **C**||||
+|can | 1-4 | ⠉ | U+2809 |
+|cannot |4-5-6, 1-4 | ⠸⠉ | U+2838, U+2809 |
+|⌂cc⌂ | 2-5 | ⠒ | U+2812 |
+|ch | 1-6 | ⠡ | U+2821 |
+|character | 5, 1-6 | ⠐⠡ | U+2810, U+2821|
+|child | 1-6 | ⠡ | U+2821|
+|children | 1-6,  1-3-4-5 |⠡⠝ | U+2821, U+281D |
+|con⌂ | 2-5 | ⠒ | U+2812|
+|conceive |2-5, 1-4, 1-2-3-6 |⠒⠉⠧ | U+2812, U+2809 |
+|conceiving |2-5, 1-4, 1-2-3-6, 1-2-4-5 | ⠒⠉⠧⠛ | U+2812, U+2809, U+2827, U+281B |
+|could |1-4, 1-4-5 | ⠉⠙ | U+2809, U+2819 |
 |**D**||||
-|day |"d|| UD+28|
-|deceive |dcv|| UD+28|
-|deceiving |dcvg|| UD+28|
-|declare |dcl|| UD+28|
-|declaring |dclg|| UD+28|
-|dis⌂ |4|| UD+28|
-|do |d || UD+28|
+|day | 5, 1-4-5 | ⠐⠙ | U+2810, U+2819 |
+|deceive | 1-4-5, 1-4, 1-2-3-6 | ⠙⠉⠧ | U+2819, U+2809, U+2827 |
+|deceiving | 1-4-5, 1-4, 1-2-3-6, 1-2-4-5 | ⠙⠉⠧⠛ | U+2819, U+2809, U+2827, U+281B |
+|declare | 1-4-5, 1-4, 1-2-3 | ⠙⠉⠇ | U+2819, U+2809, U+2807 |
+|declaring |1-4-5, 1-4, 1-2-3, 1-2-4-5 | ⠙⠉⠇⠛ | U+2819, U+2809, U+281B |
+|dis⌂ | 2-5-6 | ⠲ | U+2832 |
+|do |1-4-5 | ⠙ | U+2819 |
 |**E**||||
-|⌂ea⌂ |1|| UD+28|
-|ed |$|| UD+28|
-|either |ei|| UD+28|
-|en |5|| UD+28|
-|⌂ence |;e|| UD+28|
-|enough |5|| UD+28|
-|er |]|| UD+28|
-|ever |"e|| UD+28|
-|every |e || UD+28|
+|⌂ea⌂ | 2 | ⠂ | U+2802 |
+|ed | 1-2-4-6 | ⠫ | U+282B |
+|either | 1-5, 2-4 | ⠑⠊ | U+2811, U+280A |
+|en | 2-6 | ⠢ | U+2822 |
+|⌂ence | 5-6, 1-5 | ⠰⠑ | U+2830, U+2811 |
+|enough | 2-6 | ⠢ | U+2822 |
+|er | 1-2-4-5-6 | ⠻ | U+283B |
+|ever | 5, 1-5 | ⠐⠑ | U+2810, U+2811|
+|every | 1-5 | ⠑ | U+2811|
 |**F**||||
-|father |"f|| UD+28|
-|⌂ff⌂ |6|| UD+28|
-|first |f/|| UD+28|
-|for |=|| UD+28|
-|friend |fr|| UD+28|
-|from |f|| UD+28|
-|⌂ful |;l || UD+28|
-|**G**|||||| UD+28|
-|⌂gg⌂ |7|| UD+28|
-|gh |<|| |UD+28|
-|go |g|| UD+28|
-|good |gd|| UD+28|
-|great |grt || UD+28|
+|father | 5, 1-2-4 | ⠐⠋ | U+2810, U+280B |
+|⌂ff⌂ | 2-3-5 | ⠖ | U+2816 |
+|first | 1-2-4, 1-6 | ⠋⠡ | U+280B, U+2821|
+|for | 1-2-3-4-5-6 | ⠿ | U+283F |
+|friend | 1-2-4, 1-2-3-5 | ⠋⠗ | U+280B, U+2817|
+|from | 1-2-4 | ⠋ | U+280B |
+|⌂ful | 5-6, 1-2-3 | ⠰⠇ | U+2830, U+2807 |
+|**G**||||
+|⌂gg⌂ | 2-3-5-6 | ⠶ | U+2836 |
+|gh | 1-2-6 | ⠣ |U+2823 |
+|go | 1-2-4-5 | ⠛ | U+281B |
+|good | 1-2-4-5, 1-4-5 | ⠛⠙ | U+281B, U+2819 |
+|great | 1-2-4-5, 1-2-3-5, 2-3-4-5 | ⠛⠗⠞ | U+281B, U+2817, U+281E |
 |**H**||||
-|had |_h|| UD+28|
-|have |h|| UD+28|
-|here |"h|| UD+28|
-|herself |h]f|| UD+28|
-|him |hm|| UD+28|
-|himself |hmf|| UD+28|
-|his |8|| UD+28|
+|had | 4-5-6, 1-2-5 | ⠸⠓ | U+2838, U+2813 |
+|have | 1-2-5 | ⠓ | U+2813 |
+|here | 5, 1-2-5 | ⠐⠓ | U+2810, U+2813 |
+|herself | 1-2-5, 1-2-4-5-6, 1-2-5 | ⠓⠻⠓ | U+2813, U+283B |
+|him | 1-2-5, 1-3-4 | ⠓⠍ | U+2813, U+280D |
+|himself | 1-2-5, 1-3-4, 1-2-4 | ⠓⠍⠋ | U+2813, U+280D, U+280B |
+|his | 2-3-6 | ⠦ | U+2826 |
 |**I**||||
-|immediate |imm|| UD+28|
-|in |9|| UD+28|
-|ing |+|| UD+28|
-|it |x|| UD+28|
-|its |xs|| UD+28|
-|itself |xf|| UD+28|
-|⌂ity |;y|| UD+28|
-|**J**||| UD+28|
-|just |j|| UD+28|
-|**K**||| UD+28|
-|know |"k|| UD+28|
-|knowledge |k|UD+28|
+|immediate |2-4, 1-3-4, 1-3-4 | ⠊⠍⠍ | U+280A, U+280D, U+280D |
+|in | 3-5 | ⠑ | U+2814 |
+|ing | 3-4-6 | ⠬ | U+282C |
+|it | 1-3-4-6 | ⠭ | U+282D |
+|its | 1-3-4-6, 2-3-4 | ⠭⠎ | U+282D, U+280E |
+|itself | 1-3-4-6, 1-2-4 | ⠭⠋ | U+282D, U+280B |
+|⌂ity | 5-6, 1-3-4-5-6 | ⠰⠽ | U+2830, U+283D |
+|**J**||||
+|just | 2-4-5 | ⠚ | U+281A |
+|**K**||||
+|know | 5, 1-3 | ⠐⠅ | U+2810, U+2805|
+|knowledge | 1-3 | ⠅ | U+2805 |
 |**L**||||
-|⌂less |.s|| UD+28|
-|letter |lr|| UD+28|
-|like |l|| UD+28|
-|little |ll|| UD+28|
-|lord |"l|| UD+28|
+|⌂less | 4-6, 2-3-4 | ⠨⠎ | U+2828, U+280E |
+|letter | 1-2-3, 1-2-3-5 | ⠇⠗ | U+2807, U+2817 |
+|like | 1-2-3 | ⠇ | U+2807 |
+|little | 1-2-3, 1-2-3 | ⠇⠇ | U+2807, U+2807 |
+|lord | 5, 1-2-3 | ⠐⠇ | U+2810, U+2807 |
 |**M**||||
-|many |_m|| UD+28|
-|⌂ment |;t|| UD+28|
-|more |m|| UD+28|
-|mother |"m|| UD+28|
-|much |m*|| UD+28|
-|must |m/|| UD+28|
-|myself |myf|| UD+28|
+|many | 4-5-6, 1-3-4 | ⠸⠍ | U+2838, U+280D |
+|⌂ment | 5-6, 2-3-4-5 | ⠰⠞ | U+2830, U+281E |
+|more | 1-3-4 | ⠍ | U+280D |
+|mother | 5, 1-3-4 | ⠐⠍ | U+2810, U+280D |
+|much | 1-3-4, 1-6 | ⠍⠡ | U+280D, U+2810 |
+|must | 1-3-4, 3-4 | ⠍⠌ | U+280D, U+280C |
+|myself | 1-3-4, 1-3-4-5-6, 1-2-4 | ⠍⠽⠋ | U+280D, U+283D, U+280B |
 |**N**||||
-|name |"n|| UD+28|
-|necessary |nec|| UD+28|
-|neither |nei|| UD+28|
-|⌂ness |;s|| UD+28|
-|not |n|| UD+28|
+|name | 5, 1-3-4-5 | ⠐⠝ | U+2810, U+281D |
+|necessary | 1-3-4-5, 1-5, 1-4 | ⠝⠑⠉ | U+281D, U+2811, U+2809 |
+|neither | 1-3-4-5, 1-5, 2-4 | ⠝⠑⠊ | U+281D, U+2811, U+280A |
+|⌂ness | 5-6, 2-3-4 | ⠰⠎ | U+2830, U+280E |
+|not | 1-3-4-5 | ⠝ | U+281D |
 |**O**||||
-|of |(|| UD+28|
-|one |"o|| UD+28|
-|oneself |"of|| UD+28|
-|⌂ong |;g|| UD+28|
-|ou |\|| UD+28|
-|ought |"\|| UD+28|
-|⌂ound |.d|| UD+28|
-|⌂ount |.t|| UD+28|
-|ourselves |\rvs|| UD+28|
-|out |\|| UD+28|
-|ow |[|| UD+28|
+|of | 1-2-3-5-6 | ⠷ | U+2837 |
+|one | 5, 1-3-5 | ⠐⠕ | U+2810, U+2815 |
+|oneself |5, 1-3-5, 1-2-4 | ⠐⠕⠋ | U+2810, U+2815, U+280B |
+|⌂ong | 5-6, 1-2-4-5 | ⠰⠛ | U+2830, U+281B |
+|ou | 1-2-5-6 | ⠳ | U+2833 |
+|ought | 5, 1-2-5-6 | ⠐⠳ | U+2810, U+2833 |
+|⌂ound | 4-6, 1-4-5 | ⠨⠙ | U+2828, U+2819 |
+|⌂ount | 4-6, 2-3-4-5 | ⠨ ⠞ | U+2828, U+281E |
+|ourselves | 1-2-5-6, 1-2-3-5, 1-2-3-6, 2-3-4 | ⠳⠗⠧⠎ | U+2833, U+2817, U+2827, U+280E |
+|out | 1-2-5-6 | ⠳ | U+2833 |
+|ow | 2-4-6 | ⠪ | U+282A |
 |**P**||||
-|paid |pd|| UD+28|
-|part |"p|| UD+28|
-|people |p|| UD+28|
-|perceive |p]cv|| UD+28|
-|perceiving |p]cvg|| UD+28|
-|perhaps |p]h|| UD+28|
+|paid | 1-2-3-4, 1-4-5 | ⠏⠙ | U+280F, U+2819 |
+|part | 5, 1-2-3-4 | ⠐⠏ | U+2810, U+280F |
+|people | 1-2-3-4 | ⠏ | U+280F |
+|perceive | 1-2-3-4, 1-2-4-5-6, 1-4, 1-2-3-6 | ⠏⠻⠉⠧ | U+280F, U+283B, U+2809, U+2827 |
+|perceiving | 1-2-3-4, 1-2-5-6, 1-3, 1-2-3-6, 1-2-4-5 | ⠏⠳⠅⠧⠛ | U+280F, U+2833, U+2805, U+2827, U+281B |
+|perhaps | 1-2-3-4, 1-2-5-6, 1-2-5 | ⠏⠳⠓ | U+280F, U+2833, U+2813 |
 |**Q**||||
-|question |"q|| UD+28|
-|quick |qk|| UD+28|
-|quite |q|| UD+28|
+|question | 5, 1-2-3-4-5 | ⠐⠟ | U+2810, U+281F |
+|quick | 1-2-3-4-5, 1-3 | ⠟⠅ | U+281F, U+2805 |
+|quite | 1-2-3-4-5 | ⠟ | U+281F |
 |**R**||||
-|rather |r|| UD+28|
-|receive |rcv|| UD+28|
-|receiving |rcvg|| UD+28|
-|rejoice |rjc|| UD+28|
-|rejoicing |rjcg|| UD+28|
-|right |"r|| UD+28|
+|rather | 1-2-3-5 | ⠗ | U+2817 |
+|receive | 1-2-3-5, 1-3, 1-2-3-6 | ⠗⠇⠧ | U+2817, U+2805, U+2827 |
+|receiving | 1-2-3-5, 1-3, 1-2-3-6, 1-2-4-5 | ⠗⠇⠧⠛ | U+2817, U+2805, U+2827, U+281B |
+|rejoice | 1-2-3-5, 2-4-5, 1-3 | ⠗⠚⠅ | U+2817, U+281A, U+2805 |
+|rejoicing | 1-2-3-5, 2-4-5, 1-3, 1-2-4-5 | ⠗⠚⠅⠛ | U+2817, U+281A, U+2805, U+28aB |
+|right | 5, 1-2-3-5 | ⠐⠗ | U+2810, U+2817 |
 |**S**||||
-|said |sd|| UD+28|
-|sh |%|| UD+28|
-|shall |%|| UD+28|
-|should |%d|| UD+28|
-|⌂sion |.n|| UD+28|
-|so |s|| UD+28|
-|some |"s|| UD+28|
-|spirit |_s|| UD+28|
-|st |/|| UD+28|
-|still |/|| UD+28|
-|such |s*|| UD+28|
+|said | 2-3-4, 1-4-5 | ⠎⠙ | U+280E, U+2819 |
+|sh | 1-4-6 | ⠩ | U+2829 |
+|shall | 1-4-6 | ⠩ | U+2829 |
+|should | 1-4-6, 1-4-5 | ⠩⠙ | U+2829, U+2819 |
+|⌂sion | 4-6, 1-3-4-5 | ⠨⠝ | U+2828, U+281D |
+|so | 2-3-4 | ⠎ | U+280E |
+|some | 5, 2-3-4 |⠐⠎ | U+2810, U+280E |
+|spirit | 4-5-6, 2-3-4 | ⠸⠎ | U+2838, U+280E |
+|st | 3-4 | ⠌ | U+280C |
+|still | 3-4 | ⠌ | U+280C |
+|such | 2-3-4, 1-6 | ⠎⠡ | U+280E, U+2821 |
 |**T**||||
-|th |?|| UD+28|
-|that |t|| UD+28|
-|the |!|| UD+28|
-|their |_!|| UD+28|
-|themselves |!mvs|| UD+28|
-|there |"!|| UD+28|
-|these |^!|| UD+28|
-|this |?|| UD+28|
-|those |^?|| UD+28|
-|through |"?|| UD+28|
-|thyself |?yf|| UD+28|
-|time |"t|| UD+28|
-|⌂tion |;n|| UD+28|
-|today |td|| UD+28|
-|together |tgr|| UD+28|
-|tomorrow |tm|| UD+28|
-|tonight |tn|| UD+28|
+|th | 1-4-5-6 | ⠹ | U+2839 |
+|that | 2-3-4-5 | ⠞ | U+281E |
+|the | 2-3-4-6 | ⠮ | U+282E |
+|their | 4-5-6, 2-3-4-6 | ⠸⠮ | U+2838, U+282E |
+|themselves | 2-3-4-6, 1-3-4, 1-2-3-6, 2-3-4 | ⠮⠍⠧⠎ | U+282E, U+280D, U+2827, U+280E |
+|there | 5, 2-3-4-6 | ⠐⠮ | U+2810, U+282E |
+|these | 4-5, 2-3-4-6 | ⠘⠮ | U+2818, U+282E |
+|this | 1-4-5-6 | ⠹ | U+2839 |
+|those | 4-5, 1-4-5-6 | ⠘⠹ | U+2818, U+2839 |
+|through | 5, 1-4-5-6 | ⠐⠹ | U+2810, U+2839 |
+|thyself | 1-4-5-6, 1-3-4-5-6, 1-2-4 | ⠹⠽⠋ | U+2839, U+283D, U+280B |
+|time | 5, 2-3-4-5 | ⠐⠞ | U+2810, U+281E |
+|⌂tion | 5-6, 1-3-4-5 | ⠰⠝ | U+2830, U+281D |
+|today | 2-3-4-5, 1-4-5 | ⠞⠙ | U+281E, U+2819 |
+|together | 2-3-4-5, 1-2-4-5, 1-2-3-5 | ⠞⠛⠗ | U+281E, U+281B, U+2817|
+|tomorrow | 2-3-4-5, 1-3-4 | ⠞⠍ | U+281E, U+28-D |
+|tonight |2-3-4-5, 1-3-4-5 | ⠞⠝ | U+281E, U+281D |
 |**U**||||
-|under |"u|| UD+28|
-|upon |^u|| UD+28|
-|us u
-|**V**||| UD+28|
-|very |v|| UD+28| 
+|under | 5, 1-3-6 | ⠐⠥ | U+2810, U+2825 |
+|upon | 4-5, 1-3-6| ⠘⠥ | U+2818, U+2825 |
+|us | 1-3-6 | ⠥ | U+2825 |
+|**V**||||
+|very | 1-2-3-6 | ⠧ | U+2827 | 
 |**W**||||
-|was |0|| UD+28|
-|were |7|| UD+28|
-|wh |:|| UD+28|
-|where |":|| UD+28|
-|which |:|| UD+28|
-|whose |^:|| UD+28|
-|will |w|| UD+28|
-|with |)|| UD+28|
-|word |^w|| UD+28|
-|work |"w|| UD+28|
-|world |_w|| UD+28|
-|would |wd|| UD+28|
+|was | 3-5-6 | ⠴ | U+2834 |
+|were | 2-3-5-6 | ⠶ | U+2836 |
+|wh | 1-5-6 | ⠱ | U+2831 |
+|where | 5, 1-5-6 | ⠐⠱ | U+2810, U+2831 |
+|which | 1-5-6 | ⠱ | U+2831 |
+|whose | 4-5, 1-5-6 | ⠘⠱ | U+2818, U+2831 |
+|will | 2-4-5-6 | ⠺ | U+283A |
+|with | 2-3-4-5-6 |⠾ | U+283E |
+|word | 4-5, 2-4-5-6 | ⠘⠺ | U+2818, U+283A |
+|work | 5, 2-4-5-6 | ⠐⠺ | U+2810, U+283A |
+|world | 4-5-6, 2-4-5-6 | ⠸⠺ | U+2838, U+283A |
+|would | 2-4-5-6, 1-4-5 | ⠺⠙ | U+283A, U+2819 |
 |**Y**||||
-|you |y|| UD+28|
-|young |"y|| UD+28|
-|your |yr|| UD+28|
-|yourself |yrf|| UD+28|
-|yourselves |yrvs|| UD+28|
+|you | 1-3-4-5-6 | ⠽ | U+283D |
+|young | 5, 1-3-4-5-6 | ⠐⠽ | U+2810, U+283D |
+|your | 1-3-4-5-6, 1-2-3-5 | ⠽⠗ | U+283D, U+2817 |
+|yourself | 1-3-4-5-6, 1-2-3-5, 1-2-4 | ⠽⠗⠋ | U+283D, U+2817, U+280B |
+|yourselves | 1-3-4-5-6, 1-2-3-5, 1-2-3-6, 2-3-4 | ⠽⠗⠧⠎ | U+283D, U+2817, U+2827, U+280E |
 
-
-| ch | 1‑6 | ⠡ | U+2821 |
-| gh | 1‑2‑6 | ⠣ | U+2823 |
-| sh | 2‑5 | ⠩ | U+2829 |
-| th | 2‑3‑4‑5 | ⠹ | U+2839 |
-| wh | 1‑2‑4‑5 | ⠱ | U+2831 |
-| st | 3‑4‑6 | ⠞ | U+281E (same as the letter “t” with dot 3 added) |
-| ed | 2‑3‑4‑6 | ⠫ | U+282B |
-| er | 2‑3‑5‑6 | ⠻ | U+283B |
-| ou | 2‑4‑5‑6 | ⠳ | U+2833 |
-| ow | 2‑4‑5 | ⠪ | U+282A |
-| ar | 2‑3‑4‑6 | ⠜ | U+281C |
-| ing | 2‑4‑6 | ⠬ | U+282C |
-| ion | 2‑4‑6 (same as “ing”) – context decides | ⠬ | U+282C |
-| ea | 1‑2‑5‑6 | ⠪ | +282A (same as “ow”) – context decides |
-| bb | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠃ | U+283F U+2803 |
-| cc | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠉ | U+283F U+2809 |
-| ff | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠋ | U+283F U+280B |
-| gg | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠛ | U+283F U+281B |
-| ll | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠇ | U+283F U+2807 |
-| mm | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠍ | U+283F U+280D |
-| nn | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠝ | U+283F U+281D |
-| pp | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠏ | U+283F U+280F |
-| rr | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠗ | U+283F U+2817 |
-| ss | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠎ | U+283F U+280E |
-| tt | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠞ | U+283F U+281E |
-| zz | 1‑2‑3‑4‑5‑6 (two‑cell) | ⠿⠵ | U+283F U+2835 |
-
-*(The “two‑cell” forms above are used when the same letter appears twice in a word, e.g., “letter” → ⠇⠑⠞⠞⠑⠗.)*
 
 ### 4.3 Punctuation‑group contractions  
 
@@ -369,18 +341,16 @@ The layout mirrors the Grade 1 table, but it now includes the **standard contr
 
 ## 5. Quick‑reference cheat‑sheet  
 
-| Category | Example | Braille (Unicode) | Dots |
-|----------|----------|-------------------|------|
-| Whole‑word | **and** | ⠯ | 1‑2‑3‑4‑6 |
-| Letter‑group | **ch** | ⠡ | 1‑6 |
-| Letter‑group | **sh** | ⠩ | 2‑5 |
-| Letter‑group | **th** | ⠹ | 2‑3‑4‑5 |
-| Letter‑group | **ing** | ⠬ | 2‑4‑6 |
-| Double‑letter | **ll** | ⠿⠇ | 1‑2‑3‑4‑5‑6 + 1‑2‑3 |
-| Number | **42** | ⠼⠙⠃ | 3‑4‑5‑6 + 1‑4‑5 + 1‑2 |
-| Punctuation | **?** | ⠦ | 2‑3‑6 |
-| Symbol | **@** | ⠈ | 4‑5‑6 |
-| Symbol | **&** | ⠯ | 1‑2‑3‑4‑6 (same as “and”) – context decides |
+||0|1|2|3|4|5|6|7|8|9|A|B|C|D|E|F|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|U+280x||⠁|⠂|⠃|⠄|⠅|⠆|⠇|⠈|⠉|⠊|⠋|⠌|⠍|⠎|⠏|
+|||1|2|12|3|13|23|123|4|14|24|124|34|134|234|1234|
+|U+281x|⠐|⠑|⠒|⠓|⠔|⠕|⠖|⠗|⠘|⠙|⠚|⠛|⠜|⠝|⠞|⠟|
+||5|15|25|125|35|135|235|1235|45|145|245|1245|345|1345|2345|12345|
+|U+282x|⠠|⠡|⠢|⠣|⠤|⠥|⠦|⠧|⠨|⠩|⠪|⠫|⠬|⠭|⠮|⠯|
+||6|16|26|126|36|136|236|1236|46|146|246|1246|346|1346|2346|12346|
+|U+283x|⠰|⠱|⠲|⠳|⠴|⠵|⠶|⠷|⠸|⠹|⠺|⠻|⠼|⠽|⠾|⠿|
+||56|156|256|1256|356|1356|2356|12356|456|1456|2456|12456|3456|13456|23456|123456|
 
 ---
 

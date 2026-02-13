@@ -116,7 +116,20 @@ The digits themselves reuse the patterns for **A‑J**.
 *Some symbols (e.g., ©, ™) are represented in UEB by a **prefix cell** (⠘, U+2818) followed by the letters that spell the abbreviation.*
 
 ---  
+## 5. Quick‑reference cheat‑sheet  
 
+||0|1|2|3|4|5|6|7|8|9|A|B|C|D|E|F|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|U+280x||⠁|⠂|⠃|⠄|⠅|⠆|⠇|⠈|⠉|⠊|⠋|⠌|⠍|⠎|⠏|
+|||1|2|12|3|13|23|123|4|14|24|124|34|134|234|1234|
+|U+281x|⠐|⠑|⠒|⠓|⠔|⠕|⠖|⠗|⠘|⠙|⠚|⠛|⠜|⠝|⠞|⠟|
+||5|15|25|125|35|135|235|1235|45|145|245|1245|345|1345|2345|12345|
+|U+282x|⠠|⠡|⠢|⠣|⠤|⠥|⠦|⠧|⠨|⠩|⠪|⠫|⠬|⠭|⠮|⠯|
+||6|16|26|126|36|136|236|1236|46|146|246|1246|346|1346|2346|12346|
+|U+283x|⠰|⠱|⠲|⠳|⠴|⠵|⠶|⠷|⠸|⠹|⠺|⠻|⠼|⠽|⠾|⠿|
+||56|156|256|1256|356|1356|2356|12356|456|1456|2456|12456|3456|13456|23456|123456|
+
+---
 ### How to use the table  
 
 * **Copy‑paste** the Unicode column (the actual Braille character) directly into a document that supports Unicode.  
