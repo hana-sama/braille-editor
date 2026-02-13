@@ -122,4 +122,4 @@ The digits themselves reuse the patterns for **A‑J**.
 
 Feel free to expand the “Special Symbols” section with any additional characters you need – the pattern of adding dot 3 (or dot 6 for caps/number signs) follows the same UEB rules. Happy brailling!
 
-⠈
+
