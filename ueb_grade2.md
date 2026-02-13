@@ -1,5 +1,5 @@
 Below is a **Unified English Braille (UEB) Grade 2 (contracted) reference** in markdown.  
-The layout mirrors the Grade 1 table you asked for, but it now includes the **standard contracted forms** that are part of UEB Grade 2.  
+The layout mirrors the Grade 1 table, but it now includes the **standard contracted forms** that are part of UEB Grade 2.  
 
 ---
 

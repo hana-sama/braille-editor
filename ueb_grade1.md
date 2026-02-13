@@ -78,13 +78,16 @@ The digits themselves reuse the patterns for **A‑J**.
 | ! (exclamation) | 2‑3‑5 | ⠖ | U+2816 |
 | ’ (apostrophe) | 3 | ⠄ | U+2804 |
 | – (hyphen) | 3‑6 | ⠤ | U+2824 |
-| “ ” (double quote) | 2‑3‑5‑6 | ⠶ | U+2836 |
-| ( (left parenthesis) | 2‑3‑5‑6 | ⠶ | U+2836 |
-| ) (right parenthesis) | 3‑5‑6 | ⠶ | U+2836 |
-| / (slash) | 3‑4 | ⠌ | U+280C |
-| \ (back‑slash) | 3‑4‑5 | ⠸ | U+2838 |
-| – (en‑dash) | 3‑6 | ⠤ | U+2824 |
-| — (em‑dash) | 3‑6 | ⠤ | U+2824 |
+| “ (left double quote) | 2‑3-6 | ⠦ | U+2820 |
+| “ (right double quote) | 3-5-6 | ⠦ | U+2834 |
+| ( (left parenthesis) | 5, 1-2-6 | ⠐⠣ | U+2810, U+2823 |
+| ) (right parenthesis) | 5, 3-4-5 | ⠐⠜ | U+2810, U+281C |
+| ' (left single quote) | 6, 2-3-6 | ⠠⠦ | U+2820, U+2826 |
+| ' (right single quote) | 6, 3-5-6 | ⠠⠴ | U+2820, U+2834 |
+| / (slash) | 4-5-6, 3‑4 | ⠸⠌ | U+2839, U+280C |
+| \ (back‑slash) | 4-5-6, 1-6 | ⠸⠡ | U+2839, U+2821 |
+| – (dash) | 6, 3‑6 | ⠠⠤ | U+2820, U+2824 |
+| — (long‑dash) | 5, 6, 3‑6 | ⠐⠠⠤ | U+2810, U+2820, U+2824 |
 | … (ellipsis) | 2‑5‑6 (repeated) | ⠲⠲⠲ | U+2832×3 |
 
 ---  
@@ -93,22 +96,22 @@ The digits themselves reuse the patterns for **A‑J**.
 
 | Print | Dots | Braille Pattern | Unicode |
 |-------|------|----------------|----------|
-| @ (at sign) | 4‑5‑6 | ⠈ | U+2808 |
-| # (hash / pound) | 3‑4‑5‑6 (same as number sign) | ⠼ | U+283C |
-| $ (dollar) | 4‑5 | ⠎ | U+280E |
-| % (percent) | 4‑5‑6 | ⠩ | U+2829 |
-| & (ampersand) | 1‑2‑3‑4‑6 | ⠯ | U+282F |
-| * (asterisk) | 1‑2‑3‑5‑6 | ⠭ | U+282D |
-| + (plus) | 2‑3‑5‑6 | ⠖ | U+2816 |
-| = (equals) | 4‑5‑6 | ⠶ | U+2836 |
-| < (less‑than) | 1‑2‑6 | ⠣ | U+2823 |
-| > (greater‑than) | 3‑4‑6 | ⠜ | U+281C |
-| ÷ (division) | 2‑3‑4‑5 | ⠹ | U+2839 |
-| × (multiplication) | 1‑3‑4‑6 | ⠭ | U+282D |
-| ° (degree) | 4‑5‑6 | ⠴ | U+2834 |
-| © (copyright) | 2‑3‑5‑6‑? (requires 2‑cell) | ⠘⠉ | U+2818 U+2809 |
-| ™ (trademark) | 2‑3‑5‑6‑? | ⠘⠞ | U+2818 U+281E |
-| ¶ (pilcrow) | 2‑5‑6‑? | ⠘⠲ | U+2818 U+2832 |
+| @ (at sign) | 4, 1 | ⠈⠁ | U+2808, U+2801 |
+| # (hash / pound) | 4-5-6, 1456 | ⠸⠹ | U+2838, U+2839 |
+| $ (dollar) | 4, 2-3-4 | ⠈⠎ | U+2808, U+280E |
+| % (percent) | 4-6, 3‑5‑6 | ⠨⠴ | U+2828, U+2834 |
+| & (ampersand) | 4, 1‑2‑3‑4‑6 | ⠈⠯ | U+2808, U+282F |
+| * (asterisk) | 5, 3‑5 | ⠐⠔ | U+2810, U+2814 |
+| + (plus) | 5, 2‑3‑5 | ⠐⠖ | U+2810, U+2816 |
+| = (equals) | 5, 2-3‑5‑6 | ⠐⠶ | U+2810, U+2836 |
+| < (less‑than) | 4, 1‑2‑6 | ⠈⠣ | U+2808, U+2823 |
+| > (greater‑than) | 4, 3‑4‑5 | ⠈⠜ | U+2808, U+281C |
+| ÷ (division) | 5, 3-4 | ⠐⠌ | U+2810, U+280C |
+| × (multiplication) | 5, 2-3-6 | ⠐⠦ | U+2810, U+2826 |
+| ° (degree) | 4-5, 2-4-5 | ⠘⠚ | U+2818, U+281A |
+| © (copyright) | 4-5, 1-4 | ⠘⠉ | U+2818 U+2809 |
+| ™ (trademark) | 4-5, 2-3-4-5| ⠘⠞ | U+2818 U+281E |
+| ¶ (pilcrow) | 4-5, 2-5-6 | ⠘⠲ | U+2818 U+2832 |
 
 *Some symbols (e.g., ©, ™) are represented in UEB by a **prefix cell** (⠘, U+2818) followed by the letters that spell the abbreviation.*
 

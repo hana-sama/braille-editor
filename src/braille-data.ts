@@ -261,7 +261,7 @@ export const UEB_GRADE1: Record<number, string> = {
   0x04: "'", // dots 3
   0x24: "-", // dots 36 (hyphen)
   0x2e: "/", // dots 346
-  0x28: '"', // dots 46 — opening quotation
+  0x34: '"', // dots 356 — closing quotation
   0x1c: ")", // dots 345
 
   // Special sign indicators (displayed as their braille symbol)
