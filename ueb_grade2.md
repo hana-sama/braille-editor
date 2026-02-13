@@ -58,21 +58,25 @@ The layout mirrors the Grade 1 table, but it now includes the **standard contr
 
 | Print | Dots | Braille Pattern | Unicode |
 |-------|------|----------------|----------|
-| . | 2‑5‑6 | ⠲ | U+2832 |
-| , | 2 | ⠂ | U+2802 |
-| ; | 2‑3 | ⠆ | U+2806 |
-| : | 2‑5 | ⠒ | U+2812 |
-| ? | 2‑3‑6 | ⠦ | U+2826 |
-| ! | 2‑3‑5 | ⠖ | U+2816 |
-| ’ | 3 | ⠄ | U+2804 |
-| – | 3‑6 | ⠤ | U+2824 |
-| “ ” | 2‑3‑5‑6 | ⠶ | U+2836 |
-| ( | 2‑3‑5‑6 | ⠶ | U+2836 |
-| ) | 3‑5‑6 | ⠶ | U+2836 |
-| / | 3‑4 | ⠌ | U+280C |
-| \ | 3‑4‑5 | ⠸ | U+2838 |
-| … | 2‑5‑6 (×3) | ⠲⠲⠲ | U+2832 ×3 |
-
+| . (period) | 2‑5‑6 | ⠲ | U+2832 |
+| , (comma) | 2 | ⠂ | U+2802 |
+| ; (semicolon) | 2‑3 | ⠆ | U+2806 |
+| : (colon) | 2‑5 | ⠒ | U+2812 |
+| ? (question) | 2‑3‑6 | ⠦ | U+2826 |
+| ! (exclamation) | 2‑3‑5 | ⠖ | U+2816 |
+| ’ (apostrophe) | 3 | ⠄ | U+2804 |
+| – (hyphen) | 3‑6 | ⠤ | U+2824 |
+| “ (left double quote) | 2‑3-6 | ⠦ | U+2820 |
+| “ (right double quote) | 3-5-6 | ⠦ | U+2834 |
+| ( (left parenthesis) | 5, 1-2-6 | ⠐⠣ | U+2810, U+2823 |
+| ) (right parenthesis) | 5, 3-4-5 | ⠐⠜ | U+2810, U+281C |
+| ' (left single quote) | 6, 2-3-6 | ⠠⠦ | U+2820, U+2826 |
+| ' (right single quote) | 6, 3-5-6 | ⠠⠴ | U+2820, U+2834 |
+| / (slash) | 4-5-6, 3‑4 | ⠸⠌ | U+2839, U+280C |
+| \ (back‑slash) | 4-5-6, 1-6 | ⠸⠡ | U+2839, U+2821 |
+| – (dash) | 6, 3‑6 | ⠠⠤ | U+2820, U+2824 |
+| — (long‑dash) | 5, 6, 3‑6 | ⠐⠠⠤ | U+2810, U+2820, U+2824 |
+| … (ellipsis) | 2‑5‑6 (repeated) | ⠲⠲⠲ | U+2832×3 |
 ---
 
 ## 4. **Contracted (Grade 2) Forms**  
@@ -104,6 +108,23 @@ The layout mirrors the Grade 1 table, but it now includes the **standard contr
 
 | Print | Dots | Braille Pattern | Unicode |
 |-------|------|----------------|----------|
+|**A**||||
+| about | 1, 1-2 (ab) | ⠁⠃ | U+2801, U+2803|
+| above | 1, 1-2, 1-2-3-6 (abv) | ⠁⠃⠧ | U+2801, U+2803, U+2827 |
+| according | 1, 1-4 (ac) | ⠁⠉ | U+2801, U+2809 |
+| across | 1, 1-4, 1-2-3-5 (acr) | ⠁⠉⠗ | U+2801, U+2809, U+2817 |
+| after | 1, 1-2-4 (af) | ⠁⠋ | U+2801, U+280B |
+| afternoon | 1, 1-2-4, 1-3-4-5 (afn) | ⠁⠋⠝ | U+2801, U+280B, U+281D |
+| afterword | 1, 1-2-4, 2-4-5-6  (afw) | ⠁⠋⠺ | U+2801, U+280B, U+283A |
+| again | 1, 1-2-4-5 (ag) | ⠁⠛ | U+2801, U+281B, U+283A |
+| against | 1, 1-2-4-5, 3-4 (ag+3-4) | ⠁⠛⠌ | U+2801, U+281B, U+280C |
+| almost | 1, 1-2-3, 1-3-4  (alm) | ⠁⠇⠍ | U+2801, U+2807, U+280D |
+| already | 1, 1-2-3, 1-2-3-5 (alr) | ⠁⠇⠗ | U+2801, U+2807, U+2817 |
+
+| already | 1, 1-2-3, 1-2-3-5 (alr) | ⠁⠇⠗ | U+2801, U+2807, U+2817 |
+| already | 1, 1-2-3, 1-2-3-5 (alr) | ⠁⠇⠗ | U+2801, U+2807, U+2817 |
+
+
 | ch | 1‑6 | ⠡ | U+2821 |
 | gh | 1‑2‑6 | ⠣ | U+2823 |
 | sh | 2‑5 | ⠩ | U+2829 |
