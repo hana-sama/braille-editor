@@ -70,15 +70,54 @@ export interface EditorContext {
   precedingText?: string;
   precedingBraille?: string;
   state?: ModeState;
+  // Contraction context
+  atWordBoundary?: boolean;
+  atWordStart?: boolean;
+  standalone?: boolean;
 }
 
-// ==================== SEQUENCE RESULT ====================
+// ==================== SEQUENCE RESOLUTION ====================
 
+/**
+ * Result of resolving a multi-cell braille sequence.
+ */
 export interface SequenceResult {
   name: string;
   text: string;
   type: string;
   action: string;
+}
+
+/**
+ * Resolver for variable-length braille sequences.
+ * Used for indicators that span 2+ cells (e.g., capital passage ⠠⠠⠠).
+ */
+export interface SequenceResolver {
+  /** Minimum number of cells required to attempt resolution */
+  minCells: number;
+  /** Maximum number of cells this sequence can contain */
+  maxCells: number;
+  /** First cell codes that can start this sequence type */
+  prefixCodes: Set<BrailleCode>;
+  /**
+   * Attempt to resolve a sequence of codes.
+   * @param codes The braille codes in sequence (first = prefix)
+   * @param context Editor context for context-dependent resolution
+   * @returns SequenceResult if resolved, null if not a valid sequence
+   */
+  resolve: (codes: BrailleCode[], context: EditorContext) => SequenceResult | null;
+}
+
+/**
+ * State for tracking multi-cell sequence input.
+ */
+export interface SequenceState {
+  /** Codes accumulated so far in the current sequence */
+  pendingCodes: BrailleCode[];
+  /** Whether we're actively collecting a sequence */
+  isActive: boolean;
+  /** Maximum depth reached so far */
+  depth: number;
 }
 
 // ==================== CONFIRM RESULT ====================
@@ -97,6 +136,14 @@ export interface ModeInfo {
   id: string;
   description: string;
   language: string;
+  categoryId?: string;
+}
+
+export interface ModeCategory {
+  id: string;
+  name: string;
+  description?: string;
+  modes: ModeInfo[];
 }
 
 export interface ModeChangeEvent {
@@ -106,6 +153,15 @@ export interface ModeChangeEvent {
 }
 
 export type ModeChangeListener = (event: ModeChangeEvent) => void;
+
+// ==================== MODE TRANSITION ====================
+
+export interface ModeTransition {
+  from: string;
+  to: string;
+  preserveContent: boolean;
+  stateMapping?: (oldState: ModeState) => ModeState;
+}
 
 // ==================== STORAGE ====================
 

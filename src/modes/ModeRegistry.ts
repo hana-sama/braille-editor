@@ -8,16 +8,20 @@
  * - Switch between modes
  * - Persist mode preference
  * - Notify listeners on mode change
+ * - Organize modes by category
+ * - Handle mode transitions
  *
  * @author Hana
  * @license MIT
  */
 
 import { BrailleMode } from "./BrailleMode";
-import type { ModeChangeEvent, ModeChangeListener, ModeInfo } from "../types";
+import type { ModeCategory, ModeChangeEvent, ModeChangeListener, ModeInfo, ModeTransition } from "../types";
 
 export class ModeRegistry {
   private modes: Map<string, BrailleMode> = new Map();
+  private categories: Map<string, ModeCategory> = new Map();
+  private transitions: Map<string, ModeTransition> = new Map();
   private currentMode: BrailleMode | null = null;
   private listeners: Set<ModeChangeListener> = new Set();
   private storageKey = "brailleEditorMode";
@@ -193,6 +197,90 @@ export class ModeRegistry {
   /** Check if a mode is currently active. */
   isModeActive(modeId: string): boolean {
     return this.currentMode?.id === modeId;
+  }
+
+  // ==================== CATEGORY MANAGEMENT ====================
+
+  /** Register a mode category. */
+  registerCategory(category: Omit<ModeCategory, "modes">): void {
+    if (this.categories.has(category.id)) {
+      console.warn(`[ModeRegistry] Category already exists: ${category.id}`);
+      return;
+    }
+    this.categories.set(category.id, { ...category, modes: [] });
+    console.log(`[ModeRegistry] Registered category: ${category.name} (${category.id})`);
+  }
+
+  /** Register a mode with a category. */
+  registerModeWithCategory(mode: BrailleMode, categoryId: string): void {
+    // Register the mode first
+    this.register(mode);
+
+    // Add to category
+    const category = this.categories.get(categoryId);
+    if (category) {
+      category.modes.push(mode.getInfo());
+      console.log(`[ModeRegistry] Added mode ${mode.name} to category ${category.name}`);
+    } else {
+      console.warn(`[ModeRegistry] Category not found: ${categoryId}, mode registered without category`);
+    }
+  }
+
+  /** Get a category by ID. */
+  getCategory(categoryId: string): ModeCategory | undefined {
+    return this.categories.get(categoryId);
+  }
+
+  /** Get all categories. */
+  getAllCategories(): ModeCategory[] {
+    return Array.from(this.categories.values());
+  }
+
+  /** Get modes by category. */
+  getModesByCategory(categoryId: string): ModeInfo[] {
+    const category = this.categories.get(categoryId);
+    return category?.modes ?? [];
+  }
+
+  /** Get the category of the current mode. */
+  getCurrentCategory(): ModeCategory | null {
+    if (!this.currentMode) return null;
+    
+    for (const category of this.categories.values()) {
+      if (category.modes.some(m => m.id === this.currentMode?.id)) {
+        return category;
+      }
+    }
+    return null;
+  }
+
+  // ==================== TRANSITION MANAGEMENT ====================
+
+  /** Register a mode transition. */
+  registerTransition(transition: ModeTransition): void {
+    const key = `${transition.from}:${transition.to}`;
+    this.transitions.set(key, transition);
+  }
+
+  /** Get a transition between two modes. */
+  getTransition(fromId: string, toId: string): ModeTransition | undefined {
+    return this.transitions.get(`${fromId}:${toId}`);
+  }
+
+  /** Set mode with transition handling. */
+  setModeWithTransition(modeId: string): void {
+    const previousMode = this.currentMode;
+    const transition = previousMode 
+      ? this.getTransition(previousMode.id, modeId) 
+      : null;
+
+    // If there's a transition defined, we could apply state mapping here
+    // For now, just set the mode normally
+    this.setMode(modeId);
+
+    if (transition) {
+      console.log(`[ModeRegistry] Applied transition: ${transition.from} -> ${transition.to}`);
+    }
   }
 }
 

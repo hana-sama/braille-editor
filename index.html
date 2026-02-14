@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6-Dot Braille Editor (Modular) - Dual View</title>
     <link rel="stylesheet" href="braille.css" />
+    <link rel="stylesheet" href="/src/components/mode-sidebar.css" />
     <style>
       /* Mode selector styles */
       .mode-selector {
@@ -50,13 +51,16 @@
     </header>
 
     <div class="main-container">
+      <!-- Mode Sidebar (New) -->
+      <div id="mode-sidebar-container" aria-label="Braille Mode Selection"></div>
+      
       <!-- Sidebar -->
       <div
         class="sidebar"
         role="complementary"
         aria-label="Controls and Reference"
       >
-        <!-- Mode Selector -->
+        <!-- Mode Selector (Legacy - will be replaced by sidebar) -->
         <h2 class="section-title" id="mode-heading">Braille Mode</h2>
         <div
           class="mode-selector"
@@ -224,7 +228,10 @@
             <kbd>Ctrl+L</kbd> cycles keyboard layout.
           </p>
           <p style="margin-top: 8px">
-            <kbd>Ctrl+M</kbd> or <kbd>Alt+M</kbd> cycles braille mode.
+            <kbd>Ctrl+M</kbd> or <kbd>Alt+M</kbd> cycles braille mode forward.
+          </p>
+          <p style="margin-top: 8px">
+            <kbd>Ctrl+Shift+M</kbd> or <kbd>Alt+Shift+M</kbd> cycles braille mode backward.
           </p>
         </div>
 

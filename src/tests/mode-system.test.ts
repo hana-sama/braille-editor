@@ -151,6 +151,162 @@ describe("Prefix Codes and Sequences", () => {
   });
 });
 
+describe("Multi-Cell Sequence Support", () => {
+  let mode: UEBGrade1Mode;
+
+  beforeEach(() => {
+    mode = new UEBGrade1Mode();
+  });
+
+  it("should have sequence resolvers", () => {
+    const resolvers = mode.getSequenceResolvers();
+    expect(resolvers).toBeDefined();
+    expect(resolvers.length).toBeGreaterThan(0);
+  });
+
+  it("should have max sequence depth of 3", () => {
+    expect(mode.getMaxSequenceDepth()).toBe(3);
+  });
+
+  it("should detect capital sign can start sequence", () => {
+    expect(mode.canStartSequence(0x20)).toBe(true); // capital sign
+  });
+
+  it("should resolve 3-cell capital passage sequence", () => {
+    // Capital passage: ⠠⠠⠠ = 0x20, 0x20, 0x20
+    const result = mode.resolveMultiCellSequence([0x20, 0x20, 0x20], {});
+    expect(result).not.toBeNull();
+    expect(result!.name).toBe("CAPITAL_PASSAGE");
+    expect(result!.type).toBe("capital");
+    expect(result!.action).toBe("passage");
+  });
+
+  it("should resolve 2-cell capital word sequence", () => {
+    // Capital word: ⠠⠠ = 0x20, 0x20
+    const result = mode.resolveMultiCellSequence([0x20, 0x20], {});
+    expect(result).not.toBeNull();
+    expect(result!.name).toBe("CAPITAL_WORD");
+    expect(result!.action).toBe("word");
+  });
+
+  it("should resolve 2-cell italic word sequence", () => {
+    // Italic word: ⠨⠁ = 0x28, 0x01
+    const result = mode.resolveMultiCellSequence([0x28, 0x01], {});
+    expect(result).not.toBeNull();
+    expect(result!.name).toBe("ITALIC_WORD");
+    expect(result!.action).toBe("word");
+  });
+
+  it("should resolve 3-cell italic passage sequence", () => {
+    // Italic passage: ⠨⠶ = 0x28, 0x36
+    const result = mode.resolveMultiCellSequence([0x28, 0x36], {});
+    expect(result).not.toBeNull();
+    expect(result!.name).toBe("ITALIC_PASSAGE");
+    expect(result!.action).toBe("passage");
+  });
+
+  it("should return null for invalid multi-cell sequence", () => {
+    const result = mode.resolveMultiCellSequence([0x20, 0xff], {});
+    expect(result).toBeNull();
+  });
+
+  it("should return null for incomplete sequence", () => {
+    // Capital sign alone is not a complete sequence
+    const result = mode.resolveMultiCellSequence([0x20], {});
+    expect(result).toBeNull();
+  });
+
+  it("should detect partial sequence is valid", () => {
+    // After first capital sign, we can still collect more
+    expect(mode.isPartialSequenceValid([0x20])).toBe(true);
+  });
+
+  it("should detect max depth reached", () => {
+    // At max depth (3), no more cells should be collected
+    expect(mode.isPartialSequenceValid([0x20, 0x20, 0x20])).toBe(false);
+  });
+});
+
+describe("Multi-Cell EditorState Integration", () => {
+  let mode: UEBGrade1Mode;
+  let state: EditorState;
+
+  beforeEach(() => {
+    mode = new UEBGrade1Mode();
+    state = new EditorState(mode);
+  });
+
+  it("should create initial sequence state", () => {
+    expect(state.sequenceState).toBeDefined();
+    expect(state.sequenceState.isActive).toBe(false);
+    expect(state.sequenceState.pendingCodes).toEqual([]);
+  });
+
+  it("should detect pending indicator via sequence state", () => {
+    // Start a sequence
+    state.addDot(6 as 1|2|3|4|5|6);
+    state.addDot(3 as 1|2|3|4|5|6);
+    const result = state.confirmChar();
+    
+    // Should be pending after capital sign
+    expect(result.pending).toBe(true);
+    expect(state.isPendingIndicator()).toBe(true);
+    expect(state.getSequenceDepth()).toBe(1);
+  });
+
+  it("should resolve 2-cell sequence", () => {
+    // Add capital sign ⠠ = 0x20
+    state.addDot(6 as 1|2|3|4|5|6);
+    state.addDot(3 as 1|2|3|4|5|6);
+    state.confirmChar();
+    
+    // Add second capital sign ⠠ = 0x20
+    state.addDot(6 as 1|2|3|4|5|6);
+    state.addDot(3 as 1|2|3|4|5|6);
+    const result = state.confirmChar();
+    
+    // Should resolve to capital word
+    expect(result.indicator).not.toBeNull();
+    expect(result.indicator!.name).toBe("CAPITAL_WORD");
+  });
+
+  it("should resolve 3-cell capital passage", () => {
+    // Add three capital signs ⠠⠠⠠ = 0x20, 0x20, 0x20
+    for (let i = 0; i < 3; i++) {
+      state.addDot(6 as 1|2|3|4|5|6);
+      state.addDot(3 as 1|2|3|4|5|6);
+      state.confirmChar();
+    }
+    
+    // The result should contain capital passage
+    expect(state.brailleContent).toContain("⠠⠠⠠");
+  });
+
+  it("should get pending codes", () => {
+    // Start sequence
+    state.addDot(6 as 1|2|3|4|5|6);
+    state.addDot(3 as 1|2|3|4|5|6);
+    state.confirmChar();
+    
+    const pendingCodes = state.getPendingCodes();
+    expect(pendingCodes.length).toBe(1);
+    expect(pendingCodes[0]).toBe(0x20);
+  });
+
+  it("should cancel pending sequence on escape", () => {
+    // Start sequence
+    state.addDot(6 as 1|2|3|4|5|6);
+    state.addDot(3 as 1|2|3|4|5|6);
+    state.confirmChar();
+    
+    // Cancel
+    state.cancelPendingIndicator();
+    
+    expect(state.isPendingIndicator()).toBe(false);
+    expect(state.getPendingCodes().length).toBe(0);
+  });
+});
+
 describe("State Management", () => {
   let mode: UEBGrade1Mode;
 

@@ -17,6 +17,8 @@ import { EditorState } from "./core/EditorState";
 import { BrailleMode } from "./modes/BrailleMode";
 import { modeRegistry } from "./modes/ModeRegistry";
 import { UEBGrade1Mode } from "./modes/ueb/UEBGrade1Mode";
+import { UEBGrade2Mode } from "./modes/ueb/UEBGrade2Mode";
+import { ModeSidebar } from "./components/ModeSidebar";
 import type { DotNumber, Layout, ModeChangeEvent } from "./types";
 
 // ==================== DOM HELPER ====================
@@ -130,8 +132,20 @@ function codeToDots(code: number): number[] {
 // ==================== MODE MANAGEMENT ====================
 
 function initModes(): void {
+  // Register categories first
+  modeRegistry.registerCategory({
+    id: "ueb",
+    name: "Unified English Braille",
+    description: "UEB modes for English text"
+  });
+
+  // Register modes with categories
   const ueb1Mode = new UEBGrade1Mode();
-  modeRegistry.register(ueb1Mode);
+  modeRegistry.registerModeWithCategory(ueb1Mode, "ueb");
+
+  // Register UEB Grade 2
+  const ueb2Mode = new UEBGrade2Mode();
+  modeRegistry.registerModeWithCategory(ueb2Mode, "ueb");
 
   const savedMode = modeRegistry.loadPreference(ueb1Mode.id);
   modeRegistry.setMode(savedMode);
@@ -139,6 +153,24 @@ function initModes(): void {
   editorState = new EditorState(modeRegistry.getMode()!);
 
   modeRegistry.addListener(handleModeChange);
+}
+
+function initModeSidebar(): void {
+  try {
+    const container = document.getElementById("mode-sidebar-container");
+    if (container) {
+      // Create sidebar - it self-registers with modeRegistry for updates
+      new ModeSidebar({
+        containerId: "mode-sidebar-container",
+        collapsed: false,
+        onModeSelect: (mode) => {
+          console.log(`[Main] Mode selected: ${mode.name}`);
+        }
+      });
+    }
+  } catch (e) {
+    console.warn("Failed to initialize mode sidebar:", e);
+  }
 }
 
 function handleModeChange(event: ModeChangeEvent): void {
@@ -159,6 +191,10 @@ function handleModeChange(event: ModeChangeEvent): void {
 
 function cycleToNextMode(): void {
   modeRegistry.cycleToNext();
+}
+
+function cycleToPreviousMode(): void {
+  modeRegistry.cycleToPrevious();
 }
 
 function initModeSelector(): void {
@@ -645,10 +681,17 @@ document.addEventListener("keydown", (e: KeyboardEvent) => {
     return;
   }
 
-  // Ctrl+M or Alt+M = cycle mode
-  if (key === "m" && (e.ctrlKey || e.altKey)) {
+  // Ctrl+M or Alt+M = cycle mode forward
+  if (key === "m" && (e.ctrlKey || e.altKey) && !e.shiftKey) {
     e.preventDefault();
     cycleToNextMode();
+    return;
+  }
+
+  // Ctrl+Shift+M or Alt+Shift+M = cycle mode backward
+  if (key === "m" && (e.ctrlKey || e.altKey) && e.shiftKey) {
+    e.preventDefault();
+    cycleToPreviousMode();
     return;
   }
 
@@ -706,6 +749,12 @@ function init(): void {
   } catch (e) {
     console.error("Failed to initialize mode system:", e);
     return;
+  }
+
+  try {
+    initModeSidebar();
+  } catch (e) {
+    console.error("Failed to initialize mode sidebar:", e);
   }
 
   try {

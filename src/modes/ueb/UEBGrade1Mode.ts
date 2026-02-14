@@ -21,6 +21,7 @@ import type {
   EditorContext,
   Indicator,
   ModeState,
+  SequenceResolver,
   SequenceResult
 } from "../../types";
 
@@ -40,6 +41,7 @@ export class UEBGrade1Mode extends BrailleMode {
   private indicators: Record<string, Indicator> = {};
   private prefixCodes: Set<BrailleCode> = new Set();
   private sequenceMap: Record<string, string> = {};
+  private sequenceResolvers: SequenceResolver[] = [];
 
   constructor() {
     super({
@@ -278,6 +280,73 @@ export class UEBGrade1Mode extends BrailleMode {
         this.sequenceMap[key] = name;
       }
     }
+    
+    // Build multi-cell sequence resolvers
+    this._buildSequenceResolvers();
+  }
+  
+  /**
+   * Build sequence resolvers for multi-cell indicators.
+   * Handles 2-cell and 3-cell sequences.
+   */
+  private _buildSequenceResolvers(): void {
+    this.sequenceResolvers = [];
+    
+    // Group indicators by their prefix code
+    const byPrefix = new Map<BrailleCode, Array<{ name: string; indicator: Indicator }>>();
+    
+    for (const [name, indicator] of Object.entries(this.indicators)) {
+      if (indicator.codes.length === 0) continue;
+      const prefix = indicator.codes[0];
+      if (!byPrefix.has(prefix)) {
+        byPrefix.set(prefix, []);
+      }
+      byPrefix.get(prefix)!.push({ name, indicator });
+    }
+    
+    // Create a resolver for each prefix group
+    for (const [prefixCode, entries] of byPrefix) {
+      const maxCells = Math.max(...entries.map(e => e.indicator.codes.length));
+      const minCells = Math.min(...entries.map(e => e.indicator.codes.length));
+      
+      const resolver: SequenceResolver = {
+        minCells,
+        maxCells,
+        prefixCodes: new Set([prefixCode]),
+        resolve: (codes: BrailleCode[], _context: EditorContext): SequenceResult | null => {
+          // Try to match each indicator in this group
+          for (const { name, indicator } of entries) {
+            if (indicator.codes.length !== codes.length) continue;
+            
+            // Check if all codes match
+            const matches = indicator.codes.every((code, i) => code === codes[i]);
+            if (matches) {
+              return {
+                name,
+                text: indicator.display,
+                type: indicator.type,
+                action: indicator.action
+              };
+            }
+          }
+          return null;
+        }
+      };
+      
+      this.sequenceResolvers.push(resolver);
+    }
+  }
+  
+  // ==================== MULTI-CELL SEQUENCE SUPPORT ====================
+  
+  /** Get sequence resolvers for this mode. */
+  getSequenceResolvers(): SequenceResolver[] {
+    return this.sequenceResolvers;
+  }
+  
+  /** Get the maximum sequence depth for this mode (3 for capital passage). */
+  getMaxSequenceDepth(): number {
+    return 3;
   }
 
   // ==================== IMPLEMENT REQUIRED METHODS ====================

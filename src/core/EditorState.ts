@@ -16,7 +16,8 @@ import type {
   ConfirmResult,
   DotNumber,
   EditorContext,
-  ModeState
+  ModeState,
+  SequenceState
 } from "../types";
 
 export class EditorState {
@@ -25,7 +26,12 @@ export class EditorState {
   brailleContent = "";
   textContent = "";
   modeState!: ModeState;
+  
+  /** @deprecated Use sequenceState instead for multi-cell support */
   pendingIndicator: BrailleCode | null = null;
+  
+  /** Multi-cell sequence state */
+  sequenceState!: SequenceState;
 
   constructor(mode: BrailleMode) {
     this.setMode(mode);
@@ -39,6 +45,7 @@ export class EditorState {
     this.textContent = "";
     this.modeState = mode ? mode.createInitialState() : ({} as ModeState);
     this.pendingIndicator = null;
+    this.sequenceState = mode ? mode.createInitialSequenceState() : { pendingCodes: [], isActive: false, depth: 0 };
   }
 
   // ==================== DOT INPUT ====================
@@ -87,6 +94,7 @@ export class EditorState {
     this.textContent = "";
     this.modeState = this.mode.createInitialState();
     this.pendingIndicator = null;
+    this.sequenceState = this.mode.createInitialSequenceState();
   }
 
   /** Delete the last character and recalculate state. */
@@ -121,7 +129,70 @@ export class EditorState {
       state: this.modeState
     };
 
-    // Check for pending indicator (second cell of sequence)
+    // ========== MULTI-CELL SEQUENCE HANDLING ==========
+    
+    // If we're already collecting a sequence, add this code
+    if (this.sequenceState.isActive) {
+      this.sequenceState.pendingCodes.push(code);
+      this.sequenceState.depth++;
+      
+      // Try to resolve the sequence
+      const result = this.mode.resolveMultiCellSequence(
+        this.sequenceState.pendingCodes,
+        context
+      );
+      
+      if (result) {
+        // Sequence resolved successfully
+        indicator = result;
+        text = result.text;
+        
+        // Add all pending braille characters
+        const brailleStr = this.sequenceState.pendingCodes
+          .map(c => this.mode.codeToBraille(c))
+          .join("");
+        this.brailleContent += brailleStr;
+        this.textContent += text;
+        
+        this.modeState = this.mode.applyIndicator(this.modeState, result.name);
+        this._resetSequenceState();
+        this.resetDots();
+        
+        return { braille, text, indicator };
+      }
+      
+      // Check if we can continue collecting or need to flush
+      const maxDepth = this.mode.getMaxSequenceDepth();
+      const canContinue = this.mode.isPartialSequenceValid(this.sequenceState.pendingCodes);
+      
+      if (!canContinue || this.sequenceState.depth >= maxDepth) {
+        // Flush: process all pending codes as single codes
+        this._flushPendingCodes();
+        // Then process current code
+        this._processSingleCode(code);
+        this.resetDots();
+        return { braille, text: this.textContent.slice(-1), indicator: null };
+      }
+      
+      // Wait for more cells
+      this.resetDots();
+      return { braille, text: "", indicator: null, pending: true };
+    }
+    
+    // ========== NEW SEQUENCE CHECK ==========
+    
+    // Check if this code can start a multi-cell sequence
+    if (this.mode.canStartSequence(code)) {
+      this.sequenceState.isActive = true;
+      this.sequenceState.pendingCodes = [code];
+      this.sequenceState.depth = 1;
+      this.resetDots();
+      return { braille, text: "", indicator: null, pending: true };
+    }
+
+    // ========== LEGACY 2-CELL SUPPORT (deprecated) ==========
+    
+    // Check for pending indicator (second cell of sequence) - legacy support
     if (this.pendingIndicator !== null) {
       const result = this.mode.resolveSequence(
         this.pendingIndicator,
@@ -148,8 +219,8 @@ export class EditorState {
       }
     }
 
-    // Check if this code starts a multi-cell sequence
-    if (this.mode.getPrefixCodes().has(code)) {
+    // Check if this code starts a multi-cell sequence (legacy)
+    if (this.mode.getPrefixCodes && this.mode.getPrefixCodes().has(code)) {
       this.pendingIndicator = code;
       this.resetDots();
       return { braille, text: "", indicator: null, pending: true };
@@ -160,6 +231,23 @@ export class EditorState {
     this.resetDots();
 
     return { braille, text: this.textContent.slice(-1), indicator: null };
+  }
+  
+  /** Reset the multi-cell sequence state. */
+  private _resetSequenceState(): void {
+    this.sequenceState = {
+      pendingCodes: [],
+      isActive: false,
+      depth: 0
+    };
+  }
+  
+  /** Flush pending codes as single codes. */
+  private _flushPendingCodes(): void {
+    for (const code of this.sequenceState.pendingCodes) {
+      this._processSingleCode(code);
+    }
+    this._resetSequenceState();
   }
 
   /** Process a single braille code. */
@@ -237,17 +325,32 @@ export class EditorState {
 
   /** Check if waiting for second cell of indicator. */
   isPendingIndicator(): boolean {
-    return this.pendingIndicator !== null;
+    return this.pendingIndicator !== null || this.sequenceState.isActive;
   }
 
   /** Get pending indicator code. */
   getPendingIndicator(): BrailleCode | null {
+    // For multi-cell sequences, return the first pending code
+    if (this.sequenceState.isActive && this.sequenceState.pendingCodes.length > 0) {
+      return this.sequenceState.pendingCodes[0];
+    }
     return this.pendingIndicator;
+  }
+  
+  /** Get all pending codes in the current sequence. */
+  getPendingCodes(): BrailleCode[] {
+    return this.sequenceState.isActive ? [...this.sequenceState.pendingCodes] : [];
+  }
+  
+  /** Get current sequence depth. */
+  getSequenceDepth(): number {
+    return this.sequenceState.depth;
   }
 
   /** Cancel pending indicator. */
   cancelPendingIndicator(): void {
     this.pendingIndicator = null;
+    this._resetSequenceState();
   }
 
   // ==================== CONTENT QUERIES ====================

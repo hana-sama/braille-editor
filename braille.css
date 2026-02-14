@@ -62,8 +62,14 @@ h1 {
 
 .main-container {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 220px 280px 1fr;
   height: calc(100vh - 70px);
+}
+
+/* Mode Sidebar Container */
+#mode-sidebar-container {
+  height: 100%;
+  background: #1a1a2e;
 }
 
 /* Sidebar */
