@@ -354,6 +354,94 @@ The layout mirrors the Grade 1 table, but it now includes the **standard contr
 
 ---
 
+## 6. Braille Tables
+**Alphabetic Contractions**  
+||Wordsign |Initial Contractions||| Final Groupsigns||
+|---|---|---|---|---|---|---|
+||Standing Alone|With Dot 5|With Dots 45|With Dots 456| With Dots 46|With Dots 56|
+|⠁a|…|…|…|…|…|…|
+|⠃b|but| …| …| …| …| …|
+|⠉c| can| …| …| cannot| …| …|
+|⠙d| do| day| …| …| -ound| …|
+|⠑e| every| ever| …| …| -ance| -ence|
+|⠋f| from| father| …| …| …| …|
+|⠛g| go| …| …| …| …| -ong|
+|⠓h| have| here| …| had| …| …|
+|⠊i| …| …| …| …| …| …|
+|⠚j| just| …| …| …| …| …|
+|⠅k| knowledge| know| …| …| …| …|
+|⠇l| like| lord| …| …| …| -ful|
+|⠍m| more| mother| …| many| …| …|
+|⠝n| not| name| …| …| -sion| -tion|
+|⠗o| …| one| …| …| …| …|
+|⠏p| people| part| …| …| …| …|
+|⠟q| quite| question| …| …| …| …|
+|⠗r| rather| right| …| …| …| …|
+|⠎s| so| some| …| spirit| -less| -ness|
+|⠞t| that| time| …| …| -ount| -ment|
+|⠥u| us| under| upon| …| …| …|
+|⠧v| very| …| …| …| …| …|
+|⠺w| will| work| word| world| …| …|
+|⠭x| it| …| …| …| …| …|
+|⠽y| you| young| …| …| …| -ity|
+|⠷z| as| …| …| …| …| …|
+
+**Strong Contractions**  
+||ContractionInitial| Initial Contractions|||
+|---|---|---|---|---|
+|||With Dot 5| With Dots 45| With Dots 456|
+|⠯| and| …| …| …|
+|⠿| for| …| …| …|
+|⠷| of| …| …| …|
+|⠮| the| there| these| their|
+|⠾| with| …| …| …|
+
+**Strong Groupsigns/Wordsigns**  
+|Groupsign |Wordsign| Initial Contractions/Brackets|||||
+|---|---|---|---|---|---|---|
+||Standing Alone|With Dot 5|With Dots 45|With Dots 456|With Dots 46|With Dot 4,Dots 4 6|
+|⠡ ch| child| character| …| …| …|
+|⠣ gh| …| (| …| { | [| open tni|
+|⠩ sh| shall| …| …| …| …|
+|⠹ th| this| through| those| …| …|
+|⠱ wh| which| where| whose| …| …|
+|⠫ ed| …| …| …| …| …|
+|⠻ er| …| …| …| …| …|
+|⠳ ou| out| ought| …| …| …|
+|⠪ ow| …| …| …| …| …|
+|⠌ st| still| …| …| …| …|
+|⠜ ar| …| )| …| } | ] |close tni|
+|⠬ -ing| …| …| …| …| …|
+
+**Lower Contractions**
+||Wordsign|Groupsign/Punctuation|||
+|---|---|---|---|---|
+|||Start of Word| Middle of Word| End of Word|
+|⠂| …| …| -ea- |, (comma)|
+|⠆| be| be-| -bb-| ; (semicolon)|
+|⠒| …| con-| -cc-| : (colon)|
+|⠲| …| dis-| . (dot)| . (full stop)|
+|⠢| enough |en| en| en|
+|⠖| …| …| -ff-| ! (exclamation)|
+|⠶| were| …| -gg-| …|
+|⠦| his| " (open)| … |? (question mark)|
+|⠔| in| in| in| in|
+|⠴| was| …| …| " (close)|
+|⠤| …| - (hyphen)| - (hyphen)| - (hyphen)|
+|⠄| … |' (apostrophe)| ' (apostrophe)| ' (apostrophe)|
+
+**Prefixes**  
+|Sign||
+|---|---|
+|⠼| Numeric mode|
+|⠈| Script; currency|
+|⠘| Bold; symbol; initial-letter contraction|
+|⠨| Italic; Greek letter; final-letter contraction|
+|⠸| Underline; initial-letter contraction|
+|⠐| Maths operation sign; initial-letter contraction|
+|⠰| Grade 1 mode; final-letter contraction|
+|⠠| Capitals mode|
+
 ### How to read the table  
 
 * **Dots** – the six‑dot positions (1‑6) used on a Braille cell.  
