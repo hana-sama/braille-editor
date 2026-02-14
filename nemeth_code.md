@@ -150,15 +150,15 @@ The radical is the square root symbol that houses the radicand, or number whose 
 |Hexagon (regular)| | ⠫⠖ | 1-2-4-6, 2-3-5|U+282B, U+2816|
 |Parallel| ∥| ⠫⠇ | 1-2-4-6, 1-2-3|U+282B, U+2807|
 |Perpendicular| ⊥| ⠫⠏ | 1-2-4-6, 1-2-3-4|U+282B, U+280F|
-|Parallelogram|a|  ⠫⠛ | 1-2-4-6, 1-2-4-5|U+282B, U+281B|
+|Parallelogram||  ⠫⠛ | 1-2-4-6, 1-2-4-5|U+282B, U+281B|
 |Pentagon (regular)|| ⠫⠢ | 1-2-4-6, 2-6|U+282B, U+2822|
 |Quadrilateral| |⠫⠟ | 1-2-4-6, 1-2-3-4-5|U+282B, U+281F|
 |Rectangle| |⠫⠗ | 1-2-4-6, 1-2-3-5|U+282B, U+2817|
 |Rhombus|| ⠫⠓ | 1-2-4-6, 1-2-5|U+282B, U+2813|
 |Square|| ⠫⠲ | 1-2-4-6, 2-5-6|U+282B, U+2832|
 |Star|| ⠫⠎ | 1-2-4-6, 2-3-4|U+282B, U+280E|
-|Trapezoid|a | ⠫⠵ | 1-2-4-6, 1-3-5-6|U+282B, U+2835|
-|Triangle (equilateral)| a| ⠫⠞ | 1-2-4-6, 2-3-4-5|U+282B, U+281E|
+|Trapezoid| | ⠫⠵ | 1-2-4-6, 1-3-5-6|U+282B, U+2835|
+|Triangle (equilateral)| | ⠫⠞ | 1-2-4-6, 2-3-4-5|U+282B, U+281E|
 
 ## 8. Modifiers
 Modifiers are symbols (like lines, arcs, arrows, carets, etc.) that are printed above or below a related symbol or mathematical expression. Modified expressions are brailled in the following order, without spaces:
