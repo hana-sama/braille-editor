@@ -15,150 +15,150 @@ In the tables below the indicator is shown **in front of** the symbol when it is
 ## 1. Nemeth Indicators and Punctuation
 |Name| Braille Symbol| Braille Dot Numbers| Unicode|
 |---|---|---|---|
-|Opening Nemeth code indicator| _%| 4-5-6, 1-4-6|U+2838, U+2829|
-|Closing Nemeth code indicator| _:| 4-5-6, 1-5-6|U+2839, U+2831|
-|Nemeth switch indicator (for a single word in Nemeth context)| ,'| 6, 3|U+2820, U+2804|
-|Punctuation indicator| _| 4-5-6|U+2838|
-|Grade 1 (English letter) indicator| ;| 5-6|U+2830|
-|Literary comma| 1| 2|U+2802|
-|Mathematical comma| ,| 6|U+2820|
-|Long dash (blank space)| ----| 3-6, 3-6, 3-6, 3-6|U+2824x3|
-|Ellipsis| '''| 3, 3, 3|U+2804x3|
-|Decimal point| .| 4-6|U+2828|
+|Opening Nemeth code indicator| ⠸⠩| 4-5-6, 1-4-6|U+2838, U+2829|
+|Closing Nemeth code indicator| ⠸⠱| 4-5-6, 1-5-6|U+2839, U+2831|
+|Nemeth switch indicator (for a single word in Nemeth context)| ⠠⠄| 6, 3|U+2820, U+2804|
+|Punctuation indicator| ⠸| 4-5-6|U+2838|
+|Grade 1 (English letter) indicator| ⠰| 5-6|U+2830|
+|Literary comma| ⠂| 2|U+2802|
+|Mathematical comma| ⠠| 6|U+2820|
+|Long dash (blank space)| ⠤⠤⠤| 3-6, 3-6, 3-6|U+2824x3|
+|Ellipsis| ⠄⠄⠄| 3, 3, 3|U+2804x3|
+|Decimal point| ⠨| 4-6|U+2828|
 
 ## 2. Signs of Operation
 Signs of operation are not typically preceded or followed by a blank space.
 
 |Name| Print Symbol| Braille Symbol| Braille Dot Numbers|Unicode|
 |---|---|---|---|---|
-|Plus| +| +| 3-4-6| U+282C|
-|Minus| -| -| 3-6 U+2824||
-|Multiplication cross| x| `*| 4, 1-6|U+282C|
-|Multiplication dot| •| *| 1-6|U+28|
-|Division| ÷| ./| 4-6, 3-4|U+28|
-|Plus or minus| ±| +-| 3-4-6, 3-6|U+28|
-|Plus followed by minus| +-| +"-| 3-4-6, 5, 3-6|U+28|
-|Asterisk| *| `#| 4, 3-4-5-6|U+28|
-|Crosshatch/pound sign| #| .#| 4-6, 3-4-5-6|
-|Hollow dot| °| .*| 4-6, 1-6|U+28|
-|Union| ∪| .+| 4-6, 3-4-6|U+28|
-|Intersection| ∩| .%| 4-6, 1-4-6|U+28|
-|Vertical bar| | | 1-2-5-6|U+28|
+|Plus| +| ⠬| 3-4-6| U+282C|
+|Minus| -| ⠤| 3-6| U+2824|
+|Multiplication cross| x| ⠈⠡| 4, 1-6|U+2808, U+2821|
+|Multiplication dot| •| ⠡| 1-6|U+2821|
+|Division| ÷| ⠨⠌| 4-6, 3-4|U+2828, U+280C|
+|Plus or minus| ±| ⠬⠤| 3-4-6, 3-6|U+282C, U+2824|
+|Plus followed by minus| +-| ⠬⠐⠤| 3-4-6, 5, 3-6|U+282C, U+2810, U+2824|
+|Asterisk| *| ⠈⠼| 4, 3-4-5-6|U+2808, U+283C|
+|Crosshatch/pound sign| #| ⠨⠼| 4-6, 3-4-5-6| U+2828, U+283C|
+|Hollow dot| °| ⠨⠡| 4-6, 1-6|U+2828, U+2821|
+|Union| ∪| ⠨⠬| 4-6, 3-4-6|U+2828, U+282C|
+|Intersection| ∩| ⠨⠩| 4-6, 1-4-6|U+2828, U+2829|
+|Vertical bar| | ⠳| 1-2-5-6|U+2833|
 
 
 ## 3. Comparison Symbols and Arrows
 Signs of comparison, including arrows, are always preceded and followed by a blank space.
 |Name| Print Symbol |Braille Symbol| Braille Dot Numbers| Unicode|
 |---|---|---|---|---|
-|Equals| =| .k| 4-6, 1-3|U+28|
-|Not equal to| ≠| /.k| 3-4, 4-6, 1-3|U+28|
-|Approximately equal| ≈| `:.k| 4, 1-5-6, 4-6, 1-3|U+28|
-|Similar| ~| `:| 4, 1-5-6|U+28|
-|Greater than| >| .1| 4-6, 2|U+28|
-|Greater than or equal to| ≥| .1:| 4-6, 2, 1-5-6|U+28|
-|Less than| <| "k| 5, 1-3|U+28|
-|Less than or equal to| ≤| "k:| 5, 1-3, 1-5-6|U+28|
-|Proportion| ::| ;2 |5-6, 2-3|U+28|
-|Ratio| :| "1| 5, 2|U+28|
-|Arc| ∩| $a| 1-2-4-6, 1|U+28|
-|Inclusion| ⊂| _"k| 4-5-6, 5, 1-3|U+28|
-|Intersection| ∩| .%| 4-6, 1-4-6|U+28|
-|Membership (element)| ∈| `e| 4, 1-5|U+28|
-|Parallel| ∥| $l| 1-2-4-6, 1-2-3|U+28|
-|Perpendicular| ⊥| $p| 1-2-4-6, 1-2-3-4|U+28|
-|Tilde| ~| `:| 4, 1-5-6|U+28|
-|Vertical bar| | \ |1-2-5-6|U+28|
-|Left arrow| ←| $[33| 1-2-4-6, 2-4-6, 2-5, 2-5|U+28|
-|Right arrow, contracted| →| $o| 1-2-4-6, 1-3-5|U+28|
-|Right arrow, uncontracted| →| $33o| 1-2-4-6, 2-5, 2-5, 1-3-5|U+28|
-|Left/right arrow| ↔ |$[33o| 1-2-4-6, 2-4-6, 2-5, 2-5, 1-3-5|U+28|
-|Up arrow| ↑| $<33o| 1-2-4-6, 1-2-6, 2-5, 2-5, 1-3-5|U+28|
-|Down arrow| ↓| $%33o| 1-2-4-6, 1-4-6, 2-5, 2-5, 1-3-5|U+28|
-|Up/down arrow| ↕| $<[33o| 1-2-4-6, 1-2-6, 2-4-6, 2-5, 2-5, 1-3-5|U+28|
-|Right over left arrow| ⇄| $33o$[33| 1-2-4-6, 2-5, 2-5, 1-3-5, 1-2-4-6, 2-4-6, 2-5, 2-5|U+28|
-|Left over right arrow| ⇆| $[33$33o| 1-2-4-6, 2-4-6, 2-5, 2-5, 1-2-4-6, 2-5, 2-5, 1-3-5|U+28|
+|Equals| =| ⠨⠅| 4-6, 1-3|U+2828, U+2805|
+|Not equal to| ≠| ⠌⠨⠅| 3-4, 4-6, 1-3|U+280C, U+2828, U+2805|
+|Approximately equal| ≈| ⠈⠱⠨⠅| 4, 1-5-6, 4-6, 1-3|U+2808, U+2831, U+2828, U+2805|
+|Similar| ~| ⠈⠱| 4, 1-5-6||U+2808, U+2831|
+|Greater than| >| ⠨⠂| 4-6, 2|U+2828, U+2802|
+|Greater than or equal to| ≥| ⠨⠂⠱| 4-6, 2, 1-5-6|U+2828, U+2802, U+2831|
+|Less than| <| ⠐⠅| 5, 1-3|U+2810, U+2805|
+|Less than or equal to| ≤| ⠐⠅⠱| 5, 1-3, 1-5-6|U+2810, U+2805, U+2831|
+|Proportion| ::| ⠰⠆ |5-6, 2-3|U+2830, U+2806|
+|Ratio| :| ⠐⠂| 5, 2|U+2810, U+2802|
+|Arc| ∩| ⠫⠁| 1-2-4-6, 1|U+282B, U+2801|
+|Inclusion| ⊂| ⠸⠐⠅| 4-5-6, 5, 1-3|U+2838, U+2810, U+2805|
+|Intersection| ∩| ⠨⠩| 4-6, 1-4-6|U+2828, U+2829|
+|Membership (element)| ∈| ⠈⠑| 4, 1-5|U+2808, U+2811|
+|Parallel| ∥| ⠫⠇| 1-2-4-6, 1-2-3|U+282B, U+2807|
+|Perpendicular| ⊥| ⠫⠏| 1-2-4-6, 1-2-3-4|U+282B, U+280F|
+|Tilde| ~| ⠈⠱| 4, 1-5-6|U+2808, U+2831|
+|Vertical bar| | ⠳ |1-2-5-6|U+2833|
+|Left arrow| ←| ⠫⠪⠒⠒| 1-2-4-6, 2-4-6, 2-5, 2-5|U+282B, U+282A, U+2812, U+2812|
+|Right arrow, contracted| →| ⠫⠕| 1-2-4-6, 1-3-5|U+282B, U+2815|
+|Right arrow, uncontracted| →| ⠫⠒⠒⠕| 1-2-4-6, 2-5, 2-5, 1-3-5|U+282B, U+2812, U+2812, U+2815|
+|Left/right arrow| ↔ | ⠫⠪⠒⠒⠕| 1-2-4-6, 2-4-6, 2-5, 2-5, 1-3-5|U+282B, U+282A, U+2812, U+2812, U+2815|
+|Up arrow| ↑| ⠫⠣⠒⠒⠕| 1-2-4-6, 1-2-6, 2-5, 2-5, 1-3-5|U+282B, U+2823, U+2812, U+2812, U+2815 |
+|Down arrow| ↓| ⠫⠩⠒⠒⠕| 1-2-4-6, 1-4-6, 2-5, 2-5, 1-3-5|U+282B, U+2829, U+2812, U+2812, U+2815|
+|Up/down arrow| ↕| ⠫⠣⠪⠒⠒⠕| 1-2-4-6, 1-2-6, 2-4-6, 2-5, 2-5, 1-3-5|U+282B, U+2823, U+282A, U+2812, U+2812, U+2815|
+|Right over left arrow| ⇄| ⠫⠒⠒⠕⠫⠪⠒⠒| 1-2-4-6, 2-5, 2-5, 1-3-5, 1-2-4-6, 2-4-6, 2-5, 2-5|U+282B, U+2812, U+2812, U+2815, U+282B, U+282A, U+2812, U+2812|
+|Left over right arrow| ⇆| ⠫⠪⠒⠒⠫⠒⠒⠕| 1-2-4-6, 2-4-6, 2-5, 2-5, 1-2-4-6, 2-5, 2-5, 1-3-5|U+282B, U+282A, U+2812, U+2812, U+282B, U+2812, U+2812, U+2815|
 
 ## 4. Grouping Symbols
 |Name| Print Symbol |Braille Symbol| Braille Dot Numbers| Unicode|
 |---|---|---|---|---|
-|Opening Parenthesis| (| (| 1-2-3-5-6|U+28|
-|Closing Parenthesis| )| )| 2-3-4-5-6|U+28|
-|Opening Square Bracket| [| `(| 4, 1-2-3-5-6|U+28|
-|Closing Square Bracket| ]| `)| 4, 2-3-4-5-6|U+28|
-|Opening Brace| {| .(| 4-6, 1-2-3-5-6|U+28|
-|Closing Brace| }| .)| 4-6, 2-3-4-5-6|U+28|
-|Opening Angle Bracket| <| ..( |4-6, 4-6, 1-2-3-5-6|U+28|
-|Closing Angle Bracket| >| ..) |4-6, 4-6, 2-3-4-5-6|U+28|
-|Vertical Bar | | \ |1-2-5-6||
+|Opening Parenthesis| (| ⠷| 1-2-3-5-6|U+2837|
+|Closing Parenthesis| )| ⠾| 2-3-4-5-6|U+283E|
+|Opening Square Bracket| [| ⠈⠷| 4, 1-2-3-5-6|U+2808, U+2837|
+|Closing Square Bracket| ]| ⠈⠾| 4, 2-3-4-5-6|U+2808, U+283E|
+|Opening Brace| {| ⠨⠷| 4-6, 1-2-3-5-6|U+28, U+2837|
+|Closing Brace| }| ⠨⠾| 4-6, 2-3-4-5-6|U+28, U+283E|
+|Opening Angle Bracket| <| ⠨⠨⠷ |4-6, 4-6, 1-2-3-5-6|U+2828, U+2828, U+2837|
+|Closing Angle Bracket| >| ⠨⠨⠾ |4-6, 4-6, 2-3-4-5-6|U+2828, U+2828, U+283E|
+|Vertical Bar | | ⠳ |1-2-5-6| U+2833 |
 
 ## 5. Fractions and Fraction Indicators
 A simple fraction is a single numerator over a single denominator. A mixed number is a whole number combined with a simple fraction. 
 |Name| Braille Symbol| Braille Dot Numbers| Unicode|
 |---|---|---|---|
-|Opening simple fraction indicator| ?| 1-4-5-6|U+28|
-|Closing simple fraction indicator| #| 3-4-5-6|U+28|
-|Opening mixed number indicator| _?| 4-5-6, 1-4-5-6|U+28|
-Closing mixed number indicator| _#| 4-5-6, 3-4-5-6|U+28|
-Opening complex fraction indicator| ,?| 6, 1-4-5-6|U+28|
-Closing complex fraction indicator| ,#| 6, 3-4-5-6|U+28|
-Simple horizontal fraction line| /| 3-4|U+28|
-Complex horizontal fraction line| ,/| 6, 3-4|U+28|
-Diagonal fraction line| _/| 4-5-6, 3-4|U+28|
+|Opening simple fraction indicator| ⠹| 1-4-5-6|U+2839|
+|Closing simple fraction indicator| ⠼| 3-4-5-6|U+283C|
+|Opening mixed number indicator| ⠸⠹| 4-5-6, 1-4-5-6|U+2838, U+2839|
+Closing mixed number indicator| ⠸⠼| 4-5-6, 3-4-5-6|U+2838, U+283C|
+Opening complex fraction indicator| ⠠⠹| 6, 1-4-5-6|U+2820, U+2839|
+Closing complex fraction indicator| ⠠⠼| 6, 3-4-5-6|U+2820,U+283C|
+Simple horizontal fraction line| ⠌| 3-4|U+280C|
+Complex horizontal fraction line| ⠠⠌| 6, 3-4|U+2820, U+280C|
+Diagonal fraction line| ⠸⠌| 4-5-6, 3-4|U+2838, U+280C|
 
 ## 6. Superscripts and Subscripts
 |Name| Braille Symbol| Braille Dot Numbers|Unicode|
 |---|---|---|---|
-|Baseline indicator| "| 5|U+28|
-|Superscript| ^| 4-5|U+28|
-|Superscript with superscript| ^^| 4-5, 4-5|U+28|
-|Superscript with superscript with superscript| ^^^| 4-5, 4-5, 4-5|U+28|
-|Subscript| ;| 5-6|U+28|
-|Subscript with subscript| ;; |5-6, 5-6|U+28|
-|Subscript with subscript with subscript| ;;;| 5-6, 5-6, 5-6|U+28|
-|Superscript with subscript| ^;| 4-5, 5-6|U+28|
-|Superscript with subscript with subscript| ^;; |4-5, 5-6, 5-6|U+28|
-|Superscript with subscript with superscript| ^;^| 4-5, 5-6, 4-5|U+28|
-|Superscript with superscript with subscript| ^^;| 4-5, 4-5, 5-6|U+28|
-|Subscript with superscript| ;^ |5-6, 4-5|U+28|
-|Subscript with superscript with superscript| ;^^| 5-6, 4-5, 4-5|U+28|
-|Subscript with superscript with subscript| ;^;| 5-6, 4-5, 5-6|U+28|
-|Subscript with subscript with superscript| ;;^| 5-6, 5-6, 4-5|U+28|
+|Baseline indicator| ⠐| 5|U+2810|
+|Superscript| ⠘| 4-5|U+2818|
+|Superscript with superscript| ⠘⠘| 4-5, 4-5|U+2818, U+2818|
+|Superscript with superscript with superscript| ⠘⠘⠘| 4-5, 4-5, 4-5|U+2818, U+2818, U+2818|
+|Subscript| ⠰| 5-6|U+2830|
+|Subscript with subscript| ⠰⠰ |5-6, 5-6|U+2830, U+2830|
+|Subscript with subscript with subscript| ⠰⠰⠰| 5-6, 5-6, 5-6|U+2830, U+2830, U+2830|
+|Superscript with subscript| ⠘⠰| 4-5, 5-6|U+2818, U+2830|
+|Superscript with subscript with subscript| ⠘⠰⠰ |4-5, 5-6, 5-6|U+2818, U+2830, U+2830|
+|Superscript with subscript with superscript| ⠘⠰⠘| 4-5, 5-6, 4-5|U+2818, U+2830, U+2818|
+|Superscript with superscript with subscript| ⠘⠘⠰| 4-5, 4-5, 5-6|U+2818, U+2818, U+2830|
+|Subscript with superscript| ⠰⠘ |5-6, 4-5|U+2830, U+2818|
+|Subscript with superscript with superscript| ⠰⠘⠘| 5-6, 4-5, 4-5|U+2830, U+2818, U+2818|
+|Subscript with superscript with subscript| ⠰⠘⠰| 5-6, 4-5, 5-6|U+2830, U+2818, U+2830|
+|Subscript with subscript with superscript| ⠰⠰⠘| 5-6, 5-6, 4-5|U+2830, U+2830, U+2818|
 
 ## 7. Square Roots and Radical Indicators
 The radical is the square root symbol that houses the radicand, or number whose root is being taken. The index is the number that tells you which root to find. 
-|Name| Print Symbol| Braille Symbol| Braille Dot Numbers| Unicode|
-|---|---|---|---|---|
-|Radical (square root) sign| >| |3-4-5|U+28|
-|Index-of-radical indicator| <|| 1-2-6|U+28|
-|First inner radical| .| |4-6|U+28|
-|Second inner radical| ..| |4-6, 4-6|U+28|
-|Third inner radical| ...| |4-6, 4-6, 4-6|U+28|
-|Termination indicator| ] ||1-2-4-5-6|U+28|
+|Name| Braille Symbol| Braille Dot Numbers| Unicode|
+|---|---|---|---|
+|Radical (square root) sign| ⠜| 3-4-5|U+281C|
+|Index-of-radical indicator| ⠣|1-2-6|  U+2823|
+|First inner radical|  ⠨|4-6|U+2828|
+|Second inner radical| ⠨⠨ |4-6, 4-6|U+2828, U+2828|
+|Third inner radical| ⠨⠨⠨ |4-6, 4-6, 4-6|U+2828, U+2828, U+2828|
+|Termination indicator| ⠻ |1-2-4-5-6|U+283B|
 
 ## 8. Shape Symbols
 |Name| Print Symbol| Braille Symbol| Braille Dot Numbers| Unicode|
 |---|---|---|---|---|
-|Angle| ∠  ||1-2-4-6, 2-4-6|U+28|
-|Arc| ∩| $a| 1-2-4-6, 1|U+28|
-|Right arrow| →| $o or$33o| 1-2-4-6, 1-3-5 or 1-2-4-6, 2-5, 2-5, 1-3-5|U+28|
-|Left arrow| ←| $[33| 1-2-4-6, 2-4-6, 2-5, 2-5|U+28|
-|Up arrow| ↑| $<33o| 1-2-4-6, 1-2-6, 2-5, 2-5, 1-3-5|U+28|
-|Down arrow| ↓| $%33o| 1-2-4-6, 1-4-6, 2-5, 2-5, 1-3-5|U+28|
-|Circle| |$c| 1-2-4-6, 1-4|U+28|
-|Diamond| |$d| 1-2-4-6, 1-4-5|U+28|
-|Ellipse| |$e| 1-2-4-6, 1-5|U+28|
-|Hexagon (regular)| |$6| 1-2-4-6, 2-3-5|U+28|
-|Parallel| ∥| $l| 1-2-4-6, 1-2-3|U+28|
-|Perpendicular| ⊥| $p| 1-2-4-6, 1-2-3-4|U+28|
-|Parallelogram| $g| 1-2-4-6, 1-2-4-5|U+28|
-|Pentagon (regular)|| $5| 1-2-4-6, 2-6|U+28|
-|Quadrilateral| |$q| 1-2-4-6, 1-2-3-4-5|U+28|
-|Rectangle| |$r| 1-2-4-6, 1-2-3-5|U+28|
-|Rhombus|| $h| 1-2-4-6, 1-2-5|U+28|
-|Square|| $4| 1-2-4-6, 2-5-6|U+28|
-|Star|| $s| 1-2-4-6, 2-3-4|U+28|
-|Trapezoid|| $z 1-2-4-6, 1-3-5-6|U+28|
-|Triangle (equilateral)|| $t| 1-2-4-6, 2-3-4-5|U+28|
+|Angle| ∠  | ⠫⠪ |1-2-4-6, 2-4-6|U+282B, U+282A|
+|Arc| ∩| ⠫⠁ | 1-2-4-6, 1|U+282B, U+2801|
+|Right arrow| →| ⠫⠕ or ⠫⠒⠒⠕| 1-2-4-6, 1-3-5 or 1-2-4-6, 2-5, 2-5, 1-3-5|U+282B, U+2815 or U+282B, U+2812, U+2812, U+2815|
+|Left arrow| ←| ⠫⠪⠒⠒| 1-2-4-6, 2-4-6, 2-5, 2-5|U+282B, U+282A, U+2812, U+2812|
+|Up arrow| ↑| ⠫⠣⠒⠒⠕| 1-2-4-6, 1-2-6, 2-5, 2-5, 1-3-5|U+282B, U+2823, U+2812, U+2812, U+2815|
+|Down arrow| ↓| ⠫⠩⠒⠒⠕| 1-2-4-6, 1-4-6, 2-5, 2-5, 1-3-5|U+282B, U+2829, U+2812, U+2812, U+2815|
+|Circle| | ⠫⠉ | 1-2-4-6, 1-4|U+282B, U+2809, U+2809|
+|Diamond| | ⠫⠙ | 1-2-4-6, 1-4-5|U+282B, U+2819|
+|Ellipse| | ⠫⠑ | 1-2-4-6, 1-5|U+282B, U+2811|
+|Hexagon (regular)| | ⠫⠖ | 1-2-4-6, 2-3-5|U+282B, U+2816|
+|Parallel| ∥| ⠫⠇ | 1-2-4-6, 1-2-3|U+282B, U+2807|
+|Perpendicular| ⊥| ⠫⠏ | 1-2-4-6, 1-2-3-4|U+282B, U+280F|
+|Parallelogram|a|  ⠫⠛ | 1-2-4-6, 1-2-4-5|U+282B, U+281B|
+|Pentagon (regular)|| ⠫⠢ | 1-2-4-6, 2-6|U+282B, U+2822|
+|Quadrilateral| |⠫⠟ | 1-2-4-6, 1-2-3-4-5|U+282B, U+281F|
+|Rectangle| |⠫⠗ | 1-2-4-6, 1-2-3-5|U+282B, U+2817|
+|Rhombus|| ⠫⠓ | 1-2-4-6, 1-2-5|U+282B, U+2813|
+|Square|| ⠫⠲ | 1-2-4-6, 2-5-6|U+282B, U+2832|
+|Star|| ⠫⠎ | 1-2-4-6, 2-3-4|U+282B, U+280E|
+|Trapezoid|a | ⠫⠵ | 1-2-4-6, 1-3-5-6|U+282B, U+2835|
+|Triangle (equilateral)| a| ⠫⠞ | 1-2-4-6, 2-3-4-5|U+282B, U+281E|
 
 ## 8. Modifiers
 Modifiers are symbols (like lines, arcs, arrows, carets, etc.) that are printed above or below a related symbol or mathematical expression. Modified expressions are brailled in the following order, without spaces:
@@ -171,47 +171,47 @@ symbol is printed above or below the expression being modified)
 
 |Name| Braille Symbol| Braille Dot Numbers| Unicode|
 |---|---|---|---|
-|Multipurpose indicator| "| 5|U+28|
-|Directly-over indicator| <| 1-2-6|U+28|
-|Directly-under indicator| % |1-4-6|U+28|
-|Termination indicator| ] |1-2-4-5-6|U+28|
+|Multipurpose indicator| ⠐ | 5|U+2810|
+|Directly-over indicator| ⠣ | 1-2-6|U+2823|
+|Directly-under indicator| ⠩ |1-4-6|U+2829|
+|Termination indicator| ⠻ |1-2-4-5-6|U+283B|
 
 ## 9. Miscellaneous Symbols
 |Name| Print Symbol| Braille Symbol| Braille Dot Numbers| Unicode|
 |---|---|---|---|---|
-|Cent| ¢| `c| 4, 1-4|U+28|
-|Dollar| $| `s| 4, 2-3-4|U+28|
-|Degree| °| ^.*| 4-5, 4-6, 1-6|U+28|
-|Percent| %| `0| 4, 3-5-6|U+28|
-|Prime| ‘| '| 3|U+28|
-|Caret| ^| _<| 4-5-6, 1-2-6|U+28|
-|Null set| ∅| _0| 4-5-6, 3-5-6|U+28|
-|Factorial| !| &| 1-2-3-4-6|U+28|
-|Infinity| ∞| ,= 6,| 1-2-3-4-5-6|U+28|
-|Integral| ∫| !| 2-3-4-6|U+28|
-|At sign| @| `a| 4, 1|U+28|
-|Checkmark| | `>| 4, 3-4-5|U+28|
-|Ditto mark| “| ,'| 6, 3|U+28|
-|Therefore| ∴| ,*| 6, 1-6|U+28|
-|Tally mark || _ |4-5-6|U+28|
+|Cent| ¢| ⠈⠉ | 4, 1-4|U+2808, U+2809|
+|Dollar| $| ⠈⠎ | 4, 2-3-4|U+2808, U+280E|
+|Degree| °| ⠘⠨⠡ | 4-5, 4-6, 1-6|U+2818, U+2828, U+2821|
+|Percent| %| ⠈⠴ | 4, 3-5-6|U+2808, U+2834|
+|Prime| ‘| ⠄ | 3|U+2804|
+|Caret| ^| ⠸⠣ | 4-5-6, 1-2-6|U+2838, U+2823|
+|Null set| ∅| ⠸⠴ | 4-5-6, 3-5-6|U+2838, U+2834|
+|Factorial| !| ⠯ | 1-2-3-4-6|U+282F|
+|Infinity| ∞| ⠿ | 1-2-3-4-5-6|U+283F|
+|Integral| ∫| ⠮ | 2-3-4-6|U+282E|
+|At sign| @| ⠈⠁ | 4, 1|U+2808, U+2801|
+|Checkmark| | ⠈⠜ | 4, 3-4-5|U+2808, U+281C|
+|Ditto mark| “| ⠠⠄ | 6, 3|U+2820, U+2804|
+|Therefore| ∴| ⠠⠡ | 6, 1-6|U+2820, U+2821|
+|Tally mark || ⠸ |4-5-6|U+2838|
 
 ## 10. Function Names and Abbreviations
 The function abbreviation is always followed by a blank space. Usually, a space does not precede the function abbreviation unless it comes at the beginning of a mathematical expression.
 |Name| Abbreviation| Braille Symbol| Braille Dot Numbers|Unicode|
 |---|---|---|---|---|
-|Arc| arc| arc| 1, 1-2-3-5, 1-4|U+28|
-|Cosine| cos| cos| 1-4, 1-3-5, 2-3-4|U+28|
-|Cosecant| csc| csc| 1-4, 2-3-4, 1-4|U+28|
-|Cotangent| cot| cot| 1-4, 1-3-5, 2-3-4-5|U+28|
-|Determinant| det| det| 1-4-5, 1-5, 2-3-4-5|U+28|
-|Limit| lim| lim| 1-2-3, 2-4, 1-3-4|U+28|
-|Natural logarithm| ln| ln| 1-2-3, 1-3-4-5|U+28|
-|Logarithm| log| log| 1-2-3, 1-3-5, 1-2-4-5|U+28|
-|Maximum| max| max| 1-3-4, 1, 1-3-4-6|U+28|
-|Minimum| min| min| 1-3-4, 2-4, 1-3-4-5|U+28|
-|Secant| sec| sec| 2-3-4, 1-5, 1-4|U+28|
-|Sine| sin| sin| 2-3-4, 2-4, 1-3-4-5|U+28|
-|Tangent| tan| tan| 2-3-4-5, 1, 1-3-4-5|U+28|
+|Arc| arc| ⠈⠗ | 1, 1-2-3-5, 1-4|U+2801, U+2817, U+2809|
+|Cosine| cos| ⠉⠕⠎ | 1-4, 1-3-5, 2-3-4|U+2809, U+2815, U+280E|
+|Cosecant| csc| ⠉⠎⠉ | 1-4, 2-3-4, 1-4|U+2809, U+280E, U+2809|
+|Cotangent| cot| ⠉⠕⠞ | 1-4, 1-3-5, 2-3-4-5|U+2809, U+2815, U+281E|
+|Determinant| det| ⠙⠑⠞ | 1-4-5, 1-5, 2-3-4-5|U+28, U+2811, U+281E|
+|Limit| lim| ⠇⠊⠍ | 1-2-3, 2-4, 1-3-4|U+2807, U+280A, U+280D|
+|Natural logarithm| ln| ⠇⠝ | 1-2-3, 1-3-4-5|U+2807, U+281D|
+|Logarithm| log| ⠇⠕⠛ | 1-2-3, 1-3-5, 1-2-4-5|U+2807, U+2815, U+281B|
+|Maximum| max| ⠍⠁⠭ | 1-3-4, 1, 1-3-4-6|U+280D, U+2801, U+282D|
+|Minimum| min| ⠍⠊⠝ | 1-3-4, 2-4, 1-3-4-5|U+280D, U+280A, U+281D|
+|Secant| sec| ⠎⠑⠉ | 2-3-4, 1-5, 1-4|U+280E, U+2811, U+2809|
+|Sine| sin| ⠎⠊⠝ | 2-3-4, 2-4, 1-3-4-5|U+280E, U+280A, U+281D|
+|Tangent| tan| ⠞⠁⠝ | 2-3-4-5, 1, 1-3-4-5|U+281E, U+2801, U+281D|
 
 
 ## 11. Greek Letters
@@ -219,32 +219,32 @@ The Greek letter indicator is dots 46. All letters in the following table are lo
 letter indicator.
 |Name| Print Symbol| Braille Symbol| Braille Dot Numbers|Unicode|
 |---|---|---|---|---|
-|Alpha| Α |.a| 4-6, 1|U+28|
-|Beta |Β |.b| 4-6, 1-2|U+28|
-|Gamma| Γ| .g| 4-6, 1-2-4-5|U+28|
-|Delta| δ (Δ)| .d .,d| 4-6, 1-4-5 (4-6, 6, 1-4-5)|U+28|
-|Epsilon| Ε| .e |4-6, 1-5|U+28|
-|Zeta| Ζ |.z| 4-6, 1-3-5-6|U+28|
-|Theta| Θ| .? |4-6, 1-4-5-6|U+28|
-|Lambda| Λ| .l| 4-6, 1-2-3|U+28|
-|Mu| Μ| .m| 4-6, 1-3-4|U+28|
-|Nu| Ν| .n| 4-6, 1-3-4-5|U+28|
-|Pi| Π| .p| 4-6, 1-2-3-4|U+28|
-|Sigma| σ (Σ)| .s .,s| 4-6, 2-3-4 (4-6, 6, 2-3-4)|U+28|
-|Tau| τ| .t| 4-6, 2-3-4-5|U+28|
-|Chi| χ| .& |4-6, 1-2-3-4-6|U+28|
-|Omega| ω |.w k,w| 4-6, 2-4-5-6 (4-6, 6,2-4-5-6)|U+28|
+|Alpha| Α | ⠨⠁ | 4-6, 1|U+2828, U+2801|
+|Beta |Β | ⠨⠃ | 4-6, 1-2|U+2828, U+2803|
+|Gamma| Γ| ⠨⠛ | 4-6, 1-2-4-5|U+2828, U+281B|
+|Delta| δ (Δ)| ⠨⠙ or ⠨⠠⠙ | 4-6, 1-4-5 (4-6, 6, 1-4-5)|U+2828, U+2819 (U+2828, U+2820, U+2819)|
+|Epsilon| Ε| ⠨⠑  |4-6, 1-5|U+2828, U+2811|
+|Zeta| Ζ |⠨⠵ | 4-6, 1-3-5-6|U+2828, U+2835|
+|Theta| Θ| ⠨⠹ |4-6, 1-4-5-6|U+2828, U+2839|
+|Lambda| Λ| ⠨⠇ | 4-6, 1-2-3|U+2828, U+2807|
+|Mu| Μ| ⠨⠍ | 4-6, 1-3-4|U+2828, U+280D|
+|Nu| Ν| ⠨⠝ | 4-6, 1-3-4-5|U+2828, U+281D|
+|Pi| Π| ⠨⠏ | 4-6, 1-2-3-4|U+2828, U+280F|
+|Sigma| σ (Σ)| ⠨⠎ or ⠨⠠⠎ | 4-6, 2-3-4 (4-6, 6, 2-3-4)|U+2828, U+280E (U+2828, U+2820, U+280E)|
+|Tau| τ| ⠨⠞ | 4-6, 2-3-4-5|U+2828, U+281E|
+|Chi| χ| ⠨⠯ |4-6, 1-2-3-4-6|U+2828, U+282F|
+|Omega| ω | ⠨⠺ or ⠨⠠⠺ | 4-6, 2-4-5-6 (4-6, 6,2-4-5-6)|U+2828, U+283A, (U+2828, U+2820, U+283A)|
 
 ## 12. Typeforms
 When adding a boldface or italic indicator to a single letter in Nemeth, remember to include a grade 1 indicator (dots 56) after the indicator. An opening boldface or italic indicator that is used for a word, phrase, or statement is preceded and followed by a blank space, and the closing indicator is likewise preceded and followed by a blank space.
 |Name| Braille Symbol| Braille Dot Numbers|Unicode|
 |---|---|---|---|
-|Boldface (single letter)| _ |4-5-6|U+28|
-|Italic (single letter)| .| 4-6|U+28|
-|Opening Boldface (words,phrases, and statements)| ,'_| 6, 3, 4-5-6|U+28|
-|Closing Boldface (words, phrases, and statements)| _,'| 4-5-6, 6, 3|U+28|
-|Opening Italic (words, phrases, and statements)| ,'. |6, 3, 4-6|U+28|
-|Closing Italic (words, phrases, and statements)| .,'| 4-6, 6, 3|U+28|
+|Boldface (single letter)| ⠸ |4-5-6|U+2838|
+|Italic (single letter)| ⠨| 4-6|U+2828|
+|Opening Boldface (words,phrases, and statements)| ⠠⠄⠸| 6, 3, 4-5-6|U+2820, U+2804, U+2838|
+|Closing Boldface (words, phrases, and statements)| ⠸⠠⠄ | 4-5-6, 6, 3|U+2838, U+2820, U+2804|
+|Opening Italic (words, phrases, and statements)| ⠠⠄⠨ |6, 3, 4-6|U+2820, U+2804, U+2828|
+|Closing Italic (words, phrases, and statements)| ⠨⠠⠄ | 4-6, 6, 3|U+2828, U+2820, U+2804|
 
 ## 13. Latin Letters (lower‑case and upper‑case)
 
@@ -278,7 +278,6 @@ When adding a boldface or italic indicator to a single letter in Nemeth, remembe
 | z | ⠵ |1‑3‑5‑6 | U+2835 |
 
 > The **capital‑indicator** (dot 6) is placed **before** the letter cell.  
-
 
 ## 14. Numbers
 | Print | Braille Symbol | Braille Dot Numbers | Unicode |
