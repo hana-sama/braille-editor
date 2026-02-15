@@ -43,12 +43,12 @@ export class UEBGrade1Mode extends BrailleMode {
   private sequenceMap: Record<string, string> = {};
   private sequenceResolvers: SequenceResolver[] = [];
 
-  constructor() {
+  constructor(config?: Partial<{ name: string; id: string; description: string; language: string }>) {
     super({
-      name: "UEB Grade 1",
-      id: "ueb1",
-      description: "Unified English Braille Grade 1 (uncontracted)",
-      language: "en"
+      name: config?.name ?? "UEB Grade 1",
+      id: config?.id ?? "ueb1",
+      description: config?.description ?? "Unified English Braille Grade 1 (uncontracted)",
+      language: config?.language ?? "en"
     });
 
     this.indicatorCodes = {
@@ -296,7 +296,8 @@ export class UEBGrade1Mode extends BrailleMode {
     const byPrefix = new Map<BrailleCode, Array<{ name: string; indicator: Indicator }>>();
     
     for (const [name, indicator] of Object.entries(this.indicators)) {
-      if (indicator.codes.length === 0) continue;
+      // Only include multi-cell indicators (2+ codes) in the sequence resolvers
+      if (indicator.codes.length < 2) continue;
       const prefix = indicator.codes[0];
       if (!byPrefix.has(prefix)) {
         byPrefix.set(prefix, []);

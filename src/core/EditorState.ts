@@ -142,8 +142,18 @@ export class EditorState {
         context
       );
       
+      // Check if a longer sequence could still form
+      const maxDepth = this.mode.getMaxSequenceDepth();
+      const canContinue = this.mode.isPartialSequenceValid(this.sequenceState.pendingCodes);
+      
       if (result) {
-        // Sequence resolved successfully
+        // If we could still extend to a longer match, defer resolution
+        if (canContinue && this.sequenceState.depth < maxDepth) {
+          this.resetDots();
+          return { braille, text: "", indicator: null, pending: true };
+        }
+        
+        // Sequence resolved and cannot extend further — commit
         indicator = result;
         text = result.text;
         
@@ -161,15 +171,39 @@ export class EditorState {
         return { braille, text, indicator };
       }
       
-      // Check if we can continue collecting or need to flush
-      const maxDepth = this.mode.getMaxSequenceDepth();
-      const canContinue = this.mode.isPartialSequenceValid(this.sequenceState.pendingCodes);
-      
       if (!canContinue || this.sequenceState.depth >= maxDepth) {
-        // Flush: process all pending codes as single codes
-        this._flushPendingCodes();
-        // Then process current code
-        this._processSingleCode(code);
+        // Try to resolve the best (longest) sub-sequence
+        const pending = [...this.sequenceState.pendingCodes];
+        this._resetSequenceState();
+        
+        let resolved = false;
+        // Try progressively shorter sub-sequences (longest first)
+        for (let len = pending.length - 1; len >= 2; len--) {
+          const subCodes = pending.slice(0, len);
+          const subResult = this.mode.resolveMultiCellSequence(subCodes, context);
+          if (subResult) {
+            // Sub-sequence matched — commit it
+            const brailleStr = subCodes.map(c => this.mode.codeToBraille(c)).join("");
+            this.brailleContent += brailleStr;
+            this.textContent += subResult.text;
+            this.modeState = this.mode.applyIndicator(this.modeState, subResult.name);
+            
+            // Process remaining codes as single codes
+            for (let i = len; i < pending.length; i++) {
+              this._processSingleCode(pending[i]);
+            }
+            resolved = true;
+            break;
+          }
+        }
+        
+        if (!resolved) {
+          // No sub-sequence matched — process all as single codes
+          for (const c of pending) {
+            this._processSingleCode(c);
+          }
+        }
+        
         this.resetDots();
         return { braille, text: this.textContent.slice(-1), indicator: null };
       }
@@ -242,13 +276,6 @@ export class EditorState {
     };
   }
   
-  /** Flush pending codes as single codes. */
-  private _flushPendingCodes(): void {
-    for (const code of this.sequenceState.pendingCodes) {
-      this._processSingleCode(code);
-    }
-    this._resetSequenceState();
-  }
 
   /** Process a single braille code. */
   private _processSingleCode(code: BrailleCode): void {

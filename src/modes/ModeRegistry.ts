@@ -34,7 +34,7 @@ export class ModeRegistry {
       throw new Error("Invalid mode: must have id and name");
     }
     if (this.modes.has(mode.id)) {
-      throw new Error(`Mode already registered: ${mode.id}`);
+      return; // Already registered (e.g. Vite HMR reload)
     }
     this.modes.set(mode.id, mode);
     console.log(`[ModeRegistry] Registered mode: ${mode.name} (${mode.id})`);
@@ -213,6 +213,11 @@ export class ModeRegistry {
 
   /** Register a mode with a category. */
   registerModeWithCategory(mode: BrailleMode, categoryId: string): void {
+    // Skip entirely if already registered (e.g. HMR reload)
+    if (this.modes.has(mode.id)) {
+      return;
+    }
+
     // Register the mode first
     this.register(mode);
 

@@ -62,7 +62,11 @@ export class UEBGrade2Mode extends UEBGrade1Mode {
   private grade1Mode: boolean = false;
 
   constructor() {
-    super();
+    super({
+      name: "UEB Grade 2",
+      id: "ueb2",
+      description: "Unified English Braille Grade 2 (contracted)"
+    });
 
     this._initContractionResolvers();
   }

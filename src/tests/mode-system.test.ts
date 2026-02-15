@@ -243,9 +243,8 @@ describe("Multi-Cell EditorState Integration", () => {
   });
 
   it("should detect pending indicator via sequence state", () => {
-    // Start a sequence
+    // Start a sequence: dot 6 only = 0x20 = capital sign ⠠
     state.addDot(6 as 1|2|3|4|5|6);
-    state.addDot(3 as 1|2|3|4|5|6);
     const result = state.confirmChar();
     
     // Should be pending after capital sign
@@ -255,26 +254,29 @@ describe("Multi-Cell EditorState Integration", () => {
   });
 
   it("should resolve 2-cell sequence", () => {
-    // Add capital sign ⠠ = 0x20
+    // Add capital sign ⠠ = 0x20 (dot 6 only)
     state.addDot(6 as 1|2|3|4|5|6);
-    state.addDot(3 as 1|2|3|4|5|6);
     state.confirmChar();
     
     // Add second capital sign ⠠ = 0x20
+    // With deferred resolution, this stays pending (could become 3-cell)
     state.addDot(6 as 1|2|3|4|5|6);
-    state.addDot(3 as 1|2|3|4|5|6);
-    const result = state.confirmChar();
+    const result2 = state.confirmChar();
+    expect(result2.pending).toBe(true);
     
-    // Should resolve to capital word
-    expect(result.indicator).not.toBeNull();
-    expect(result.indicator!.name).toBe("CAPITAL_WORD");
+    // Add a letter 'a' (dot 1 = 0x01) — this triggers deferred 2-cell resolution
+    state.addDot(1 as 1|2|3|4|5|6);
+    state.confirmChar();
+    
+    // The capital word indicator should have been applied, making the letter uppercase
+    expect(state.textContent).toContain("A");
+    expect(state.brailleContent).toContain("⠠⠠");
   });
 
   it("should resolve 3-cell capital passage", () => {
-    // Add three capital signs ⠠⠠⠠ = 0x20, 0x20, 0x20
+    // Add three capital signs ⠠⠠⠠ = 0x20, 0x20, 0x20 (dot 6 only each)
     for (let i = 0; i < 3; i++) {
       state.addDot(6 as 1|2|3|4|5|6);
-      state.addDot(3 as 1|2|3|4|5|6);
       state.confirmChar();
     }
     
@@ -283,9 +285,8 @@ describe("Multi-Cell EditorState Integration", () => {
   });
 
   it("should get pending codes", () => {
-    // Start sequence
+    // Start sequence: dot 6 only = 0x20 = capital sign
     state.addDot(6 as 1|2|3|4|5|6);
-    state.addDot(3 as 1|2|3|4|5|6);
     state.confirmChar();
     
     const pendingCodes = state.getPendingCodes();
@@ -294,9 +295,8 @@ describe("Multi-Cell EditorState Integration", () => {
   });
 
   it("should cancel pending sequence on escape", () => {
-    // Start sequence
+    // Start sequence: dot 6 only = 0x20 = capital sign
     state.addDot(6 as 1|2|3|4|5|6);
-    state.addDot(3 as 1|2|3|4|5|6);
     state.confirmChar();
     
     // Cancel
