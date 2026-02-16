@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "standard": "Unified English Braille (Symbols)",
+    "version": "2024 rules",
+    "source": "BANA/ICEB official"
+  },
+  "symbols":{
+    "operation_and_comparison": {
+    "+":"⠐⠖",
+    "-": "⠐⠤",
+    "x": "⠐⠦",
+    "÷": "⠐⠌",
+    "⋅": "⠐⠙",
+    "=": "⠐⠶",
+    ">": "⠈⠜",
+    "<": "⠈⠣"
+  },
+    "currency_and_measurement": {
+    "$": "⠈⠎",
+    "¢": "⠈⠉",
+    "€": "⠈⠑",
+    "£": "⠈⠇",
+    "¥": "⠈⠽",
+    "“": "⠶",
+    "′": "⠶⠶"
+  },
+    "special_symbols": {
+    "%": "⠨⠴",
+    "°": "⠘⠴",
+    "angle": "⠸⠪",
+    "#": "⠸⠹",
+    "&": "⠈⠯",
+    "©": "⠘⠉",
+    "™": "⠘⠞",
+    "superscript": "⠔",
+    "subscript": "⠢",
+    "•": "⠸⠲",
+    "@": "⠈⠁",
+    "*": "⠐⠔",
+    "dot locator for mention": "⠨⠿"
+  }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "standard": "Unified English Braille (Symbols)",
+    "version": "2024 rules",
+    "source": "BANA/ICEB official"
+  },
+  "numeric_indicator": "⠼", 
+  "capital_indicator": {
+    "capital_letter": "⠠",
+    "capital_word": "⠠⠠",
+    "capital_passage": "⠠⠠⠠",
+    "capital_terminator": "⠠⠄"
+  },
+  "grade1_indicator": {
+    "grade1_symbol": "⠰",
+    "grade1_word": "⠰⠰",
+    "grade1_passage": "⠰⠰⠰",
+    "grade1_terminator": "⠰⠄"
+  },
+  "typeform_indicator": {
+    "italic": {
+      "italic_symbol": "⠨⠆",
+      "italic_word": "⠨⠂",
+      "italic_passage": "⠨⠶",
+      "italic_terminator": "⠨⠄"
+    },
+    "bold": {
+      "bold_symbol": "⠘⠆",
+      "bold_word": "⠘⠂",
+      "bold_passage": "⠘⠶",
+      "bold_terminator": "⠘⠄"
+    },
+    "underline": {
+      "underline_symbol": "⠸⠆",
+      "underline_word": "⠸⠂",
+      "underline_passage": "⠸⠶",
+      "underline_terminator": "⠸⠄"
+    },
+    "script": {
+      "script_symbol": "⠈⠆",
+      "script_word": "⠈⠂",
+      "script_passage": "⠈⠶",
+      "script_terminator": "⠈⠄"
+    }
+  }
+}
