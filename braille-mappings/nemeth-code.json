@@ -1,8 +1,8 @@
 {
   "metadata": {
     "standard": "Nemeth Code",
-    "version": "2024 rules",
-    "source": ""
+    "version": "2022 rules",
+    "source": "BANA"
   },
   "indicators": {
     "Opening Nemeth code": "⠸⠩",
@@ -17,6 +17,7 @@
     "Decimal point": "⠨"
   },
   "signs_of_operation": {
+    "_comments": "Signs of operation are not typically preceded or followed by a blank space. ",
     "+": "⠬",
     "-": "⠤",
     "x": "⠈⠡",
@@ -31,6 +32,7 @@
     "|": "⠳"
   },
   "comparison_symbols": {
+    "_comments": "Comparison symbols are typically preceded and followed by a blank space. ",
     "=": "⠨⠅",
     "≠": "⠌⠨⠅",
     "≈": "⠈⠱⠨⠅",
@@ -43,11 +45,9 @@
     "ratio": "⠐⠂",
     "∩": "⠫⠁",
     "⊂": "⠸⠐⠅",
-    "∩": "⠨⠩",
     "∈": "⠈⠑",
     "∥": "⠫⠇",
     "⊥": "⠫⠏",
-    "~": "⠈⠱",
     "|": "⠳",
     "←": "⠫⠪⠒⠒",
     "→": "⠫⠕",
@@ -59,15 +59,15 @@
     "⇆": "⠫⠪⠒⠒⠫⠒⠒⠕"
   },
   "grouping_symbols": {
-    "Opening Parenthesis": "⠷",
-    "Closing Parenthesis": "⠾",
-    "Opening Square Bracket": "⠈⠷",
-    "Closing Square Bracket": "⠈⠾",
-    "Opening Brace": "⠨⠷",
-    "Closing Brace": "⠨⠾",
-    "Opening Angle Bracket": "⠨⠨⠷",
-    "Closing Angle Bracket": "⠨⠨⠾",
-    "Vertical Bar": "⠳"
+    "(": "⠷",
+    ")": "⠾",
+    "[": "⠈⠷",
+    "]": "⠈⠾",
+    "{": "⠨⠷",
+    "}": "⠨⠾",
+    "<": "⠨⠨⠷",
+    ">": "⠨⠨⠾",
+    "|": "⠳"
   },
   "fractions": {
     "Opening simple fraction indicator": "⠹",
@@ -166,7 +166,7 @@
     "sin": "⠎⠊⠝",
     "tan": "⠞⠁⠝"
   },
-  "Greek letters"':{
+  "Greek letters":{
     "Α": "⠨⠁",
     "Β": "⠨⠃",
     "Γ": "⠨⠛",
