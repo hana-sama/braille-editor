@@ -30,7 +30,7 @@ indicators:
       braille: "⠰"
       unicode: "U+2830"
       dots: "5-6"
-    word: 
+    grade1_word: 
       braille: "⠰⠰"
       unicode: "U+2830 U+2830"
       dots: "5-6, 5-6"

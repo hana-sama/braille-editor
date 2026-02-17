@@ -8,132 +8,106 @@ alphabet:
     braille: "⠁"
     unicode: "U+2801"
     dots: "1"
-    note: "Represents the letter 'a' in UEB Grade 1."
   b: 
     braille: "⠃"
     unicode: "U+2803"
     dots: "1-2"
-    note: "Represents the letter 'b' in UEB Grade 1."
   c: 
     braille: "⠉"
     unicode: "U+2809"
     dots: "1-4"
-    note: "Represents the letter 'c' in UEB Grade 1."
   d: 
     braille: "⠙"
     unicode: "U+2819"
     dots: "1-4-5"
-    note: "Represents the letter 'd' in UEB Grade 1."
   e: 
     braille: "⠑"
     unicode: "U+2811"
     dots: "1-5"
-    note: "Represents the letter 'e' in UEB Grade 1."
   f: 
     braille: "⠋"
     unicode: "U+280B"
     dots: "1-2-4"
-    note: "Represents the letter 'f' in UEB Grade 1."
   g: 
     braille: "⠛"
     unicode: "U+281B"
     dots: "1-2-4-5"
-    note: "Represents the letter 'g' in UEB Grade 1."
   h: 
     braille: "⠓"
     unicode: "U+2813"
     dots: "1-2-5"
-    note: "Represents the letter 'h' in UEB Grade 1."
   i: 
     braille: "⠊"
     unicode: "U+280A"
     dots: "2-4"
-    note: "Represents the letter 'i' in UEB Grade 1."
   j: 
     braille: "⠚"
     unicode: "U+281A"
     dots: "2-4-5"
-    note: "Represents the letter 'j' in UEB Grade 1."
   k: 
     braille: "⠅"
     unicode: "U+2805"
     dots: "1-3"
-    note: "Represents the letter 'k' in UEB Grade 1."
   l: 
     braille: "⠇"
     unicode: "U+2807"
     dots: "1-2-3"
-    note: "Represents the letter 'l' in UEB Grade 1."
   m: 
     braille: "⠍"
     unicode: "U+280D"
     dots: "1-3-4"
-    note: "Represents the letter 'm' in UEB Grade 1."
   n: 
     braille: "⠝"
     unicode: "U+281D"
     dots: "1-3-4-5"
-    note: "Represents the letter 'n' in UEB Grade 1."
   o: 
     braille: "⠕"
     unicode: "U+2815"
     dots: "1-3-5"
-    note: "Represents the letter 'o' in UEB Grade 1."
   p: 
     braille: "⠏"
     unicode: "U+280F"
     dots: "1-2-3-4"
-    note: "Represents the letter 'p' in UEB Grade 1."
   q: 
     braille: "⠟"
     unicode: "U+281F"
     dots: "1-2-3-4-5"
-    note: "Represents the letter 'q' in UEB Grade 1."
   r: 
     braille: "⠗"
     unicode: "U+2817"
     dots: "1-2-3-5"
-    note: "Represents the letter 'r' in UEB Grade 1."
   s: 
     braille: "⠎"
     unicode: "U+280E"
     dots: "2-3-4"
-    note: "Represents the letter 's' in UEB Grade 1."
   t: 
     braille: "⠞"
     unicode: "U+281E"
     dots: "2-3-4-5"
-    note: "Represents the letter 't' in UEB Grade 1."
   u: 
     braille: "⠥"
     unicode: "U+2825"
     dots: "1-3-6"
-    note: "Represents the letter 'u' in UEB Grade 1."
   v: 
     braille: "⠧"
     unicode: "U+2827"
     dots: "1-2-3-6"
-    note: "Represents the letter 'v' in UEB Grade 1."
   w: 
     braille: "⠺"
     unicode: "U+283A"
     dots: "2-4-5-6"
-    note: "Represents the letter 'w' in UEB Grade 1."
   x: 
     braille: "⠭"
     unicode: "U+282D"
     dots: "1-3-4-6"
-    note: "Represents the letter 'x' in UEB Grade 1."
   y: 
     braille: "⠽"
     unicode: "U+283D"
     dots: "1-3-4-5-6"
-    note: "Represents the letter 'y' in UEB Grade 1."  
   z:
     braille: "⠵"
     unicode: "U+2835"
     dots: "1-3-5-6"
-    note: "Represents the letter 'z' in UEB Grade 1."  
 numbers: 
   1:
     braille: "⠁"

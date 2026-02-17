@@ -20,7 +20,7 @@ punctuation:
     print: ":"
     braille: "⠒"
     unicode: "U+2812"
-    dots: "2-4"
+    dots: "2-5"
     note: "Represents a colon in UEB punctuation."
   period:
     print: "."
@@ -49,7 +49,7 @@ punctuation:
   em_dash:
     print: "---" 
     braille: "⠐⠠⠤"
-    unicode: "U+2810, U+2820,U+2854"
+    unicode: "U+2810, U+2820,U+2824"
     dots: "5, 6, 3-6"
     note: "Represents an em dash in UEB punctuation."
   hyphen:
@@ -61,8 +61,8 @@ punctuation:
   apostrophe:
     print: "'"
     braille: "⠄"
-    unicode: "U+2824"
-    dots: "3-6"
+    unicode: "U+2804"
+    dots: "3"
     note: "Represents an apostrophe in UEB punctuation."
   ellipsis:
     print: "…"
@@ -73,13 +73,13 @@ punctuation:
   slash:
     print: "/"
     braille: "⠸⠌"
-    unicode: "U+2839, U+280C"
+    unicode: "U+2838, U+280C"
     dots: "4-5-6, 3-4"
     note: "Represents a forward slash in UEB punctuation."
   backslash:
     print: "\\"
     braille: "⠸⠡"
-    unicode: "U+2839, U+2821"
+    unicode: "U+2838, U+2821"
     dots: "4-5-6, 1-6"
     note: "Represents a backslash in UEB punctuation."
   left_double_quotation_mark:
@@ -267,7 +267,7 @@ symbols:
     print: "&"
     braille: "⠈⠯"
     unicode: "U+2808, U+282F"
-    dots: "4, 1-2-3-6"
+    dots: "4, 1-2-3-4-6"
     note: "Represents an ampersand in UEB symbols."
   copyright_sign:
     print: "©"
