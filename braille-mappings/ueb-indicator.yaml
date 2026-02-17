@@ -1,0 +1,113 @@
+metadata: 
+  standard: "Unified English Braille (Symbols)"
+  version: "2024 rules"
+  source: "BANA/ICEB official"
+indicators:
+  numeric_indicator: 
+  braille: "⠼"
+  unicode: "U+283C"
+  dots: "3-4-5-6"
+  note: "Indicates that the following characters are numbers in UEB."
+  capital: 
+    letter: 
+      braille: "⠠"
+      unicode: "U+2820"
+      dots: "6"
+    word: 
+      braille: "⠠⠠"
+      unicode: "U+2820 U+2820"
+      dots: "6, 6"
+    passage: 
+      braille: "⠠⠠⠠"
+      unicode: "U+2820 U+2820 U+2820"
+      dots: "6, 6, 6"
+    terminator: 
+      braille: "⠠⠄"
+      unicode: "U+2820 U+2804"
+      dots: "6, 3"
+  grade1_indicator:
+    grade1_symbol: 
+      braille: "⠰"
+      unicode: "U+2830"
+      dots: "5-6"
+    word: 
+      braille: "⠰⠰"
+      unicode: "U+2830 U+2830"
+      dots: "5-6, 5-6"
+    grade1_passage: 
+      braille: "⠰⠰⠰"
+      unicode: "U+2830 U+2830 U+2830"
+      dots: "5-6, 5-6, 5-6"
+    grade1_terminator: 
+      braille: "⠰⠄"
+      unicode: "U+2830 U+2804"
+      dots: "5-6, 3"
+  typeform_indicator: 
+    italic: 
+      italic_symbol: 
+        braille: "⠨⠆"
+        unicode: "U+2828, U+2806"
+        dots: "4-6, 2-3"
+      italic_word: 
+        braille: "⠨⠂"
+        unicode: "U+2828 U+2802"
+        dots: "4-6, 2"
+      italic_passage: 
+        braille: "⠨⠶"
+        unicode: "U+2828 U+2836"
+        dots: "4-6, 2-3-5-6"
+      italic_terminator: 
+        braille: "⠨⠄"
+        unicode: "U+2828 U+2804"
+        dots: "4-6, 3"
+    bold: 
+      bold_symbol: 
+        braille: "⠘⠆"
+        unicode: "U+2818 U+2806"
+        dots: "4-5, 2-3"
+      bold_word: 
+        braille: "⠘⠂"
+        unicode: "U+2818 U+2802"
+        dots: "4-5, 2"
+      bold_passage: 
+        braille: "⠘⠶"
+        unicode: "U+2818 U+2836"
+        dots: "4-5, 2-3-5-6"
+      bold_terminator: 
+        braille: "⠘⠄"
+        unicode: "U+2818 U+2804"
+        dots: "4-5, 3"
+    underline: 
+      underline_symbol: 
+        braille: "⠸⠆"
+        unicode: "U+2838 U+2806"
+        dots: "4-5-6, 2-3"
+      underline_word: 
+        braille: "⠸⠂"
+        unicode: "U+2838 U+2802"
+        dots: "4-5-6, 2"
+      underline_passage: 
+        braille: "⠸⠶"
+        unicode: "U+2838 U+2836"
+        dots: "4-5-6, 2-3-5-6"
+      underline_terminator: 
+        braille: "⠸⠄"
+        unicode: "U+2838 U+2804"
+        dots: "4-5-6, 3"
+    script:
+      script_symbol:
+        braille: "⠈⠆"
+        unicode: "U+2808 U+2806"
+        dots: "4, 2-3"
+      script_word: 
+        braille: "⠈⠂"
+        unicode: "U+2808 U+2802"
+        dots: "4, 2"
+      script_passage: 
+        braille: "⠈⠶"
+        unicode: "U+2808 U+2836"
+        dots: "4, 2-3-5-6"
+      script_terminator: 
+        braille: "⠈⠄"
+        unicode: "U+2808 U+2804"
+        dots: "4, 3"

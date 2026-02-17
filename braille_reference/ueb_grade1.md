@@ -79,7 +79,7 @@ The digits themselves reuse the patterns for **A‑J**.
 | ’ (apostrophe) | 3 | ⠄ | U+2804 |
 | – (hyphen) | 3‑6 | ⠤ | U+2824 |
 | “ (left double quote) | 2‑3-6 | ⠦ | U+2820 |
-| “ (right double quote) | 3-5-6 | ⠦ | U+2834 |
+| “ (right double quote) | 3-5-6 | ⠴ | U+2834 |
 | ( (left parenthesis) | 5, 1-2-6 | ⠐⠣ | U+2810, U+2823 |
 | ) (right parenthesis) | 5, 3-4-5 | ⠐⠜ | U+2810, U+281C |
 | ' (left single quote) | 6, 2-3-6 | ⠠⠦ | U+2820, U+2826 |
