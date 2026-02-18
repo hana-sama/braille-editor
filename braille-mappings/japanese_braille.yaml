@@ -234,548 +234,585 @@ voiced_sound:
     braille: "⠐⠳"
     unicode: "U+2810, U+2833"
     dots: "5, 1-2-5-6"
-  ず":
+  ず:
     braille: "⠐⠹"
     unicode: "U+2810, U+2839"
     dots: "5, 1-4-5-6"
-  ぜ":
+  ぜ:
     braille: "⠐⠻"
     unicode: "U+2810, U+283B"
     dots: "5, 1-2-4-5-6"
-  ぞ":
+  ぞ:
     braille: "⠐⠺"
     unicode: "U+2810, U+283A"
     dots: "5, 2-4-5-6"
-  だ":
+  だ:
     braille: "⠐⠕"
     unicode: "U+2810, U+2815"
     dots: "5, 1-3-5"
-  ぢ":
+  ぢ:
     braille: "⠐⠗"
     unicode: "U+2810, U+2817"
     dots: "5, 1-2-3-5"
-  づ":
+  づ:
     braille: "⠐⠝"
     unicode: "U+2810, U+281D"
     dots: "5, 1-3-4-5"
-  で":
+  で:
     braille: "⠐⠟"
     unicode: "U+2810, U+281F"
     dots: "5, 1-2-3-4-5"
-  ど":
+  ど:
     braille: "⠐⠞"
     unicode: "U+2810, U+281E"
     dots: "5, 2-3-4-5"
-  ば":
+  ば:
     braille: "⠐⠥"
     unicode: "U+2810, U+2825"
     dots: "5, 1-3-6"
-  び":
+  び:
     braille: "⠐⠧"
     unicode: "U+2810, U+2827"
     dots: "5, 1-2-3-6"
-  ぶ":
+  ぶ:
     braille: "⠐⠭"
     unicode: "U+2810, U+282D"
     dots: "5, 1-3-4-6"
-  べ":
+  べ:
     braille: "⠐⠯"
     unicode: "U+2810, U+282F"
     dots: "5, 1-2-3-4-6"
-  ぼ":
+  ぼ:
     braille: "⠐⠮"
     unicode: "U+2810, U+282E"
     dots: "5, 2-3-4-6"
-  ぱ":
+  ぱ:
     braille: "⠠⠥"
     unicode: "U+2810, U+2825"
     dots: "6, 1-3-6"
-  ぴ":
+  ぴ:
     braille: "⠠⠧"
     unicode: "U+2820, U+2827"
     dots: "6, 1-2-3-6"
-  ぷ":
+  ぷ:
     braille: "⠠⠭"
     unicode: "U+2820, U+282D"
     dots: "6, 1-3-4-6"
-  ぺ":
+  ぺ:
     braille: "⠠⠯"
     unicode: "U+2820, U+282F"
     dots: "6, 1-2-3-4-6"
-  ぽ":
+  ぽ:
     braille: "⠠⠮"
     unicode: "U+2820, U+282E"
     dots: "6, 2-3-4-6"
   
 contracted_sound:
-  きゃ":
+  きゃ:
     braille: "⠈⠡"
     unicode: "U+2808, U+2821"
     dots: "4, 1-6"
-  きゅ":
+  きゅ:
     braille: "⠈⠩"
     unicode: "U+2808, U+2829"
     dots: "4, 1-4-6"
-  きょ":
+  きょ:
     braille: "⠈⠪"
     unicode: "U+2808, U+282A"
     dots: "4, 2-4-6"
-  しゃ":
+  しゃ:
     braille: "⠈⠱"
     unicode: "U+2808, U+2831"
     dots: "4, 1-5-6"
-  しゅ":
+  しゅ:
     braille: "⠈⠹"
     unicode: "U+2808, U+2839"
     dots: "4, 1-4-5-6 "
-  しょ":
+  しょ:
     braille: "⠈⠺"
     unicode: "U+2808, U+283A"
     dots: "4, 2-4-5-6"
-  ちゃ":
+  ちゃ:
     braille: "⠈⠕"
     unicode: "U+2808, U+2815"
     dots: "4, 1-3-5"
-  ちゅ":
+  ちゅ:
     braille: "⠈⠝"
     unicode: "U+2808, U+281D"
     dots: "4, 1-3-4-5"
-  ちょ":
+  ちょ:
     braille: "⠈⠞"
     unicode: "U+2808, U+281E"
     dots: "4, 2-3-4-5"
-  にゃ":
+  にゃ:
     braille: "⠈⠅"
     unicode: "U+2808, U+2805"
     dots: "4, 1-3"
-  にゅ":
+  にゅ:
     braille: "⠈⠍"
     unicode: "U+2808, U+280D"
     dots: "4, 1-3-4"
-  にょ":
+  にょ:
     braille: "⠈⠎"
     unicode: "U+2808, U+280E"
     dots: "4, 2-3-4"
-  ひゃ":
+  ひゃ:
     braille: "⠈⠥"
     unicode: "U+2808, U+2825"
     dots: "4, 1-3-6"
-  ひゅ":
+  ひゅ:
     braille: "⠈⠭"
     unicode: "U+2808, U+282D"
     dots: "4, 1-3-4-6"
-  ひょ":
+  ひょ:
     braille: "⠈⠮"
     unicode: "U+2808, U+282E"
     dots: "4, 2-3-4-6"
-  みゃ":
+  みゃ:
     braille: "⠈⠵"
     unicode: "U+2808, U+2835"
     dots: "4, 1-3-5-6"
-  みゅ":
+  みゅ:
     braille: "⠈⠽"
     unicode: "U+2808, U+283D"
     dots: "4, 1-3-4-5-6"
-  みょ":
+  みょ:
     braille: "⠈⠾"
     unicode: "U+2808, U+283E"
     dots: "4, 2-3-4-5-6"
-  りゃ":
+  りゃ:
     braille: "⠈⠑"
     unicode: "U+2808, U+2811"
     dots: "4, 1-6"
-  りゅ":
+  りゅ:
     braille: "⠈⠙"
     unicode: "U+2808, U+2819"
     dots: "4, 1-4-5"
-  りょ":
+  りょ:
     braille: "⠈⠚"
     unicode: "U+2808, U+281A"
     dots: "4, 2-4-5"
-  ぎゃ":
+  ぎゃ:
     braille: "⠘⠡"
     unicode: "U+2818, U+2821"
     dots: "4-5, 1-6"
-  ぎゅ":
+  ぎゅ:
     braille: "⠘⠩"
     unicode: "U+2818, U+2829"
     dots: "4-5, 1-4-6"
-  ぎょ":
+  ぎょ:
     braille: "⠘⠪"
     unicode: "U+2818, U+282A"
     dots: "4-5, 2-4-6"
-  じゃ":
+  じゃ:
     braille: "⠘⠱"
     unicode: "U+2818, U+2831"
     dots: "4-5, 1-5-6"
-  じゅ":
+  じゅ:
     braille: "⠘⠹"
     unicode: "U+2818, U+2839"
     dots: "4-5, 1-4-5-6"
-  じょ":
+  じょ:
     braille: "⠘⠺"
     unicode: "U+2818, U+283A"
     dots: "4-5, 2-4-5-6"
-  ぢゃ":
+  ぢゃ:
     braille: "⠘⠕"
     unicode: "U+2818, U+2815"
     dots: "4-5, 1-3-5"
-  ぢゅ":
+  ぢゅ:
     braille: "⠘⠝"
     unicode: "U+2818, U+281D"
     dots: "4-5, 1-3-4-5"
-  ぢょ":
+  ぢょ:
     braille: "⠘⠞"
     unicode: "U+2818, U+281E"
     dots: "4-5, 2-3-4-5"
-  びゃ":
+  びゃ:
     braille: "⠘⠥"
     unicode: "U+2818, U+2825"
     dots: "4-5, 1-3-6"
-  びゅ":
+  びゅ:
     braille: "⠘⠭"
     unicode: "U+2818, U+282D"
     dots: "4-5, 1-3-4-6"
-  びょ":
+  びょ:
     braille: "⠘⠾"
     unicode: "U+2828, U+282E"
     dots: "4-6, 2-3-4-6"
-  ぴゃ":
+  ぴゃ:
     braille: "⠨⠥"
     unicode: "U+2828, U+2825"
     dots: "4-6, 1-3-6"
-  ぴゅ":
+  ぴゅ:
     braille: "⠨⠭"
     unicode: "U+2828, U+282D"
     dots: "4-6, 1-3-4-6"
-  ぴょ":
+  ぴょ:
     braille: "⠨⠮"
     unicode: "U+2828, U+282E"
     dots: "4-6, 2-3-4-6"
   
 special_sound:
-  いぇ":
+  いぇ:
     braille: "⠈⠋"
     unicode: "U+2808, U+280B"
     dots: "4, 1-2-4"
-  きぇ":
+  きぇ:
     braille: "⠈⠫"
     unicode: "U+2808, U+282B"
     dots: "4, 1-2-4-6"
-  しぇ":
+  しぇ:
     braille: "⠈⠻"
     unicode: "U+2808, U+283B"
     dots: "4, 1-3-4-5-6"
-  じぇ":
+  じぇ:
     braille: "⠘⠻"
     unicode: "U+2818, U+283B"
     dots: "4-5, 1-3-4-5-6"
-  ちぇ":
+  ちぇ:
     braille: "⠈⠟"
     unicode: "U+2818, U+281F"
     dots: "4, 1-2-3-4-5"
-  にぇ":
+  にぇ:
     braille: "⠈⠏"
     unicode: "U+2818, U+280F"
     dots: "4, 1-2-3-4"
-  ひぇ":
+  ひぇ:
     braille: "⠈⠯"
     unicode: "U+2818, U+282F"
     dots: "4, 1-2-3-4-6"
-  うぃ":
+  うぃ:
     braille: "⠢⠃"
     unicode: "U+2822, U+2803"
     dots: "2-6, 1-2"
-  うぇ":
+  うぇ:
     braille: "⠢⠋"
     unicode: "U+2822, U+280B"
     dots: "2-6, 1-2-4"
-  うぉ":
+  うぉ:
     braille: "⠢⠊"
     unicode: "U+2822, U+280A"
     dots: "26, 2-4"
-  くぁ":
+  くぁ:
     braille: "⠢⠡"
     unicode: "U+2822, U+2821"
     dots: "2-6, 1-6"
-  くぃ":
+  くぃ:
     braille: "⠢⠣"
     unicode: "U+2822, U+2823"
     dots: "2-6, 1-2-6"
-  くぇ":
+  くぇ:
     braille: "⠢⠫"
     unicode: "U+2822, U+282B"
     dots: "2-6, 1-2-4-6"
-  くぉ":
+  くぉ:
     braille: "⠢⠪"
     unicode: "U+2822, U+282A"
     dots: "2-6, 2-4-6"
-  つぁ":
+  つぁ:
     braille: "⠢⠕"
     unicode: "U+2822, U+2815"
     dots: "2-6, 1-3-5"
-  つぃ":
+  つぃ:
     braille: "⠢⠗"
     unicode: "U+2822, U+2817"
     dots: "2-6, 1-2-3-5"
-  つぇ":
+  つぇ:
     braille: "⠢⠟"
     unicode: "U+2822, U+281F"
     dots: "2-6, 1-2-3-4-5"
-  つぉ":
+  つぉ:
     braille: "⠢⠞"
     unicode: "U+2822, U+281E"
     dots: "2-6, 2-3-4-5"
-  ふぁ":
+  ふぁ:
     braille: "⠢⠥"
     unicode: "U+2822, U+2825"
     dots: "2-6, 1-3-6"
-  ふぃ":
+  ふぃ:
     braille: "⠢⠧"
     unicode: "U+2822, U+2827"
     dots: "2-6, 1-2-3-6"
-  ふぇ":
+  ふぇ:
     braille: "⠢⠯"
     unicode: "U+2822, U+282F"
     dots: "2-6, 1-2-3-4-6"
-  ふぉ":
+  ふぉ:
     braille: "⠢⠮"
     unicode: "U+2822, U+282E"
     dots: "2-6, 2-3-4-6"
-  ぐぁ":
+  ぐぁ:
     braille: "⠲⠡"
     unicode: "U+2832, U+2821"
     dots: "2-5-6, 1-6"
-  ぐぃ":
+  ぐぃ:
     braille: "⠲⠣"
     unicode: "U+2832, U+2823"
     dots: "2-5-6, 1-2-6"
-  ぐぇ":
+  ぐぇ:
     braille: "⠲⠫"
     unicode: "U+2832, U+282B"
     dots: "2-5-6, 1-2-4-6"
-  ぐぉ":
+  ぐぉ:
     braille: "⠲⠪"
     unicode: "U+2832, U+282A"
     dots: "2-5-6, 2-4-6"
-  ゔぁ":
+  ゔぁ:
     braille: "⠲⠥"
     unicode: "U+2832, U+2825"
     dots: "2-5-6, 1-3-6"
-  ゔぃ":
+  ゔぃ:
     braille: "⠲⠧"
     unicode: "U+2832, U+2827"
     dots: "2-5-6, 1-2-3-6"
-  ゔぇ":
+  ゔぇ:
     braille: "⠲⠯"
     unicode: "U+2832, U+282F"
     dots: "2-5-6, 1-2-3-4-6"
-  ゔぉ":
+  ゔぉ:
     braille: "⠲⠮"
     unicode: "U+2832, U+282E"
     dots: "2-5-6, 2-3-4-6"
-  すぃ":
+  すぃ:
     braille: "⠈⠳"
     unicode: "U+2808, U+2833"
     dots: "4, 1-2-5-6"
-  ずぃ":
+  ずぃ:
     braille: "⠘⠳"
     unicode: "U+2818, U+2833"
     dots: "4-5, 1-2-5-6"
-  てぃ":
+  てぃ:
     braille: "⠈⠗"
     unicode: "U+2808, U+2817"
     dots: "4, 1-2-3-5"
-  でぃ":
+  でぃ:
     braille: "⠘⠗"
     unicode: "U+2818, U+2817"
     dots: "4-5, 1-2-3-5"
-  とぅ":
+  とぅ:
     braille: "⠢⠝"
     unicode: "U+2822, U+281D"
     dots: "2-6, 1-3-4-5"
-  どぅ":
+  どぅ:
     braille: "⠲⠝"
     unicode: "U+2832, U+281D"
     dots: "2-5-6, 1-3-4-5"
-  てゅ":
+  てゅ:
     braille: "⠨⠝"
     unicode: "U+2828, U+281D"
     dots: "4-6, 1-3-4-5"
-  でゅ":
+  でゅ:
     braille: "⠸⠝"
     unicode: "U+2838, U+281D"
     dots: "4-5-6, 1-3-4-5"
-  ふゅ":
+  ふゅ:
     braille: "⠨⠬"
     unicode: "U+2828, U+282C"
     dots: "4-6, 3-4-6"
-  ゔゅ":
+  ゔゅ:
     braille: "⠸⠬"
     unicode: "U+2838, U+282C"
     dots: "4-5-5, 3-4-6"
-  ふょ":
+  ふょ:
     braille: "⠨⠜"
     unicode: "U+2828, U+281C"
     dots: "4-6, 3-4-5"
-  ゔょ":
+  ゔょ:
     braille: "⠸⠜"
     unicode: "U+2838, U+281C"
     dots: "4-5-6, 3-4-5"
-  ゔ":
+  ゔ:
     braille: "⠐⠉"
     unicode: "U+2810, U+2809 "
     dots: "5, 1-4"
   
 signs:
-  句点（、）":
+  句点:
+    print: "、"
     braille: "⠲"
     unicode: "U+2832"
     dots: "2-5-6"
-  疑問符（？）":
+  疑問符:
+    print: "？"
     braille: "⠢"
     unicode: "U+2822"
     dots: "2-6"
-  感嘆符（！）":
+  感嘆符:
+    print: "！"
     braille: "⠖"
     unicode: "U+2816"
     dots: "2-3-5"
-  読点（。）":
+  読点:
+    print: "。"
     braille: "⠰"
     unicode: "U+2830"
     dots: "5-6"
-  中点（・）":
+  中点:
+    print: "・"
     braille: "⠐"
     unicode: "U+2810"
     dots: "5"
-  棒線（ーー）":
+  棒線:
+    print: "ーー"
     braille: "⠒⠒"
     unicode: "U+2812, U+2812"
     dots: "2-5, 2-5"
-  点線（・・・）":
+  点線:
+    print: "・・・"
     braille: "⠂⠂⠂"
     unicode: "U+2802, U+2802, U+2802"
     dots: "2, 2, 2"
-  第1カギ（「」）":
+  第1カギ:
+    print: "「」"
     braille: "⠤⠤"
     unicode: "U+2824, U+2824"
     dots: "3-6, 3-6"
-  第2カギ（＜＞）":
+  第2カギ:
+    print: "＜＞"
     braille: "⠰⠄ ⠠⠆"
     unicode: "U+2830, U+2804, U+2820, U+2806"
     dots: "5-6, 3, 6, 2-3"
-  ふえたカギ（『』）":
+  ふえたカギ:
+    print: "『』"
     braille: "⠰⠤ ⠤⠆"
-    unicode: "U+28"
-    dots: ""
-  点訳挿入符（）":
+    unicode: "U+2830, U+2824, U+2824, U+2806"
+    dots: "5-6, 3-6, 3-6, 2-3"
+  点訳挿入符:
     braille: "⠶⠶ ⠶⠶"
-    unicode: "U+28"
-    dots: ""
-  波線（～～）":
+    unicode: "U+2836, U+2836, U+2836, U+2836"
+    dots: "2-3-5-6, 2-3-5-6, 2-3-5-6, 2-3-5-6"
+    note: "点訳者が特に説明を書き表す場合に用いる"
+  波線:
+    print: "～～"
     braille: "⠤⠤"
-    unicode: "U+28"
-    dots: ""
-  第1カッコ（（））":
+    unicode: "U+2824, U+2824"
+    dots: "3-6, 3-6"
+  第1カッコ:
+    print: "（）"
     braille: "⠶⠶"
-    unicode: "U+28"
-    dots: ""
-  第2カッコ（）":
+    unicode: "U+2836, U+2836"
+    dots: "2-3-5-6, 2-3-5-6"
+  第2カッコ:
+    print: "〔 〕"
     braille: "⠐⠶ ⠶⠂"
-    unicode: "U+28"
+    unicode: "U+2810, U+2836, U+2836, U+2802"
     dots: ""
-  二重カッコ（（（）））":
+  二重カッコ:
+    print: "（（ ））"
     braille: "⠰⠶ ⠶⠆"
-    unicode: "U+28"
+    unicode: "U+2830, U+2836, U+2836, U+2806"
     dots: ""
-  第1つなぎ符（）":
+  第1つなぎ符:
     braille: "⠤"
-    unicode: "U+28"
-    dots: ""
-  第2つなぎ符（）":
+    unicode: "U+2824"
+    dots: "3-6"
+    note: "前置記号の効果の終わりを示す"
+  第2つなぎ符:
     braille: "⠠⠄"
-    unicode: "U+28"
-    dots: ""
-  第1小見出し符（）":
+    unicode: "U+2820, U+2804"
+    dots: "6, 3"
+    note: "誤読防止（数字＋文字、英字＋文字など）"
+  第1小見出し符:
     braille: "⠠⠤"
-    unicode: "U+28"
-    dots: ""
-  第2小見出し符（）":
+    unicode: "U+2820, U+2824"
+    dots: "6, 3-6"
+    note: "段落の行頭にしか使えない。改行して行頭2マス空けてから、見出し語を書いてその後ろに配置する。小見出し符の後は必ず１マスあける"
+  第2小見出し符:
     braille: "⠐⠂"
-    unicode: "U+28"
-    dots: ""
-  第1星印（☆）":
+    unicode: "U+2820, U+2804"
+    dots: "6, 3"
+    note: "段落の行頭にしか使えない。改行して行頭2マス空けてから、見出し語を書いてその後ろに配置する。小見出し符の後は必ず１マスあける"
+  第1星印:
+    print: "☆"
     braille: "⠔⠔"
-    unicode: "U+28"
-    dots: ""
-  第2星印（★）":
+    unicode: "U+2835, U+2835"
+    dots: "3-5, 3-5"
+  第2星印:
+    print: "★"
     braille: "⠢⠢"
-    unicode: "U+28"
-    dots: ""
-  第1段落挿入符（）":
+    unicode: "U+2822, U+2822"
+    dots: "2-6, 2-6"
+  第1段落挿入符:
     braille: "⠶⠶ ⠶⠶"
-    unicode: "U+28"
-    dots: ""
-  第1指示符（）":
+    unicode: "U+2836, U+2836, U+2836, U+2836"
+    dots: "2-3-5-6, 2-3-5-6, 2-3-5-6, 2-3-5-6"
+    note: "一段落挿入符の形は点訳者挿入符の形と同じ。この符号の内側は一マスあける。"
+  第1指示符:
     braille: "⠐⠤ ⠤⠂"
-    unicode: "U+28"
-    dots: ""
-  文中注記符（）":
+    unicode: "U+2810, U+2824, U+2824, U_2802"
+    dots: "5, 3-6, 3-6, 2"
+    note: "文の語句や一部を強調したり指定したりする場合に用いる"
+  文中注記符:
+    print: "※"
     braille: "⠰⠆"
-    unicode: "U+28"
-    dots: ""
-  空欄符号（）":
+    unicode: "U+2830, U+2806"
+    dots: "5-6, 2-3"
+    note: "欄外などの注と対照させるときに、その語句の直後にこの記号を使う"
+  空欄符号:
     braille: "⠸⠭ ⠭⠇"
-    unicode: "U+28"
-    dots: ""
-  右向き矢印（→）":
+    unicode: "U+2838, U+282D, U+282D, U+2807"
+    dots: "4-5-6, 1-3-4-6, 1-3-4-6, 1-2-3"
+  右向き矢印:
+    print: "→"
     braille: "⠒⠒⠕"
-    unicode: "U+28"
-    dots: ""
-  左向き矢印（←）":
+    unicode: "U+2812, U+2812, U+2815"
+    dots: "2-5, 2-5, 1-3-5"
+  左向き矢印:
+    print: "←"
     braille: "⠪⠒⠒"
-    unicode: "U+28"
-    dots: ""
-  伏字（〇）":
+    unicode: "U+282A, U+2812, U_2812"
+    dots: "2-4-6, 2-5, 2-5"
+  伏字:
+    print: "〇"
     braille: "⠐⠵"
-    unicode: "U+28"
-    dots: ""
-  伏字（△）":
+    unicode: "U+2810, U+2835"
+    dots: "5, 1-3-5-6"
+  伏字:
+    print: "△"
     braille: "⠐⠷"
-    unicode: "U+28"
-    dots: ""
-  伏字（□）":
+    unicode: "U+2810, U+2837"
+    dots: "5, 1-2-3-5-6"
+  伏字:
+    print: "□"
     braille: "⠐⠽"
-    unicode: "U+28"
-    dots: ""
-  伏字（×）":
+    unicode: "U+2810, U+283D"
+    dots: "5, 1-3-4-5-6"
+  伏字:
+    print: "×"
     braille: "⠐⠿"
-    unicode: "U+28"
-    dots: ""
-  伏字（◎）":
+    unicode: "U+2810, U+283F"
+    dots: "5, 1-2-3-4-5-6"
+  伏字:
+    print: "◎"
     braille: "⠐⠻"
-    unicode: "U+28"
-    dots: ""
-  パーセント（％）":
+    unicode: "U+2810, U+283B"
+    dots: "5, 1-3-4-5-6"
+  パーセント:
+    print: "％"
     braille: "⠰⠏"
-    unicode: "U+28"
-    dots: ""
-  アンドマーク（＆）":
+    unicode: "U+2830, U+280F"
+    dots: "5-6, 1-2-3-4"
+  アンドマーク:
+    print: "＆"
     braille: "⠰⠯"
-    unicode: "U+28"
-    dots: ""
-  アットマーク（＠）":
+    unicode: "U+2830, U+282F"
+    dots: "5-6, 1-2-3-4-6"
+  アットマーク:
+    print: "＠"
     braille: "⠰⠪"
-    unicode: "U+28"
-    dots: ""
-  ナンバーマーク（＃）":
+    unicode: "U+2830, U+282A"
+    dots: "5-6, 2-4-6"
+  ナンバーマーク:
+    print: "＃"
     braille: "⠰⠩"
-    unicode: "U+28"
-    dots: ""
-  アステリスク（＊）":
+    unicode: "U+2830, U+2829"
+    dots: "5-6, 1-4-6"
+  アステリスク:
+    print: "＊"
     braille: "⠐⠡"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2830, U+2821"
+    dots: "5-6, 1-6"
   
 english_braille_alphabet: 
   外字符:
@@ -901,132 +938,132 @@ english_braille_alphabet:
   comma:
     print: ","
     braille: "⠂"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2802"
+    dots: "2"
   semicolon:
     print: ";"
     braille: "⠆"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2806"
+    dots: "2-3"
   colon:
     colon: ":"
     braille: "⠒"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2812"
+    dots: "2-5"
   question_mark:
     print: "?"
     braille: "⠦"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2826"
+    dots: "2-3-6"
   exclamation_mark:
     print: "!"
     braille: "⠖"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2816"
+    dots: "2-3-5"
   period:
     print: "."
     braille: "⠲"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2832"
+    dots: "2-5-6"
   hyphen:
     print: "-"
     braille: "⠤"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2824"
+    dots: "3-6"
   apostrophe:
     print: "'"
     braille: "⠄"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2804"
+    dots: "3"
   left_round_bracket:
-    print: "()"
+    print: "("
     braille: "⠐⠦"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2810, U+2823"
+    dots: "5, 1-2-5"
   right_round_bracket:
     print: ")"
     braille: "⠐⠜"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2810, U+281C"
+    dots: "5, 3-4-5"
   left_double_quotation_mark:
     print: "“"
     braille: "⠦"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2826"
+    dots: "2-3-6"
   right_double_quotation_mark:
     print: "”"
     braille: "⠴"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2834"
+    dots: "3-5-6"
   slash:
     print: "/"
     braille: "⠸⠌"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2807, U+280C"
+    dots: "1-2-3, 3-4"
   dollar_sign:
     print: "$"
     braille: "⠈⠎"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2808, U+280E"
+    dots: "4, 234"
   
 english_braille_numbers: 
   数字符:
     braille: "⠼"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+283C"
+    dots: "3-4-5-6"
   小数点:
     braille: "⠂"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2802"
+    dots: "2"
   位取り点:
     braille: "⠄"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2804"
+    dots: "3"
   第一つなぎ符:
     braille: "⠤"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2824"
+    dots: "3-6"
   アポストロフィ:
     braille: "⠼⠄"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+283C, U+2804"
+    dots: "3"
   1:
     braille: "⠁"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2801"
+    dots: "1"
   2:
     braille: "⠃"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2803"
+    dots: "1-2"
   3:
     braille: "⠉"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2809"
+    dots: "1-4"
   4:
     braille: "⠙"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2819"
+    dots: "1-4-5"
   5:
     braille: "⠑"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2811"
+    dots: "1-5"
   6:
     braille: "⠋"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+280B"
+    dots: "1-2-4"
   7:
     braille: "⠛"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+281B"
+    dots: "1-2-4-5"
   8:
     braille: "⠓"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+2813"
+    dots: "1-2-5"
   9:
     braille: "⠊"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+280A"
+    dots: "2-4"
   0:
     braille: "⠚"
-    unicode: "U+28"
-    dots: ""
+    unicode: "U+281A"
+    dots: "2-4-5"
