@@ -675,7 +675,7 @@ initial_letter_contractions:
     braille: "⠐⠑"
     unicode: "U+2810, U+2811"
     dots: "5, 1-5"
-    father:
+  father:
     braille: "⠐⠋"
     unicode: "U+2810, U+280B"
     dots: "5, 1-2-4"
@@ -885,44 +885,44 @@ shortforms:
     dots: "1, 1-2-4-5"
   against":
     braille: "⠁⠛⠎⠞"
-    unicode: "U+2801, U+281B, U+2813, U+2814"
-    dots: "1, 1-2-4-5, 1-2-5, 3-5"
+    unicode: "U+2801, U+281B, U+280E, U+281E"
+    dots: "1, 1-2-4-5, 2-3-4, 2-3-4-5"
   almost":
     braille: "⠁⠇⠍"
-    unicode: "U+2801, U+280C, U+280D"
-    dots: "1, 3-4, 3-4-5"
+    unicode: "U+2801, U+2807, U+280D"
+    dots: "1, 1-2-3, 1-3-4"
   already":
     braille: "⠁⠇⠗"
-    unicode: "U+2801, U+280C, U+2817"
-    dots: "1, 3-4, 1-2-3-5"
+    unicode: "U+2801, U+2807, U+2817"
+    dots: "1, 1-2-3, 1-2-3-5"
   also":
     braille: "⠁⠇"
-    unicode: "U+2801, U+280C"
-    dots: "1, 3-4"
+    unicode: "U+2801, U+2807"
+    dots: "1, 1-2-3"
   although":
     braille: "⠁⠇⠞⠓"
-    unicode: "U+2801, U+280C, U+281E, U+2813"
-    dots: "1, 3-4, 2-3-4-5"
+    unicode: "U+2801, U+2807, U+281E, U+2813"
+    dots: "1, 1-2-3, 2-3-4-5, 1-2-5"
   altogether:
     braille: "⠁⠇⠞"
-    unicode: "U+2801, U+280C, U+2814"
-    dots: "1, 3-4, 3-5"
+    unicode: "U+2801, U+2807, U+281E"
+    dots: "1, 1-2-3, 2-3-4-5"
   always":
     braille: "⠁⠇⠺"
-    unicode: "U+2801, U+280C, U+283A"
-    dots: "1, 3-4, 2-4-5-6"
+    unicode: "U+2801, U+2807, U+283A"
+    dots: "1, 1-2-3, 2-4-5-6"
   because":
     braille: "⠃⠑⠉"
     unicode: "U+2803, U+2811, U+2809"
     dots: "1-2, 1-5, 1-4"
   before":
-    braille: "⠃⠑⠉"
-    unicode: "U+2803, U+2811, U+2809"
-    dots: "1-2, 1-5, 1-4"
-  behind":
     braille: "⠃⠑⠋"
     unicode: "U+2803, U+2811, U+280B"
     dots: "1-2, 1-5, 1-2-4"
+  behind":
+    braille: "⠃⠑⠓"
+    unicode: "U+2803, U+2811, U+280B"
+    dots: "1-2, 1-5, 1-2-5"
   below:
     braille: "⠃⠑⠇"
     unicode: "U+2803, U+2811, U+2807"
@@ -933,12 +933,12 @@ shortforms:
     dots: "1-2, 1-5, 1-3-4-5"
   beside":
     braille: "⠃⠑⠎"
-    unicode: "U+2803, U+2811, U+2813"
-    dots: "1-2, 1-5, 1-2-5"
+    unicode: "U+2803, U+2811, U+280E"
+    dots: "1-2, 1-5, 2-3-4"
   between":
     braille: "⠃⠑⠞"
-    unicode: "U+2803, U+2811, U+2814"
-    dots: "1-2, 1-5, 3-5"
+    unicode: "U+2803, U+2811, U+281E"
+    dots: "1-2, 1-5, 2-3-4-5"
   beyond":
     braille: "⠃⠑⠽"
     unicode: "U+2803, U+2811, U+283D"
@@ -951,35 +951,30 @@ shortforms:
     braille: "⠃⠗⠇"
     unicode: "U+2803, U+2817, U+2807"
     dots: "1-2, 1-2-3-5, 1-2-3"
-  cannot":
-    braille: "⠉⠁⠝⠝"
-    unicode: "U+2809, U+2801, U+281D, U+281D"
-    dots: "1-4, 1, 1-3-4-5, 1-3-4-5" 
   children:
     braille: "⠉⠓⠝"
     unicode: "U+2809, U+2813, U+281D"
     dots: "1-4, 1-2-5, 1-3-4-5"
-  choose":
   conceive":
-    braille: "⠉⠕⠉⠧"
-    unicode: "U+2809, U+2815, U+2809, U+2817"
-    dots: "1-4, 1-5, 1-4, 1-2-3-5"
+    braille: "⠉⠕⠝⠉⠧"
+    unicode: "U+2809, U+2815, U+281D, U+2809, U+2827"
+    dots: "1-4, 1-3-5, 1-3-4-5, 1-4, 1-2-3-6"
   conceiving":
     braille: "⠉⠕⠝⠉⠧⠛"
     unicode: "U+2809, U+2815, U+281D, U+2809, U+2817, U+281B"
     dots: "1-4, 1-5, 1-3-4-5, 1-4, 1-2-3-5, 1-2-4-5"
   could":
     braille: "⠉⠙"
-    unicode: "U+2809, U+280D"
-    dots: "1-4, 3-4"
+    unicode: "U+2809, U+2819"
+    dots: "1-4, 1-4-5"
   deceive":
     braille: "⠙⠉⠧"
-    unicode: "U+2819, U+2809, U+2817"
-    dots: "1-4-5, 1-4, 1-2-3-5"
+    unicode: "U+2819, U+2809, U+2827"
+    dots: "1-4-5, 1-4, 1-2-3-6"
   deceiving":
     braille: "⠙⠉⠧⠛"
-    unicode: "U+2819, U+2809, U+2817, U+281B"
-    dots: "1-4-5, 1-4, 1-2-3-5, 1-2-4-5"
+    unicode: "U+2819, U+2809, U+2827, U+281B"
+    dots: "1-4-5, 1-4, 1-2-3-6, 1-2-4-5"
   declare":
     braille: "⠙⠉⠇"
     unicode: "U+2819, U+2809, U+2807"
@@ -991,10 +986,10 @@ shortforms:
   either":
     braille: "⠑⠊"
     unicode: "U+2811, U+280A"
-    dots: "1-5, 1-3"
+    dots: "1-5, 2-4"
   first":
     braille: "⠋⠎⠞"
-    unicode: "U+280B, U+2813, U+2814"
+    unicode: "U+280B, U+2813, U+281E"
     dots: "1-2-4, 1-2-5, 2-3-4-5"
   friend":
     braille: "⠋⠗"
@@ -1006,7 +1001,7 @@ shortforms:
     dots: "1-2-4-5, 1-4-5"
   great":
     braille: "⠛⠗⠞"
-    unicode: "U+281B, U+2817, U+2814"
+    unicode: "U+281B, U+2817, U+281E"
     dots: "1-2-4-5, 1-2-3-5, 2-3-4-5"
   herself":
     braille: "⠓⠑⠗⠋"
@@ -1015,29 +1010,25 @@ shortforms:
   him":
     braille: "⠓⠍"
     unicode: "U+2813, U+280D"
-    dots: "1-2-5, 1-2-4"
+    dots: "1-2-5, 1-3-4"
   himself":
     braille: "⠓⠍⠋"
     unicode: "U+2813, U+280D, U+280B"
-    dots: "1-2-5, 1-2-4, 1-2-4"
+    dots: "1-2-5, 1-3-4, 1-2-4"
   immediate":
     braille: "⠊⠍⠍"
-    unicode: "U+280A, U+2813, U+2813"
-    dots: "1-3, 1-2-5, 1-2-5"
-  immediately":
-    braille: "⠊⠍⠍⠑"
-    unicode: "U+280A, U+2813, U+2813, U+2811"
-    dots: "1-3, 1-2-5, 1-2-5, 1-5"
+    unicode: "U+280A, U+280D, U+280D"
+    dots: "1-3, 1-3-4, 1-3-4"
   its:
     braille: "⠭⠎"
-    unicode: "U+282D, U+281E"
-    dots: "1-3-4-5, 2-3-4-5"
+    unicode: "U+282D, U+280E"
+    dots: "1-3-4-6, 2-3-4"
   itself":
     braille: "⠭⠋"
     unicode: "U+282D, U+280B"
-    dots: "1-3-4-5, 1-2-4"
+    dots: "1-3-4-6, 1-2-4"
   letter":
-    braille: "⠇⠧"
+    braille: "⠇⠗"
     unicode: "U+2807, U+2817"
     dots: "1-2-3, 1-2-3-5"
   little":
@@ -1047,15 +1038,15 @@ shortforms:
   much":
     braille: "⠍⠉⠓"
     unicode: "U+280D, U+2809, U+2813"
-    dots: "1-2-4, 1-4, 1-2-5"
+    dots: "1-3-4, 1-4, 1-2-5"
   must":
     braille: "⠍⠎⠞"
-    unicode: "U+280D, U+2813, U+2814"
-    dots: "1-2-4, 1-2-5, 2-3-4-5"
+    unicode: "U+280D, U+280E, U+281E"
+    dots: "1-3-4, 2-3-4, 2-3-4-5"
   myself":
     braille: "⠍⠽⠋"
     unicode: "U+280D, U+283D, U+280B"
-    dots: "1-2-4, 1-3-4-5-6, 1-2-4"
+    dots: "1-3-4, 1-3-4-5-6, 1-2-4"
   necessary":
     braille: "⠝⠑⠉"
     unicode: "U+281D, U+2811, U+2809"
@@ -1063,86 +1054,86 @@ shortforms:
   neither":
     braille: "⠝⠑⠊"
     unicode: "U+281D, U+2811, U+280A"
-    dots: "1-3-4-5, 1-5, 1-3"
+    dots: "1-3-4-5, 1-5, 2-4"
   oneself":
     braille: "⠕⠝⠑⠋"
     unicode: "U+2815, U+281D, U+2811, U+280B"
-    dots: "1-5, 1-3-4-5, 1-5, 1-2-4"
+    dots: "1-3-5, 1-3-4-5, 1-5, 1-2-4"
   ourselves":
     braille: "⠕⠥⠗⠧⠎"
-    unicode: "U+2815, U+2825, U+2817, U+2817, U+2813"
-    dots: "1-5, 1-3-4-6, 1-2-3-5, 1-2-3-5, 1-2-5"
+    unicode: "U+2815, U+2825, U+2817, U+2827, U+280E"
+    dots: "1-3-5, 1-3-6, 1-2-3-5, 1-2-3-6, 2-3-4"
   paid:
     braille: "⠏⠙"
-    unicode: "U+2817, U+2819"
-    dots: "1-2-3-5, 1-4-5"
+    unicode: "U+280F, U+2819"
+    dots: "1-2-3-4, 1-4-5"
   perceive":
     braille: "⠏⠑⠗⠉⠧"
-    unicode: "U+2817, U+2811, U+2817, U+2809, U+2817"
-    dots: "1-2-3-5, 1-5, 1-2-3-5, 1-4, 1-2-3-5"
+    unicode: "U+280F, U+2811, U+2817, U+2827, U+2817"
+    dots: "1-2-3-4, 1-5, 1-2-3-5, 1-4, 1-2-3-6"
   perceiving":
     braille: "⠏⠑⠗⠉⠧⠛"
-    unicode: "U+2817, U+2811, U+2817, U+2809, U+2817, U+281B"
-    dots: "1-2-3-5, 1-5, 1-2-3-5, 1-4, 1-2-3-5, 1-2-4-5"
+    unicode: "U+280F, U+2811, U+2817, U+2809, U+2827, U+281B"
+    dots: "1-2-3-4, 1-5, 1-2-3-5, 1-4, 1-2-3-6, 1-2-4-5"
   perhaps":
     braille: "⠏⠑⠗⠓"
-    unicode: "U+2817, U+2811, U+2817, U+2813"
-    dots: "1-2-3-5, 1-5, 1-2-3-5, 1-2-5"
+    unicode: "U+280F, U+2811, U+2817, U+2813"
+    dots: "1-2-3-4, 1-5, 1-2-3-5, 1-2-5"
   quick":
     braille: "⠟⠅"
     unicode: "U+281F, U+2805"
     dots: "1-2-3-4-5, 1-3"
   receive":
     braille: "⠗⠉⠧"
-    unicode: "U+2817, U+2809, U+2817"
-    dots: "1-2-3-5, 1-4, 1-2-3-5"
+    unicode: "U+2817, U+2809, U+2827"
+    dots: "1-2-3-5, 1-4, 1-2-3-6"
   receiving":
     braille: "⠗⠉⠧⠛"
-    unicode: "U+2817, U+2809, U+2817, U+281B"
-    dots: "1-2-3-5, 1-4, 1-2-3-5, 1-2-4-5"
+    unicode: "U+2817, U+2809, U+2827, U+281B"
+    dots: "1-2-3-5, 1-4, 1-2-3-6, 1-2-4-5"
   rejoice":
     braille: "⠗⠚⠉"
     unicode: "U+2817, U+281A, U+2809"
-    dots: "1-2-3-5, 1-2-4-5, 1-4"
+    dots: "1-2-3-5, 2-4-5, 1-4"
   rejoicing":
     braille: "⠗⠚⠉⠛"
     unicode: "U+2817, U+281A, U+2809, U+281B"
-    dots: "1-2-3-5, 1-2-4-5, 1-4, 1-2-4-5"
+    dots: "1-2-3-5, 2-4-5, 1-4, 1-2-4-5"
   said":
     braille: "⠎⠙"
-    unicode: "U+2813, U+2819"
-    dots: "1-2-5, 1-4-5"
+    unicode: "U+280E, U+2819"
+    dots: "2-3-4, 1-4-5"
   should":
-    braille: "⠎⠩"
-    unicode: "U+2813, U+2829"
-    dots: "1-2-5, 1-4-6"
+    braille: "⠎⠓⠙"
+    unicode: "U+280E, U+2813, U+2819"
+    dots: "2-3-4, 1-2-5, 1-4-5"
   such":
-    braille: "⠎⠩"
-    unicode: "U+2813, U+2829"
-    dots: "1-2-5, 1-4-6"
+    braille: "⠎⠉⠓"
+    unicode: "U+280E, U+2009, U+2819"
+    dots: "2-3-4, 1-4-5"
   themselves":
     braille: "⠞⠓⠑⠍⠧⠎"
-    unicode: "U+2814, U+2813, U+2811, U+281D, U+2817, U+2813"
-    dots: "2-3-4-5, 1-2-5, 1-5, 1-3-4-5, 1-2-3-5, 1-2-5"
+    unicode: "U+281E, U+2813, U+2811, U+280D, U+2827, U+280E"
+    dots: "2-3-4-5, 1-2-5, 1-5, 1-3-4, 1-2-3-6, 2-3-4"
   thyself:
     braille: "⠞⠓⠽⠋"
-    unicode: "U+2814, U+2813, U+283D, U+280B"
+    unicode: "U+281E, U+2813, U+283D, U+280B"
     dots: "2-3-4-5, 1-2-5, 1-3-4-5-6, 1-2-4"
   today":
     braille: "⠞⠙"
-    unicode: "U+2814, U+2819"
+    unicode: "U+281E, U+2819"
     dots: "2-3-4-5, 1-4-5"
   together":
     braille: "⠞⠛⠗"
-    unicode: "U+2814, U+281B, U+2817"
+    unicode: "U+281E, U+281B, U+2817"
     dots: "2-3-4-5, 1-2-4-5, 1-2-3-5"
   tomorrow":
     braille: "⠞⠍"
-    unicode: "U+2814, U+280D"
-    dots: "2-3-4-5, 1-2-4"
+    unicode: "U+281E, U+280D"
+    dots: "2-3-4-5, 1-3-4"
   tonight":
     braille: "⠞⠝"
-    unicode: "U+2814, U+281D"
+    unicode: "U+281E, U+281D"
     dots: "2-3-4-5, 1-3-4-5"
   would":
     braille: "⠺⠙"
