@@ -1,0 +1,937 @@
+metadata: 
+  standard: "Nemeth Code"
+  version: "2022 rules"
+  source: "BANA"
+
+indicators: 
+  opening_nemeth_code:
+    braille: "⠸⠩"
+    unicode: "U+2838, U+2829"
+    dots: "4-5-6, 1-4-6"
+  closing_nemeth:
+    braille: "⠸⠱"
+    unicode: "U+2838, U+2831"
+    dots: "4-5-6, 1-5-6"
+  nemeth_switch:
+    braille: "⠠⠄"
+    unicode: "U+2820, U+2804"
+    dots: "6, 3"
+  punctuation: 
+    braille: "⠸"
+    unicode: "U+28, "
+    dots: "4-5-6"
+  grade_1_indicator:
+    braille: "⠰"
+    unicode: "U+28, "
+    dots: "5-6"
+  literary_comma:
+    braille: "⠂"
+    unicode: "U+28, "
+    dots: "2"
+  mathematical_comma:
+    braille: "⠠"
+    unicode: "U+28, "
+    dots: "6"
+  long_dash (blank space):
+    braille: "⠤⠤⠤"
+    unicode: "U+28, "
+    dots: "3-6, 3-6, 3-6, 3-6"
+  ellipsis:
+    braille: "⠄⠄⠄"
+    unicode: "U+28, "
+    dots: "3, 3, 3"
+  decimal_point:
+    braille: "⠨"
+    unicode: "U+28, "
+    dots: "4-6"
+
+signs_of_operation: 
+  note: "Signs of operation are not typically preceded or followed by a blank space. ",
+  plus:
+    print: "+"
+    braille: "⠬"
+    unicode: "U+28, "
+    dots: "3-4-6"
+  minus:
+    print: "-"
+    braille: "⠤"
+    unicode: "U+28, "
+    dots: "3-6"
+  multiplication_cross:
+    print: "x"
+    braille: "⠈⠡"
+    unicode: "U+28, "
+    dots: "4, 1-6"
+  multiplication_dot:
+    print: "•"
+    braille: "⠡"
+    unicode: "U+28, "
+    dots: "1-6"
+  division:
+    print: "÷"
+    braille: "⠨⠌"
+    unicode: "U+28, "
+    dots: "4-6, 3-4"
+  plus_or_minus:
+    print: "±"
+    braille: "⠬⠤"
+    unicode: "U+28, "
+    dots: "3-4-6, 3-6"
+  plus_followed_by_minus:
+    print: "+-"
+    braille: "⠬⠐⠤"
+    unicode: "U+28, "
+    dots: "3-4-6, 5, 3-6"
+  asterisk:
+    print: "*"
+    braille: "⠈⠼"
+    unicode: "U+28, "
+    dots: "4, 3-4-5-6"
+  crosshatch:
+    print: "#"
+    braille: "⠨⠼"
+    unicode: "U+28, "
+    dots: "4-6, 3-4-5-6"
+  hollow_dot:
+    print: "°"
+    braille: "⠨⠡"
+    unicode: "U+28, "
+    dots: "4-6, 1-6"
+  union:
+    print: "∪"
+    braille: "⠨⠬"
+    unicode: "U+28, "
+    dots: "4-6, 3-4-6"
+  vertical_bar:
+    print: "|"
+    braille: "⠳"
+    unicode: "U+28, "
+    dots: "1-2-5-6"
+comparison_symbols: 
+  note: "Comparison symbols are typically preceded and followed by a blank space. ",
+  equals:
+    print: "="
+    braille: "⠨⠅"
+    unicode: "U+28, "
+    dots: "4-6, 1-3"
+  not_equal_to:
+    print: "≠"
+    braille: "⠌⠨⠅"
+    unicode: "U+28, "
+    dots: "3-4, 4-6, 1-3"
+  approximately_equal:
+    print: "≈"
+    braille: "⠈⠱⠨⠅"
+    unicode: "U+28, "
+    dots: "4, 1-5-6, 4-6, 1-3"
+  similar:
+    print: "~"
+    braille: "⠈⠱"
+    unicode: "U+28, "
+    dots: "4, 1-5-6"
+  greater_than:
+    print: ">"
+    braille: "⠨⠂"
+    unicode: "U+28, "
+    dots: "4-6, 2"
+  greather_than_or_equal_to:
+    print: "≥"
+    braille: "⠨⠂⠱"
+    unicode: "U+28, "
+    dots: "4-6, 2, 1-5-6"
+  less_than:  
+    print: "<"
+    braille: "⠐⠅"
+    unicode: "U+28, "
+    dots: "5, 1-3"
+  less_than_or_equal_to:
+    print: "≤"
+    braille: "⠐⠅⠱"
+    unicode: "U+28, "
+    dots: "5, 1-3, 1-5-6"
+  propertion:
+    print: "proportion"
+    braille: "⠰⠆"
+    unicode: "U+28, "
+    dots: "5-6, 2-3"
+  ratio:
+    print: ":"
+    braille: "⠐⠂"
+    unicode: "U+28, "
+    dots: "5, 2"
+  arc:
+    print: "∩"
+    braille: "⠫⠁"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 1"
+  inclusion:
+    print: "⊂"
+    braille: "⠸⠐⠅"
+    unicode: "U+28, "
+    dots: "4-5-6, 5, 1-3"
+  membership(element):
+    print: "∈"
+    braille: "⠈⠑"
+    unicode: "U+28, "
+    dots: "4, 1-5"
+  parallel:
+    print: "∥"
+    braille: "⠫⠇"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 1-2-3"
+  perpendicular:
+    print: "⊥"
+    braille: "⠫⠏"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 1-2-3-4"
+  tilda:
+    print: "~"
+    braille: "⠈⠱"
+    unicode: "U+28, "
+    dots: "4, 1-5-6"
+  left_arrow:
+    print: "←"
+    braille: "⠫⠪⠒⠒"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 2-4-6, 2-5, 2-5"
+  right_arrow:
+    print: "→"
+    braille: "⠫⠒⠒⠕"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 2-5, 2-5, 1-3-5"
+  left/right_arrow:
+    print: "↔"
+    braille: "⠫⠪⠒⠒⠕"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 2-4-6, 2-5, 2-5, 1-3-5"
+
+  up_arrow:
+    print: "↑"
+    braille: "⠫⠣⠒⠒⠕"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 1-2-6, 2-5, 2-5, 1-3-5"
+  down_arrow:
+    print: "↓"
+    braille: "⠫⠩⠒⠒⠕"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 1-4-6, 2-5, 2-5, 1-3-5"
+  up/down_arrow:
+    print: "↕"
+    braille: "⠫⠣⠪⠒⠒⠕"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 1-2-6, 2-4-6, 2-5, 2-5, 1-3-5"
+  right_over_left_arrow:
+    print: "⇄"
+    braille: "⠫⠒⠒⠕⠫⠪⠒⠒"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 2-5, 2-5, 1-3-5, 1-2-4-6, 2-4-6, 2-5, 2-5"
+  left_over_right_arrow:
+    print: "⇆"
+    braille: "⠫⠪⠒⠒⠫⠒⠒⠕"
+    unicode: "U+28, "
+    dots: "1-2-4-6, 2-4-6, 2-5, 2-5, 1-2-4-6, 2-5, 2-5, 1-3-5"
+
+grouping_symbols:
+  open_parenthesis:
+    print: "("
+    braille: "⠷"
+    unicode: "U+28, "
+    dots: "1-2-3-5-6"
+  close_parenthesis:
+    print: ")"
+    braille: "⠾"
+    unicode: "U+28, "
+    dots: "2-3-4-5-6"
+  open_square_bracket:
+    print: "["
+    braille: "⠈⠷"
+    unicode: "U+28, "
+    dots: "4, 1-2-3-5-6"
+  close_square_bracket:
+    print: "]"
+    braille: "⠈⠾"
+    unicode: "U+28, "
+    dots: "4, 2-3-4-5-6"
+  open_brace:
+    print: "{":
+    braille: "⠨⠷"
+    unicode: "U+28, "
+    dots: "4-6, 1-2-3-5-6"
+  close_brace:
+    print: "}"
+    braille: "⠨⠾"
+    unicode: "U+28, "
+    dots: "4-6, 2-3-4-5-6"
+  open_angle_bracket:
+    print: "<"
+    braille: "⠨⠨⠷"
+    unicode: "U+28, "
+    dots: "4-6, 4-6, 1-2-3-5-6"
+  close_angle_bracket:
+    print: ">"
+    braille: "⠨⠨⠾"
+    unicode: "U+28, "
+    dots: "4-6, 4-6, 2-3-4-5-6"
+  vertical_bar:
+    print: "|"
+    braille: "⠳"
+    unicode: "U+28, "
+    dots: "1-2-5-6"
+
+fractions: 
+  openi_simple_fraction_indicator:
+    braille: "⠹"
+    unicode: "U+28, "
+    dots: "1-4-5-6"
+  close_simple_fraction_indicator:
+    braille: "⠼"
+    unicode: "U+28, "
+    dots: "3-4-5-6"
+  open_mixed_number_indicator:
+    braille: "⠸⠹"
+    unicode: "U+28, "
+    dots: "4-5-6, 1-4-5-6"
+  close_mixed_number_indicator:
+    braille: "⠸⠼"
+    unicode: "U+28, "
+    dots: "4-5-6, 3-4-5-6"
+  open_complex_fraction_indicator:
+    braille: "⠠⠹"
+    unicode: "U+28, "
+    dots: "6, 1-4-5-6"
+  close_complex_fraction_indicator:
+    braille: "⠠⠼"
+    unicode: "U+28, "
+    dots: "6, 3-4-5-6"
+  simple_horizontal_fraction_line:
+    braille: "⠌"
+    unicode: "U+28, "
+    dots: "3-4"
+  complex_horizontal_fraction_line:
+    braille: "⠠⠌"
+    unicode: "U+28, "
+    dots: "6, 3-4"
+  diagonal_fraction_line:
+    braille: "⠸⠌"
+    unicode: "U+28, "
+    dots: "4-5-6, 3-4"
+
+superscripts_and_subscripts: 
+  baseline_indicator":
+    braille: "⠐"
+    unicode: "U+28, "
+    dots: "5"
+  superscript:
+    braille: "⠘"
+    unicode: "U+28, "
+    dots: "4-5"
+  superscript_with_superscript:
+    braille: "⠘⠘"
+    unicode: "U+28, "
+    dots: "4-5, 4-5"
+  superscript_with_superscript_with_superscript":
+    braille: "⠘⠘⠘"
+    unicode: "U+28, "
+    dots: "4-5, 4-5, 4-5"
+  subscript:
+    braille: "⠰"
+    unicode: "U+28, "
+    dots: "5-6"
+  subscript_with_subscript:
+    braille: "⠰⠰"
+    unicode: "U+28, "
+    dots: "5-6, 5-6"
+  subscript_with_subscript_with_subscript:
+    braille: "⠰⠰⠰"
+    unicode: "U+28, "
+    dots: "5-6, 5-6, 5-6"
+  superscript_with_subscript:
+    braille: "⠘⠰"
+    unicode: "U+28, "
+    dots: "4-5, 5-6"
+  superscript_with_subscript_with_subscript:
+    braille: "⠘⠰⠰"
+    unicode: "U+28, "
+    dots: "4-5, 5-6, 5-6"
+  superscript_with_subscript_with_superscript:
+    braille: "⠘⠰⠘"
+    unicode: "U+28, "
+    dots: "4-5, 5-6, 4-5"
+  superscript_with_superscript_with_subscript:
+    braille: "⠘⠘⠰"
+    unicode: "U+28, "
+    dots: "4-5, 4-5, 5-6"
+  subscript_with_superscript:
+    braille: "⠰⠘"
+    unicode: "U+28, "
+    dots: "5-6, 4-5"
+  subscript_with_superscript_with_superscript:
+    braille: "⠰⠘⠘"
+    unicode: "U+28, "
+    dots: "5-6, 4-5, 4-5"
+  subscript_with_superscript_with_subscript:
+    braille: "⠰⠘⠰"
+    unicode: "U+28, "
+    dots: "5-6, 4-5, 5-6"
+  subscript_with_subscript_with_superscript:
+    braille: "⠰⠰⠘"
+    unicode: "U+28, "
+    dots: "5-6, 5-6, 4-5"
+
+square_roots_and_radical_indicators: 
+  radical_sign:
+    braille: "⠜"
+    unicode: "U+28, "
+    dots: "3-4-5"
+  index_of_radical_indicator:
+    braille: "⠣"
+    unicode: "U+28, "
+    dots: "1-2-6"
+  first_inner_radical:
+    braille: "⠨"
+    unicode: "U+28, "
+    dots: "4-6"
+  second_inner_radical:
+    braille: "⠨⠨"
+    unicode: "U+28, "
+    dots: "4-6, 4-6"
+  third_inner_radical:
+    braille: "⠨⠨⠨"
+    unicode: "U+28, "
+    dots: "4-6, 4-6, 4-6"
+  termination_indicator:
+    braille: "⠻"
+    unicode: "U+28, "
+    dots: "1-2-4-5-6"
+
+shape_symbols:
+  angle:
+    print: "∠"
+    braille: "⠫⠪"
+    unicode: "U+28, "
+    dots: ""
+  arc:
+    print: "∩"
+    braille: "⠫⠁"
+    unicode: "U+28, "
+    dots: ""
+  right_arrow:
+    print: "→"
+    braille: "⠫⠕ or ⠫⠒⠒⠕"
+    unicode: "U+28, "
+    dots: ""
+  left_arrow:
+    print: "←"
+    braille: "⠫⠪⠒⠒"
+    unicode: "U+28, "
+    dots: ""
+  up_arrow:
+    print: "↑"
+    braille: "⠫⠣⠒⠒⠕"
+    unicode: "U+28, "
+    dots: ""
+  down_arrow:
+    print: "↓"
+    braille: "⠫⠩⠒⠒⠕"
+    unicode: "U+28, "
+    dots: ""
+  circle:
+    print: ""
+    braille: "⠫⠉"
+    unicode: "U+28, "
+    dots: ""
+  diamond:
+    print: ""
+    braille: "⠫⠙"
+    unicode: "U+28, "
+    dots: ""
+  ellipse:
+    print: ""
+    braille: ⠫⠑"
+    unicode: "U+28, "
+    dots: ""
+  hexagon (regular):
+    print: ""
+    braille: ⠫⠖"
+    unicode: "U+28, "
+    dots: ""
+  parallel:
+    print: "∥"
+    braille: "⠫⠇"
+    unicode: "U+28, "
+    dots: ""
+  perpendicular:
+    print: "⊥"
+    braille: "⠫⠏"
+    unicode: "U+28, "
+    dots: ""
+  parallelogram:
+    print: ""
+    braille: ⠫⠛"
+    unicode: "U+28, "
+    dots: ""
+  pentagon (regular):
+    print: ""
+    braille: ⠫⠢"
+    unicode: "U+28, "
+    dots: ""
+  quadrilateral:
+    print: ""
+    braille: ⠫⠟"
+    unicode: "U+28, "
+    dots: ""
+  rectangle:
+    print: ""
+    braille: "⠫⠗"
+    unicode: "U+28, "
+    dots: ""
+  rhombus:
+    print: ""
+    braille: "⠫⠓"
+    unicode: "U+28, "
+    dots: ""
+  square:
+    print: ""
+    braille: "⠫⠲"
+    unicode: "U+28, "
+    dots: ""
+  star:
+    print: ""
+    braille: "⠫⠎"
+    unicode: "U+28, "
+    dots: ""
+  trapezoid:
+    print: ""
+    braille: "⠫⠵"
+    unicode: "U+28, "
+    dots: ""
+  triangle (equilateral):
+    print: ""
+    braille: ⠫⠞"
+    unicode: "U+28, "
+    dots: ""
+
+modifiers: 
+  multipurpose_indicator:
+    braille: "⠐"
+    unicode: "U+28, "
+    dots: ""
+  directly_over_indicator:
+    braille: "⠣"
+    unicode: "U+28, "
+    dots: ""
+  directly_under_indicator:
+    braille: "⠩"
+    unicode: "U+28, "
+    dots: ""
+  termination_indicator:
+    braille: "⠻"
+    unicode: "U+28, "
+    dots: ""
+
+miscellaneous_symbols:
+  cent:
+    print: "¢"
+    braille: "⠈⠉"
+    unicode: "U+28, "
+    dots: ""
+  dollar:
+    print: "$"
+    braille: "⠈⠎"
+    unicode: "U+28, "
+    dots: ""
+  degree:
+    print: "°"
+    braille: "⠘⠨⠡"
+    unicode: "U+28, "
+    dots: ""
+  percent:
+    print: "%"
+    braille: "⠈⠴"
+    unicode: "U+28, "
+    dots: ""
+  prime:
+    print: "‘"
+    braille: "⠄"
+    unicode: "U+28, "
+    dots: ""
+  caret:
+    print: "^"
+    braille: "⠸⠣"
+    unicode: "U+28, "
+    dots: ""
+  null_set:
+    print: "∅"
+    braille: "⠸⠴"
+    unicode: "U+28, "
+    dots: ""
+  factorial:
+    print: "!"
+    braille: "⠯"
+    unicode: "U+28, "
+    dots: ""
+  infinity:
+    print: "∞"
+    braille: "⠿"
+    unicode: "U+28, "
+    dots: ""
+  integral:
+    print: "∫"
+    braille: "⠮"
+    unicode: "U+28, "
+    dots: ""
+  at_sign:
+    print: "@"
+    braille: "⠈⠁"
+    unicode: "U+28, "
+    dots: ""
+  checkmark:
+    print: "✓"
+    braille: "⠈⠜"
+    unicode: "U+28, "
+    dots: ""
+  ditto_mark:
+    print: "“"
+    braille: "⠠⠄"
+    unicode: "U+28, "
+    dots: ""
+  therefore:
+    print: "∴"
+    braille: "⠠⠡"
+    unicode: "U+28, "
+    dots: ""
+  tally_mark:
+    print: "|"
+    braille: "⠸"
+    unicode: "U+28, "
+    dots: ""
+
+function_names_and_abbreviations:
+  arc:
+    abbreviation: "arc":
+    braill: "⠈⠗"
+    unicode: "U+28, "
+    dots: ""
+  cosine:  
+    abbreviation: "cos"
+    braille: "⠉⠕⠎"
+    unicode: "U+28, "
+    dots: ""
+  coscant:
+    abbreviation: "csc"
+    braille: "⠉⠎⠉"
+    unicode: "U+28, "
+    dots: ""
+  cotangent:
+    abbreviation: "cot"
+    braille: "⠉⠕⠞"
+    unicode: "U+28, "
+    dots: ""
+  determinant:
+    abbreviation: "det"
+    braille: "⠙⠑⠞"
+    unicode: "U+28, "
+    dots: ""
+  limit:
+    abbreviation: "lim"
+    braille: "⠇⠊⠍"
+    unicode: "U+28, "
+    dots: ""
+  natural_logarithm:
+    abbreviation: "ln"
+    braille: "⠇⠝"
+    unicode: "U+28, "
+    dots: ""
+  logarithm:
+    abbreviation: "log"
+    braille: "⠇⠕⠛"
+    unicode: "U+28, "
+    dots: ""
+  maximum:
+    abbreviation: "max"
+    braille: "⠍⠁⠭"
+    unicode: "U+28, "
+    dots: ""
+  minimum:
+    abbreviation: "min"
+    braille: "⠍⠊⠝"
+    unicode: "U+28, "
+    dots: ""
+  secant:
+    abbreviation: "sec"
+    braille: "⠎⠑⠉"
+    unicode: "U+28, "
+    dots: ""
+  sine:
+    abbreviation: "sin"
+    braille: "⠎⠊⠝"
+    unicode: "U+28, "
+    dots: ""
+  tangent:
+    abbreviation: "tan"
+    braille: "⠞⠁⠝"
+    unicode: "U+28, "
+    dots: ""
+  
+greek_letters:
+  alpha:
+    print: "Α"
+    braille: "⠨⠁"
+    unicode: "U+28, "
+    dots: ""
+  beta:
+    print: "Β"
+    braille: "⠨⠃"
+    unicode: "U+28, "
+    dots: ""
+  gamma:
+    print: "Γ"
+    braille: "⠨⠛"
+    unicode: "U+28, "
+    dots: ""
+  delta:
+    print: "Δ"
+    braille: "⠨⠙"
+    unicode: "U+28, "
+    dots: ""
+  epsilon:
+    print: "Ε"
+    braille: "⠨⠑"
+    unicode: "U+28, "
+    dots: ""
+  zeta:
+    print: "Ζ"
+    braille: "⠨⠵"
+    unicode: "U+28, "
+    dots: ""
+  theta:
+    print: "Θ"
+    braille: "⠨⠹"
+    unicode: "U+28, "
+    dots: ""
+  lambda:
+    print: "Λ"
+    braille: "⠨⠇"
+    unicode: "U+28, "
+    dots: ""
+  mu:
+    print: "Μ"
+    braille: "⠨⠍"
+    unicode: "U+28, "
+    dots: ""
+  nu:
+    print: "Ν"
+    braille: "⠨⠝"
+    unicode: "U+28, "
+    dots: ""
+  pi:
+    print: "Π"
+    braille: "⠨⠏"
+    unicode: "U+28, "
+    dots: ""
+  sigma:
+    print: "Σ"
+    braille: "⠨⠎"
+    unicode: "U+28, "
+    dots: ""
+  tau:
+    print: "τ"
+    braille: "⠨⠞"
+    unicode: "U+28, "
+    dots: ""
+  chi:
+    print: "χ"
+    braille: "⠨⠯"
+    unicode: "U+28, "
+    dots: ""
+  omega:
+    print: "ω"
+    braille: "⠨⠺"
+    unicode: "U+28, "
+    dots: ""
+  
+typeforms: 
+  boldface (single letter):
+    braille: "⠸"
+    unicode: "U+28, "
+    dots: ""
+  italic (single letter):
+    braille: "⠨"
+    unicode: "U+28, "
+    dots: ""
+  open_boldface (words,phrases, and statements):
+    braille: "⠠⠄⠸"
+    unicode: "U+28, "
+    dots: ""
+  close_boldface (words, phrases, and statements):
+    braille: "⠸⠠⠄"
+    unicode: "U+28, "
+    dots: ""
+  opene_italic (words, phrases, and statements):
+    braille: "⠠⠄⠨"
+    unicode: "U+28, "
+    dots: ""
+  close_italic (words, phrases, and statements):
+    braille: "⠨⠠⠄"
+    unicode: "U+28, "
+    dots: ""
+  
+latin_letters (lower‑case and upper‑case): 
+  a: 
+    braille: "⠁"
+    unicode: "U+2801"
+    dots: "1"
+  b: 
+    braille: "⠃"
+    unicode: "U+2803"
+    dots: "1-2"
+  c: 
+    braille: "⠉"
+    unicode: "U+2809"
+    dots: "1-4"
+  d: 
+    braille: "⠙"
+    unicode: "U+2819"
+    dots: "1-4-5"
+  e: 
+    braille: "⠑"
+    unicode: "U+2811"
+    dots: "1-5"
+  f: 
+    braille: "⠋"
+    unicode: "U+280B"
+    dots: "1-2-4"
+  g: 
+    braille: "⠛"
+    unicode: "U+281B"
+    dots: "1-2-4-5"
+  h: 
+    braille: "⠓"
+    unicode: "U+2813"
+    dots: "1-2-5"
+  i: 
+    braille: "⠊"
+    unicode: "U+280A"
+    dots: "2-4"
+  j: 
+    braille: "⠚"
+    unicode: "U+281A"
+    dots: "2-4-5"
+  k: 
+    braille: "⠅"
+    unicode: "U+2805"
+    dots: "1-3"
+  l: 
+    braille: "⠇"
+    unicode: "U+2807"
+    dots: "1-2-3"
+  m: 
+    braille: "⠍"
+    unicode: "U+280D"
+    dots: "1-3-4"
+  n: 
+    braille: "⠝"
+    unicode: "U+281D"
+    dots: "1-3-4-5"
+  o: 
+    braille: "⠕"
+    unicode: "U+2815"
+    dots: "1-3-5"
+  p: 
+    braille: "⠏"
+    unicode: "U+280F"
+    dots: "1-2-3-4"
+  q: 
+    braille: "⠟"
+    unicode: "U+281F"
+    dots: "1-2-3-4-5"
+  r: 
+    braille: "⠗"
+    unicode: "U+2817"
+    dots: "1-2-3-5"
+  s: 
+    braille: "⠎"
+    unicode: "U+280E"
+    dots: "2-3-4"
+  t: 
+    braille: "⠞"
+    unicode: "U+281E"
+    dots: "2-3-4-5"
+  u: 
+    braille: "⠥"
+    unicode: "U+2825"
+    dots: "1-3-6"
+  v: 
+    braille: "⠧"
+    unicode: "U+2827"
+    dots: "1-2-3-6"
+  w: 
+    braille: "⠺"
+    unicode: "U+283A"
+    dots: "2-4-5-6"
+  x: 
+    braille: "⠭"
+    unicode: "U+282D"
+    dots: "1-3-4-6"
+  y: 
+    braille: "⠽"
+    unicode: "U+283D"
+    dots: "1-3-4-5-6"
+  z:
+    braille: "⠵"
+    unicode: "U+2835"
+    dots: "1-3-5-6"
+  
+capital_letters: 
+  capital_indicator:
+    braille: "⠠"
+    unicode: "U+28, "
+    dots: ""
+
+number_indicators: 
+  numeric_indicator:
+    braille: "⠼"
+    unicode: "U+28, "
+    dots: ""
+
+number symbols: 
+  1:
+    braille: "⠁"
+    unicode: "U+2801"
+    dots: "1"
+  2: 
+    braille: "⠃"
+    unicode: "U+2803"
+    dots: "1-2"
+  3: 
+    braille: "⠉"
+    unicode: "U+2809"
+    dots: "1-4"
+  4: 
+    braille: "⠙"
+    unicode: "U+2819"
+    dots: "1-4-5"
+  5: 
+    braille: "⠑"
+    unicode: "U+2811"
+    dots: "1-5"
+  6: 
+    braille: "⠋"
+    unicode: "U+280B"
+    dots: "1-2-4"
+  7: 
+    braille: "⠛"
+    unicode: "U+281B"
+    dots: "1-2-4-5"
+  8: 
+    braille: "⠓"
+    unicode: "U+2813"
+    dots: "1-2-5"
+  9: 
+    braille: "⠊"
+    unicode: "U+280A"
+    dots: "2-4"
+  0: 
+    braille: "⠚"
+    unicode: "U+281A"
+    dots: "2-4-5"

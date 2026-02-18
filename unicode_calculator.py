@@ -20,4 +20,4 @@ def dots_to_braille(dots):
     return chr(final_code), f"U+{final_code:04X}"
 
 # --- 実行例 ---
-print(dots_to_braille([3, 4]))  # ('⠑', 'U+2811'
+print(dots_to_braille([3]))  # ('⠑', 'U+2811'
