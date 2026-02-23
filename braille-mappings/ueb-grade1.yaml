@@ -2,7 +2,20 @@ metadata:
 standard: "Unified English Braille (Grade 1)"
 version": "2024 rules"
 source": "BANA/ICEB official"
-
+```
+category          subcategory例
+─────────────────────────────────────
+alphabet          basic, extended
+number            digit
+punctuation       basic, bracket, quote
+symbol            math, currency, misc
+contraction       strong, weak, shortform     ← UEB
+indicator         number, capital, italic      ← UEB/Nemeth共通概念
+position          any / initial / medial / final / word_only
+groupsign         initial, medial, final       ← UEB
+kana              hiragana, katakana, special  ← かな点字
+math              operator, relation, grouping ← Nemeth
+```
 alphabet:
   a: 
     braille: "⠁"

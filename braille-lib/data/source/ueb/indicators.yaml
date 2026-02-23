@@ -1,0 +1,365 @@
+schema_version: "1.0"
+system_id: "ueb"          # ueb / kana / nemeth など
+system_name: "Unified English Braille"
+version": "2024 rules"
+source": "BANA/ICEB official"
+locale: "en"
+braille_type: "grade1 and grade2"    # grade1 / grade2 / math / kana
+cell_size: 6              # 6点 or 8点
+
+entries:
+  - id: "indicator_numeric"
+    category: "indicator"   
+    subcategory: "numeric"
+    print: null
+    dots: ["3456"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100     
+    role: "indicator"      
+    tags: ["numeric"]
+    note: ""
+
+  - id: "indicator_capital_letter"
+    category: "indicator"   
+    subcategory: "capital"
+    print: null
+    dots: ["6"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100
+    role: "indicator"          
+    tags: ["capital", "letter"]
+    note: ""
+
+  - id: "indicator_capital_word"
+    category: "indicator"   
+    subcategory: "capital"
+    print: null
+    dots: ["6", "6"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["capital", "word"]
+    note: ""
+
+  - id: "indicator_capital_passage"
+    category: "indicator"   
+    subcategory: "capital"
+    print: null
+    dots: ["6", "6", "6"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["capital", "passage"]
+    note: ""
+
+  - id: "indicator_capital_terminator"
+    category: "indicator"   
+    subcategory: "capital"
+    print: null
+    dots: ["6", "3"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100 
+    role: "indicator"          
+    tags: ["capital", "terminator"]
+    note: ""
+
+  - id: "indicator_grade1_symbol"
+    category: "indicator"   
+    subcategory: "grade1"
+    print: null
+    dots: ["56"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100
+    role: "indicator"           
+    tags: ["grade1", "symbol"]
+    note: ""
+
+  - id: "indicator_grade1_word"
+    category: "indicator"   
+    subcategory: "grade1"
+    print: null
+    dots: ["56", "56"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100 
+    role: "indicator"          
+    tags: ["grade1", "word"]
+    note: ""
+
+  - id: "indicator_grade1_passage"
+    category: "indicator"   
+    subcategory: "grade1"
+    print: null
+    dots: ["56", "56", "56"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["grade1", "passage"]
+    note: ""
+
+  - id: "indicator_grade1_terminator"
+    category: "indicator"   
+    subcategory: "grade1"
+    print: null
+    dots: ["56", "3"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100
+    role: "indicator"
+    tags: ["grade1", "terminator"]
+    note: ""
+
+  - id: "indicator_kana"
+    category: "indicator"   
+    subcategory: "kana"
+    print: null
+    dots: ["16", "13"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["kana", "custom"]
+    note: ""
+
+  - id: "indicator_kana_terminator"
+    category: "indicator"   
+    subcategory: "kana"
+    print: null
+    dots: ["16", "13", "3"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["kana", "custom", "terminator"]
+    note: ""
+
+  - id: "indicator_italic_symbol"
+    category: "indicator"   
+    subcategory: "italic"
+    print: null
+    dots: ["46", "23"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100 
+    role: "indicator"          
+    tags: ["italic", "symbol"]
+    note: ""
+
+  - id: "indicator_italic_word"
+    category: "indicator"   
+    subcategory: "italic"
+    print: null
+    dots: ["46", "2"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["italic", "word"]
+    note: ""
+
+  - id: "indicator_italic_passage"
+    category: "indicator"   
+    subcategory: "italic"
+    print: null
+    dots: ["46", "2356"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["italic", "passage"]
+    note: ""
+
+  - id: "indicator_italic_terminator"
+    category: "indicator"   
+    subcategory: "italic"
+    print: null
+    dots: ["46", "3"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["italic", "terminator"]
+    note: ""
+
+  - id: "indicator_bold_symbol"
+    category: "indicator"   
+    subcategory: "bold"
+    print: null
+    dots: ["45", "23"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["bold", "symbol"]
+    note: ""
+
+  - id: "indicator_bold_word"
+    category: "indicator"   
+    subcategory: "bold"
+    print: null
+    dots: ["45", "2"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["bold", "word"]
+    note: ""
+
+  - id: "indicator_bold_passage"
+    category: "indicator"   
+    subcategory: "bold"
+    print: null
+    dots: ["45", "2356"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100
+    role: "indicator"           
+    tags: ["bold", "passage"]
+    note: ""
+
+  - id: "indicator_bold_terminator"
+    category: "indicator"   
+    subcategory: "bold"
+    print: null
+    dots: ["45", "3"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100
+    role: "indicator"           
+    tags: ["bold", "terminator"]
+    note: ""
+
+  - id: "indicator_underline_symbol"
+    category: "indicator"   
+    subcategory: "underline"
+    print: null
+    dots: ["456", "23"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100   
+    role: "indicator"        
+    tags: ["underline", "symbol"]
+    note: ""
+
+  - id: "indicator_underline_word"
+    category: "indicator"   
+    subcategory: "underline"
+    print: null
+    dots: ["456", "2"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["underline", "word"]
+    note: ""
+
+  - id: "indicator_underline_passage"
+    category: "indicator"   
+    subcategory: "underline"
+    print: null
+    dots: ["456", "2356"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100  
+    role: "indicator"         
+    tags: ["underline", "passage"]
+    note: ""
+
+  - id: "indicator_underline_terminator"
+    category: "indicator"   
+    subcategory: "underline"
+    print: null
+    dots: ["456", "3"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100   
+    role: "indicator"        
+    tags: ["underline", "terminator"]
+    note: ""
+
+  - id: "indicator_script_symbol"
+    category: "indicator"   
+    subcategory: "script"
+    print: null
+    dots: ["4", "23"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100   
+    role: "indicator"        
+    tags: ["script", "symbol"]
+    note: ""
+
+  - id: "indicator_script_word"
+    category: "indicator"   
+    subcategory: "script"
+    print: null
+    dots: ["4", "2"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100 
+    role: "indicator"          
+    tags: ["script", "word"]
+    note: ""
+
+  - id: "indicator_script_passage"
+    category: "indicator"   
+    subcategory: "script"
+    print: null
+    dots: ["4", "2356"]
+    context:
+      position: "before"        
+      requires_indicator: false
+      priority: 100 
+    role: "indicator"          
+    tags: ["script", "passage"]
+    note: ""
+
+  - id: "indicator_script_terminator"
+    category: "indicator"   
+    subcategory: "script"
+    print: null
+    dots: ["4", "3"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100    
+    role: "indicator"       
+    tags: ["script", "terminator"]
+    note: ""
+
+
+
+
+

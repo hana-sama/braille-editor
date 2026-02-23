@@ -1,0 +1,204 @@
+schema_version: "1.0"
+system_id: "nemeth"          # ueb / kana / nemeth など
+system_name: "Nemeth Code"
+version": "2022 rules"
+source": "BANA/ICEB official"
+locale: "en"
+braille_type: "math"    # grade1 / grade2 / math / kana
+cell_size: 6              # 6点 or 8点
+
+entries:
+  - id: "letter_alpha"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Α"
+    dots: ["46", "1"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_beta"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "B"
+    dots: ["46", "12"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_gamma"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Γ"
+    dots: ["46", "1245"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_delta"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "δ or Δ"
+    dots: ["46", "145", or "46", "6", "145"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_epsilon"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Ε"
+    dots: ["46", "15"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_zeta"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Ζ"
+    dots: ["46", "1356"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+    
+  - id: "letter_theta"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "θ"
+    dots: ["46", "1456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_lambda"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Λ"
+    dots: ["46", "123"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_mu"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Μ"
+    dots: ["46", "134"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+ 
+  - id: "letter_nu"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Ν"
+    dots: ["46", "1345"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_pi"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "Π"
+    dots: ["46", "1234"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_sigma"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "σ or Σ"
+    dots: ["46", "234", or "46", "6", "234"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_tau"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "τ"
+    dots: ["46", "2345"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_chi"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "χ"
+    dots: ["46", "12346"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""
+
+  - id: "letter_omega"
+    category: "alphabet"   
+    subcategory: "basic"
+    print: "ω, or Ω"
+    dots: ["46", "2456", or "46", "6", "2456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "letter"           
+    tags: ["letter", "greek", "alphabetic"]
+    note: ""

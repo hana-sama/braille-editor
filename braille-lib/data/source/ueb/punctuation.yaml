@@ -1,0 +1,335 @@
+schema_version: "1.0"
+system_id: "ueb"          # ueb / kana / nemeth など
+system_name: "Unified English Braille"
+version": "2024 rules"
+source": "BANA/ICEB official"
+locale: "en"
+braille_type: "grade1 and grade2"    # grade1 / grade2 / math / kana
+cell_size: 6              # 6点 or 8点
+
+entries:
+  - id: "punctuation_comma"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ","
+    dots: ["2"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100   
+    role: "punctuation"        
+    tags: ["punctuation", "comma"]
+    note: ""
+
+  - id: "punctuation_semicolon"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ";"
+    dots: ["23"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "semicolon"]
+    note: ""
+
+  - id: "punctuation_colon"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ":"
+    dots: ["25"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "colon"]
+    note: ""
+
+  - id: "punctuation_period"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ":"
+    dots: ["256"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "period"]
+    note: ""
+
+  - id: "punctuation_question"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "?"
+    dots: ["236"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "question"]
+    note: ""
+
+  - id: "punctuation_exclamation"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "!"
+    dots: ["235"]
+    context:
+      position: "after"        
+      requires_indicator: false
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "exclamation"]
+    note: ""
+
+  - id: "punctuation_en_dash"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "–"
+    dots: ["6", "36"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "en_dash"]
+    note: ""
+
+  - id: "punctuation_em_dash"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "---"
+    dots: ["5", "6", "36"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "em_dash"]
+    note: ""
+
+  - id: "punctuation_hyphen"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "-"
+    dots: ["36"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "hyphen"]
+    note: ""
+
+  - id: "punctuation_apostrophe"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "'"
+    dots: ["3"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "apostrophe"]
+    note: ""
+
+  - id: "punctuation_ellipsis"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "…"
+    dots: ["256", "256", "256"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "ellipsis"]
+    note: ""
+
+  - id: "punctuation_slash"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "/"
+    dots: ["456","34"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "slash"]
+    note: ""
+
+  - id: "punctuation_backslash"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "\\"
+    dots: ["456", "16"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "punctuation"           
+    tags: ["punctuation", "backslash"]
+    note: ""
+
+  - id: "punctuation_left_double_quotation_mark"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "“"
+    dots: ["236"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+    role: "open"           
+    tags: ["punctuation", "left double quotation mark"]
+    note: ""
+
+  - id: "punctuation_right_double_quotation_mark"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "”"
+    dots: ["356"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+    role: "close"           
+    tags: ["punctuation", "right double quotation mark"]
+    note: ""
+
+  - id: "punctuation_left_sigle_quotation_mark"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "'"
+    dots: ["6", "236"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "open"           
+    tags: ["punctuation", "left single quotation mark"]
+    note: ""
+
+  - id: "punctuation_right_sigle_quotation_mark"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "'"
+    dots: ["6", "356"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "close"           
+    tags: ["punctuation", "right single quotation mark"]
+    note: ""
+
+  - id: "punctuation_left_parenthesis"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "("
+    dots: ["5", "126"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "open"           
+    tags: ["punctuation", "left parenthesis"]
+    note: ""
+
+  - id: "punctuation_right_parenthesis"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ")"
+    dots: ["5", "345"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "close"           
+    tags: ["punctuation", "right parenthesis"]
+    note: ""
+
+  - id: "punctuation_left_square_bracket"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "["
+    dots: ["46", "126"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "open"           
+    tags: ["punctuation", "left sqaure bracket"]
+    note: ""
+
+  - id: "punctuation_right_square_bracket"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ")"
+    dots: ["46", "345"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "open"           
+    tags: ["punctuation", "right square bracket"]
+    note: ""
+
+  - id: "punctuation_left_curly_bracket"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "{"
+    dots: ["456", "126"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "open"           
+    tags: ["punctuation", "left curly bracket"]
+    note: ""
+
+  - id: "punctuation_right_curly_bracket"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "}"
+    dots: ["456", "345"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "close"           
+    tags: ["punctuation", "right curly bracket"]
+    note: ""
+
+  - id: "punctuation_less_than_sign"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "<"
+    dots: ["4", "126"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "open"           
+    tags: ["punctuation", "less than sign"]
+    note: ""
+
+  - id: "punctuation_greater_than_sign"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ">"
+    dots: ["4", "345"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+    role: "close"           
+    tags: ["punctuation", "greater than sign"]
+    note: ""
+

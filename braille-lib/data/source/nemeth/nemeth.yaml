@@ -1,0 +1,1115 @@
+schema_version: "1.0"
+system_id: "nemeth"          # ueb / kana / nemeth など
+system_name: "Nemeth Code"
+version": "2022 rules"
+source": "BANA/ICEB official"
+locale: "en"
+braille_type: "math"    # grade1 / grade2 / math / kana
+cell_size: 6              # 6点 or 8点
+
+entries:
+  - id: "indicator_nemeth_open"
+    category: "indicator"   
+    subcategory: "basic"
+    print: null
+    dots: ["456", "146"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["indicator","nemeth code"]
+    note: ""
+
+  - id: "indicator_nemeth_close"
+    category: "indicator"   
+    subcategory: "basic"
+    print: null
+    dots: ["456", "156"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "close"           
+    tags: ["indicator","nemeth code"]
+    note: ""
+
+  - id: "indicator_nemeth_switch"
+    category: "indicator"   
+    subcategory: "basic"
+    print: null
+    dots: ["6", "3"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["indicator","nemeth code"]
+    note: ""
+
+  - id: "indicator_punctuation"
+    category: "indicator"   
+    subcategory: "basic"
+    print: null
+    dots: ["456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["indicator","punctuation"]
+    note: ""
+
+  - id: "indicator_grade1"
+    category: "indicator"   
+    subcategory: "basic"
+    print: null
+    dots: ["56"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["indicator","grade1"]
+    note: ""
+
+  - id: "punctuation_liberary_comma"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ","
+    dots: ["2"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "punctuation"           
+    tags: ["punctuation","literary comma"]
+    note: ""
+
+  - id: "punctuation_mathematical_comma"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: ","
+    dots: ["6"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "punctuation"           
+    tags: ["punctuation","mathematical comma"]
+    note: ""
+
+  - id: "punctuation_long_dash"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "—"
+    dots: ["36", "36", "36", "36"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "punctuation"           
+    tags: ["punctuation","long dash"]
+    note: ""
+
+  - id: "punctuation_ellipsis"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "…"
+    dots: ["3", "3", "3"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "punctuation"           
+    tags: ["punctuation","ellipsis"]
+    note: ""
+
+  - id: "punctuation_decimal_point"
+    category: "punctuation"   
+    subcategory: "basic"
+    print: "."
+    dots: ["46"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "punctuation"           
+    tags: ["punctuation","decimal point"]
+    note: ""
+
+  - id: "sign_plus"
+    category: "math"   
+    subcategory: "operator"
+    print: "+"
+    dots: ["346"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "operator"           
+    tags: ["operator","plus"]
+    note: ""
+
+  - id: "sign_minus"
+    category: "math"   
+    subcategory: "operator"
+    print: "-"
+    dots: ["36"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "operator"           
+    tags: ["operator","minus"]
+    note: ""
+
+  - id: "sign_multiply_cross"
+    category: "math"   
+    subcategory: "operator"
+    print: "x"
+    dots: ["4", "16"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "operator"           
+    tags: ["operator","multiply cross"]
+    note: ""
+
+  - id: "sign_multiply_dot"
+    category: "math"   
+    subcategory: "operator"
+    print: "•"
+    dots: ["16"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "operator"           
+    tags: ["operator","multiply dot"]
+    note: ""
+
+  - id: "sign_division"
+    category: "math"   
+    subcategory: "operator"
+    print: "÷"
+    dots: ["16"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "operator"           
+    tags: ["operator","division"]
+    note: ""
+
+  - id: "sign_plus_or_minus"
+    category: "math"   
+    subcategory: "symbol"
+    print: "±"
+    dots: ["346", "36"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","plus or minus"]
+    note: ""
+
+  - id: "sign_minus_after_plus"
+    category: "math"   
+    subcategory: "symbol"
+    print: "+-"
+    dots: ["346", "5", "36"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","plus followed by minus"]
+    note: ""
+
+  - id: "sign_asterisk"
+    category: "math"   
+    subcategory: "symbol"
+    print: "*"
+    dots: ["4", "3456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","asterisk"]
+    note: ""
+
+  - id: "sign_crosshatch"
+    category: "math"   
+    subcategory: "symbol"
+    print: "#"
+    dots: ["46", "3456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","crosshatch/pound sign"]
+    note: ""
+
+  - id: "sign_hollow_dot"
+    category: "math"   
+    subcategory: "symbol"
+    print: "°"
+    dots: ["46", "16"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","hollow dot"]
+    note: ""
+
+  - id: "sign_union"
+    category: "math"   
+    subcategory: "symbol"
+    print: "U"
+    dots: ["46", "346"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","union"]
+    note: ""
+
+  - id: "sign_vertical_bar"
+    category: "math"   
+    subcategory: "symbol"
+    print: "|"
+    dots: ["1256"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","vertical bar"]
+    note: ""
+
+  - id: "symbol_equals"
+    category: "math"   
+    subcategory: "comparison"
+    print: "="
+    dots: ["46", "13"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","equals"]
+    note: ""
+
+  - id: "symbol_not_equal_to"
+    category: "math"   
+    subcategory: "comparison"
+    print: "≠"
+    dots: ["34", "46", "13"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","not equal to"]
+    note: ""
+
+  - id: "symbol_approximately_equal"
+    category: "math"   
+    subcategory: "comparison"
+    print: "≈"
+    dots: ["4", "156", "46", "13"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","approximately equal"]
+    note: ""
+
+  - id: "symbol_similar"
+    category: "math"   
+    subcategory: "comparison"
+    print: "~"
+    dots: ["4", "156"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","similar"]
+    note: ""
+
+  - id: "symbol_greater_than"
+    category: "math"   
+    subcategory: "comparison"
+    print: ">"
+    dots: ["46", 2"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","greater than"]
+    note: ""
+
+  - id: "symbol_greater_than_or_equal_to"
+    category: "math"   
+    subcategory: "comparison"
+    print: "≧"
+    dots: ["46", "2", "156"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","greater than or equal to"]
+    note: ""
+
+  - id: "symbol_less_than"
+    category: "math"   
+    subcategory: "comparison"
+    print: "<"
+    dots: ["5", "13"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","less than"]
+    note: ""
+
+  - id: "symbol_less_than_or_equal_to"
+    category: "math"   
+    subcategory: "comparison"
+    print: "≦"
+    dots: ["5", "13", "156"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","less than or equal to"]
+    note: ""
+
+  - id: "symbol_proportion"
+    category: "math"   
+    subcategory: "comparison"
+    print: "::"
+    dots: ["56", "23"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","proportion"]
+    note: ""
+
+  - id: "symbol_ratio"
+    category: "math"   
+    subcategory: "comparison"
+    print: ":"
+    dots: ["5", "2"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","ratio"]
+    note: ""
+
+  - id: "symbol_arc"
+    category: "math"   
+    subcategory: "comparison"
+    print: "∩"
+    dots: ["1246", "1"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","arc"]
+    note: ""
+
+  - id: "symbol_inclusion"
+    category: "math"   
+    subcategory: "comparison"
+    print: "⊂"
+    dots: ["456", "5", "13"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","inclusion"]
+    note: ""
+
+
+  - id: "symbol_membership"
+    category: "math"   
+    subcategory: "comparison"
+    print: "∈"
+    dots: ["4", "15"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","membership"]
+    note: ""
+
+  - id: "symbol_parallel"
+    category: "math"   
+    subcategory: "comparison"
+    print: "∥"
+    dots: ["1246", "123"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","parallel"]
+    note: ""
+
+  - id: "symbol_perpendicular"
+    category: "math"   
+    subcategory: "comparison"
+    print: "⊥"
+    dots: ["1246", "1234"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","perpendicular"]
+    note: ""
+
+  - id: "symbol_tilda"
+    category: "math"   
+    subcategory: "comparison"
+    print: "~"
+    dots: ["4", "156"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","tilda"]
+    note: ""
+
+  - id: "symbol_left_arrow"
+    category: "math"   
+    subcategory: "comparison"
+    print: "←"
+    dots: ["1246", "246", "25", "25"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","left arrow"]
+    note: ""
+
+  - id: "symbol_right_arrow"
+    category: "math"   
+    subcategory: "comparison"
+    print: "→"
+    dots: ["1246", "25", "25", "135"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","right arrow"]
+    note: ""
+
+  - id: "symbol_left_and_right_arrow"
+    category: "math"   
+    subcategory: "comparison"
+    print: "←→"
+    dots: ["1246", "246", "25", "25", "135"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","left and right arrow"]
+    note: ""
+
+  - id: "symbol_up_arrow"
+    category: "math"   
+    subcategory: "comparison"
+    print: "↑"
+    dots: ["1246", "126", "25", "25", "135"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","up arrow"]
+    note: ""
+
+  - id: "symbol_down_arrow"
+    category: "math"   
+    subcategory: "comparison"
+    print: "↓"
+    dots: ["1246", "146", "25", "25", "135"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","down arrow"]
+    note: ""
+
+  - id: "symbol_up_and_down_arrow"
+    category: "math"   
+    subcategory: "comparison"
+    print: "↕"
+    dots: ["1246", "126", "246", "25", "25", "135"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","left arrow"]
+    note: ""
+
+  - id: "symbol_right_arrow_over_left"
+    category: "math"   
+    subcategory: "comparison"
+    print: "⇄"
+    dots: ["1246", "25", "25", "135", "1246", "246", "25", "25"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "comparison"           
+    tags: ["symbol","right arrow over left arrow"]
+    note: ""
+
+  - id: "symbol_left_parenthesis"
+    category: "math"   
+    subcategory: "grouping"
+    print: "("
+    dots: ["12356"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "open"           
+    tags: ["symbol","left parenthesis"]
+    note: ""
+
+  - id: "symbol_right_parenthesis"
+    category: "math"   
+    subcategory: "grouping"
+    print: "("
+    dots: ["23456"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "close"           
+    tags: ["symbol","right parenthesis"]
+    note: ""
+
+  - id: "symbol_left_square_bracket"
+    category: "math"   
+    subcategory: "grouping"
+    print: "["
+    dots: ["4", "12356"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["symbol","left square bracket"]
+    note: ""
+
+  - id: "symbol_right_square_bracket"
+    category: "math"   
+    subcategory: "grouping"
+    print: "["
+    dots: ["4", "23456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "close"           
+    tags: ["symbol","right square bracket"]
+    note: ""
+
+  - id: "symbol_left_brace"
+    category: "math"   
+    subcategory: "grouping"
+    print: "{"
+    dots: ["45", "12356"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["symbol","left square bracket"]
+    note: ""
+
+  - id: "symbol_right_brace"
+    category: "math"   
+    subcategory: "grouping"
+    print: "}"
+    dots: ["45", "23456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "close"           
+    tags: ["symbol","right square bracket"]
+    note: ""
+
+  - id: "symbol_left_agle_bracket"
+    category: "math"   
+    subcategory: "grouping"
+    print: "<"
+    dots: ["46", "46", "12356"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["symbol","left angle bracket"]
+    note: ""
+
+  - id: "symbol_right_agle_bracket"
+    category: "math"   
+    subcategory: "grouping"
+    print: ">"
+    dots: ["46", "46", "23456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "close"           
+    tags: ["symbol","right angle bracket"]
+    note: ""
+
+  - id: "indicator_simple_fraction_open"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["1456"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "open"           
+    tags: ["indicator","open simple fraction"]
+    note: ""
+
+  - id: "indicator_simple_fraction_close"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["3456"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "close"           
+    tags: ["indicator","close simple fraction"]
+    note: ""
+
+  - id: "indicator_mixed_number_open"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["456", "1456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["indicator","open mixed number"]
+    note: ""
+
+  - id: "indicator_mixed_number_close"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["456", "3456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "close"           
+    tags: ["indicator","close mixed number"]
+    note: ""
+
+  - id: "indicator_complex_fraction_open"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["6", "1456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "open"           
+    tags: ["indicator","open complex fraction"]
+    note: ""
+
+  - id: "indicator_complex_fraction_open"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["6", "3456"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "close"           
+    tags: ["indicator","close complex fraction"]
+    note: ""
+
+  - id: "indicator_simple_horizontal_fraction_line"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["34"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "simple horizontal fraction line"           
+    tags: ["indicator","simple horizontal fraction line"]
+    note: ""
+
+  - id: "indicator_complex_horizontal_fraction_line"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["6", "34"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "complex horizontal fraction line"           
+    tags: ["indicator","complex horizontal fraction line"]
+    note: ""
+
+  - id: "indicator_diagonal_fraction_line"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["456", "34"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "diagonal fraction line"           
+    tags: ["indicator","diagonal fraction line"]
+    note: ""
+
+  - id: "indicator_baseline"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["5"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "baseline"           
+    tags: ["indicator","baseline"]
+    note: ""
+
+  - id: "indicator_superscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["45"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "superscript"           
+    tags: ["indicator","superscript"]
+    note: ""
+
+  - id: "indicator_superscript_with_superscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["45", "45"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "superscript"           
+    tags: ["indicator","superscript with superscript"]
+    note: ""
+
+  - id: "indicator_superscript_with_superscript_with_superscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["45", "45", "45"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "superscript"           
+    tags: ["indicator","superscript with superscript with superscript"]
+    note: ""
+
+  - id: "indicator_subscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["56"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "subscript"           
+    tags: ["indicator","subscript"]
+    note: ""
+
+  - id: "indicator_subscript_with_subscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["56", "56"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "subscript"           
+    tags: ["indicator","subscript with subscript"]
+    note: ""
+
+  - id: "indicator_subscript_with_subscript_with_subscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["56", "56", "56"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "subscript"           
+    tags: ["indicator","subscript with subscript with subscript"]
+    note: ""
+
+  - id: "indicator_superscript_with_subscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["45", "56"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "superscript"           
+    tags: ["indicator","superscript with subscript"]
+    note: ""
+
+  - id: "indicator_superscript_with_subscript_with_subscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["45", "56", "56"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "superscript"           
+    tags: ["indicator","superscript with subscript with subscript"]
+    note: ""
+
+  - id: "indicator_superscript_with_subscript_with_superscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["45", "56", "45"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "superscript"           
+    tags: ["indicator","superscript with subscript"]
+    note: ""
+
+  - id: "indicator_superscript_with_superscript_with_subscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["45", "45", "56"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "superscript"           
+    tags: ["indicator","superscript with superscript with subscript"]
+    note: ""
+
+  - id: "indicator_subscript_with_superscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["56","45"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "subscript"           
+    tags: ["indicator","subscript with superscript"]
+    note: ""
+
+  - id: "indicator_subscript_with_superscript_with_superscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["56","45", "45"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "subscript"           
+    tags: ["indicator","subscript with superscript with superscript"]
+    note: ""
+
+  - id: "indicator_subscript_with_superscript_with_subscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["56","45", "56"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "subscript"           
+    tags: ["indicator","subscript with superscript with subscript"]
+    note: ""
+
+  - id: "indicator_subscript_with_subscript_with_superscript"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["56","56", "45"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "subscript"           
+    tags: ["indicator","subscript with subscript with superscript"]
+    note: ""
+
+  - id: "symbol_radical_sign"
+    category: "math"   
+    subcategory: "symbol"
+    print: "√"
+    dots: ["345"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","radical sign"]
+    note: ""
+
+  - id: "indicator_index_of_radical"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["126"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "indicator"           
+    tags: ["indicator","index of radical"]
+    note: ""
+
+  - id: "symbol_first_inner_radical"
+    category: "math"   
+    subcategory: "symbol"
+    print: "√"
+    dots: ["46"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","first inner radical"]
+    note: ""
+
+  - id: "symbol_third_inner_radical"
+    category: "math"   
+    subcategory: "symbol"
+    print: "√"
+    dots: ["46", "46", "46"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","third inner radical"]
+    note: ""
+
+  - id: "indicator_termination"
+    category: "math"   
+    subcategory: "indicator"
+    print: null
+    dots: ["12456"]
+    context:
+      position: "any"        
+      requires_indicator: false
+      priority: 100
+      role: "indicator"           
+    tags: ["indicator","termination"]
+    note: ""
+
+  - id: "symbol_angle"
+    category: "math"   
+    subcategory: "symbol"
+    print: "∠"
+    dots: ["1246", "246"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","agle"]
+    note: ""
+
+  - id: "symbol_arc"
+    category: "math"   
+    subcategory: "symbol"
+    print: "∩"
+    dots: ["1246", "1"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","arc"]
+    note: ""
+
+  - id: "symbol_angle"
+    category: "math"   
+    subcategory: "symbol"
+    print: "∠"
+    dots: ["1246", "246"]
+    context:
+      position: "any"        
+      requires_indicator: true
+      priority: 100
+      role: "symbol"           
+    tags: ["symbol","agle"]
+    note: ""
